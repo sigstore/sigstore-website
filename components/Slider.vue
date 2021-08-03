@@ -64,7 +64,6 @@
 </template>
 
 <script>
-  import 'swiper/css/swiper.min.css'
   export default {
     name: 'SwiperNuxt',
     components: {
