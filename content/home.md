@@ -17,7 +17,7 @@ sections:
     showBetaCard: true
   - type: twoColumnBanner
     header: The problem with open source security
-    imageAsset: /img/problemwithopensource.svg
+    imageAsset: /img/problemwithopensource_update.svg
     text: Not knowing where all your software comes from means hard-to-spot risks to
       the integrity of your services. Without constant identity checks and
       safety protocols for keys and secrets, open source dependencies can open
