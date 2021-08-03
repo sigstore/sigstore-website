@@ -6,8 +6,6 @@
       v-if="slideData"
       v-swiper:myDirectiveSwiper="swiperOptions"
       class="swiper"
-      @mouseenter="stopSwip($event)" 
-      @mouseleave="startSwip($event)"
     >
       <div class="swiper-wrapper">
         <div v-for="(slide, index) in slideData" :key="index" :class="`${slide.caseColour}`" class="swiper-slide rounded-xl p-32 md:p-44 md:flex justify-between items-start">
