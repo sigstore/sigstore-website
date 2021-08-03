@@ -101,10 +101,6 @@ sections:
         build into your security workflow.
   - type: sigstoreDivider
     showSigstoreDivider: true
-  - type: newsEvents
-    isNewsAndEvents: true
-  - type: sigstoreDivider
-    showSigstoreDivider: true
   - type: carousel
     header: Image Gallery
     carouselCaseItems:
@@ -113,6 +109,10 @@ sections:
       - kpack
       - red-hat
       - wired
+  - type: sigstoreDivider
+    showSigstoreDivider: true
+  - type: newsEvents
+    isNewsAndEvents: true
   - ctaStyle: transparentCta
     text: Help build a safer future with us.
     header: ""

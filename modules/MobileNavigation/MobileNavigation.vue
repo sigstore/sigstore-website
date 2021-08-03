@@ -2,7 +2,7 @@
     <nav class="block md:hidden navigation--mobile w-full" :class="[bg]">
         <div class="container">
             <div class="py-30 flex flex-wrap justify-between items-start ">
-                <NuxtLink class="z-20" :to="`/`"><Logo :class="[$route.params.slug === 'trust-security' ? 'logo-white' : 'logo-black']" /></NuxtLink>
+                <a href="/" title="Home link" class="logo z-20"><Logo :class="[$route.params.slug === 'trust-security' ? 'logo-white' : 'logo-black']" /></a>
                 <NavCloseButton class="block md:hidden w-32 h-32 z-20 relative" :class="[$route.params.slug === 'trust-security' ? 'fill-white' : 'fill-black']" @click="closeNavDrawer" />
             </div>
         </div>
