@@ -4,6 +4,7 @@
     <!-- You can get the swiper instance object in current component context by the name: "mySwiper"  -->
     <div
       v-if="slideData"
+      ref="swiper"
       v-swiper:myDirectiveSwiper="swiperOptions"
       class="swiper"
     >
@@ -62,10 +63,14 @@
 </template>
 
 <script>
+  import 'swiper/swiper.min.css'
+  import { directive } from "vue-awesome-swiper";
   export default {
     name: 'SwiperNuxt',
+    directives: {
+      swiper: directive,
+    },
     components: {
-        // Card
     },
     props: {
         slideData: {
@@ -81,11 +86,11 @@
           speed: 20000,
           autoplay: {
             delay: 1,
+            disableOnInteraction: true
           },
           loop: true,
           slidesPerView:'auto',
           allowTouchMove: false,
-          // disableOnInteraction: true
         }
       }
     },
@@ -93,11 +98,14 @@
       
     },
     methods: {
-      stopSwip(event) {
-        event.target.swiper.autoplay.stop();
+      onSwiperRedied(swiper) {
+        // console.log('Swiper redied!', swiper)
       },
-      startSwip(event) {
-        event.target.swiper.autoplay.start();
+      onSwiperSlideChangeTransitionStart() {
+        // console.log('SwiperSlideChangeTransitionStart!')
+      },
+      onSwiperClickSlide(index, reallyIndex) {
+        // console.log('Swiper click slide!', reallyIndex)
       },
     }
   }
