@@ -31,7 +31,7 @@ export default {
   },
   head() {
       return this.page ? {
-        title: this.page.title,
+        title: 'Test name',
         titleTemplate: `%s · ${process.env.VUE_APP_SITENAME}`,
         script: [
           { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
