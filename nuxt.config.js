@@ -120,11 +120,6 @@ export default {
 
   generate: {
     fallback: true,
-    async ready () {
-      const { $content } = require('@nuxt/content')
-      const files = await $content().only(['slug']).fetch()
-      console.log(files)
-    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

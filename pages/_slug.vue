@@ -31,8 +31,8 @@ export default {
   },
   head() {
       return this.page ? {
-        title: 'Test name',
-        titleTemplate: `%s · ${process.env.VUE_APP_SITENAME}`,
+        title: this.page.title,
+        titleTemplate: `%s · Sigstore`,
         script: [
           { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
           {
