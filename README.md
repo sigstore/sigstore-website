@@ -1,11 +1,21 @@
 # sigstore-website
 
+![Sigstore logo][logo]
+
+[logo]: /assets/icons/logo.svg 'Sigstore logo'
+
 ## Security
 
 Should you discover any security issues, please refer to sigstores [security
 process](https://github.com/sigstore/community/blob/main/SECURITY.md)
 
 # sigstore
+
+The Sigstore website is run on an open source framework called Nuxt JS, a VUE app framework. You can read more about it [here](https://nuxtjs.org/). The reason we chose this had many factors that included greater SEO support SPA's and the ability to connect an API of our choice being easy.
+
+Sigstore content is created with Netlify CMS, which is an open source content management system that generates markdown content. The integration within the Nuxt app was solid and the query interface for getting content was very clear and easy to setup.
+
+To log into the CMS you need to be invited via Netlify identity to access the cms itself, once you have gone through the necessary steps to creating and verifying your account you can go in and start editing content.
 
 ## Build Setup
 
@@ -23,8 +33,6 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Special Directories
 
@@ -73,3 +81,9 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+### `css`
+
+We use Tailwind for our css which uses SASS, and it is highly configurable from the smallest config option such as type sizes through to more larger config such as variables for hover states and buttons. It is a styleguide for the front-end and it borrows the same idea that you get within design systems.
+
+[Go read about tailwind](https://tailwindcss.com/)
