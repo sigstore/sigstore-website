@@ -12,6 +12,7 @@ Read more about Netlify CMS below to dig into the docs:
 
 https://www.netlifycms.org/
 
+
 ## Authentication and login
 
 To log into the CMS you need to be invited through main admin users via Netlify identity to access the CMS itself. Once you have gone through the necessary steps to creating and verifying your account you can go in and start editing content.
@@ -29,6 +30,29 @@ https://docs.netlify.com/visitor-access/identity/
 ### Add credentials
 
 <img alt="login screen" src="static/img/screenshots/Screenshot-2021-08-17-at-12.43.38.png" width="700">
+
+### Editing via CMS
+
+This is the preferred way of editing content of the site. There is much more control over what you are editing and you can use the schema we created for it in a much clearer way.
+ 
+1. Navigate to content you would like to edit in the CMS eg, Case Studies.
+2. Edit a post or create a new entry within this collection.
+3. Once you are happy with the content, hit 'Publish' in the top right. This will generate a commit to the `develop` branch where it will create a deploy preview on netlify on this url: https://clever-cray-18c671.netlify.app.
+4. You can preview and check any edits on here before allowing this to be merged into the `main` branch.
+
+### Editing via .md files
+
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ Warning ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
+
+This is not the preferred way of editing content but if that is what you want to do then please follow these steps below:
+
+**via GitHub:**
+
+1. Go to the sigstore repo here: https://github.com/sigstore/sigstore-website.
+2. Change the origin branch you are on so it points to `develop` NOT `main`.
+3. Move into `/content` folder and inside here you can edit content in any of the subfolders.
+4. Once you are happy to save changes, give the commit some detail, please commit those changes by ticking the bottom radio button **Create a new branch for this commit and start a pull request**.
+5. This PR will then get merged once someone is happy on the team with the changes and you can check the progress on https://clever-cray-18c671.netlify.app.
 
 ## Pages
 
