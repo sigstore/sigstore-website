@@ -18,9 +18,19 @@ To log into the CMS you need to be invited through main admin users via Netlify 
 
 https://docs.netlify.com/visitor-access/identity/
 
-1.  Go to the admin page by visiting this url https://sigstore.dev/admin where you will be greeted by this: [image of login screen]
+1.  Go to the admin page by visiting this url https://sigstore.dev/admin where you will be greeted by this:
+
+![login screen][login]
+
+[login]: /static/img/screenshots/Screenshot 2021-08-17 at 12.43.02.png 'login screen'
 2.  Enter your email address and password you used to set the account up.[image of email and password]
-3.  Once you have added the correct details you can start exploring the different sections of the CMS on the left menu bar.[image of welcome screen]
+![login creds screen][login]
+
+[logincreds]: /static/img/screenshots/Screenshot 2021-08-17 at 12.43.38.png 'login creds screen'
+3.  Once you have added the correct details you can start exploring the different sections of the CMS on the left menu bar.
+![welcome screen][welcome]
+
+[welcome]: /static/img/screenshots/Screenshot 2021-08-17 at 12.44.05.png 'welcome screen'
 
 ## Pages
 
