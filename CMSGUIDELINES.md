@@ -1,6 +1,6 @@
 # sigstore CMS guidelines
 
-![enter image description here](https://d33wubrfki0l68.cloudfront.net/1f4ce04369d08e4f8c3a7ca30a11c4873fda2ae1/5ec76/static/netlify-cms-logo-89325c27d4b56df2c79af749826c6730.svg)
+<img alt="netlify cms home screen image" src="static/img/screenshots/Screenshot-2021-08-17-at-12.55.18.png" width="700">
 
 ## Overview
 
@@ -36,11 +36,23 @@ The pages of the CMS are made up of drag and drop components that are added when
 
 <img alt="pages collection image" src="static/img/screenshots/Screenshot-2021-08-17-at-12.44.44.png" width="700">
 
+#### Page item
+
+<img alt="pages collection image" src="static/img/screenshots/Screenshot-2021-08-17-at-12.45.43.png" width="700">
+
 ## Page components
 
-These are the items that live inside pages and can be used to build out the important structures within them. They are directly tied to the `components` directory in the main site and we dynamically load in these components from the front-end using the page block handle that is created. [image of page components dropdown]
+These are the items that live inside pages and can be used to build out the important structures within them. They are directly tied to the `components` directory in the main site and we dynamically load in these components from the front-end using the page block handle that is created.
 
-To add a new section in a page, find the dropdown to the right and select a component then drag and drop/move into the position you want. When you are happy, hit 'Publish' in the top right.[image of page builder list]
+<img alt="pages components" src="static/img/screenshots/Screenshot-2021-08-17-at-12.46.32.png" width="700">
+
+#### Page blocks
+
+<img alt="pages components" src="static/img/screenshots/Screenshot-2021-08-17-at-12.46.06.png" width="700">
+
+To add a new section in a page, find the dropdown to the right and select a component then drag and drop/move into the position you want. When you are happy, hit 'Publish' in the top right.
+
+<img alt="pages components dropdown" src="static/img/screenshots/Screenshot-2021-08-17-at-12.46.21.png" width="700">
 
 Some of the components have related collections such as Brands. These can be then added to repeated items within the components such as Case Studies.
 
@@ -48,14 +60,19 @@ Some of the components have related collections such as Brands. These can be the
 
 The collections in the site are nested sets of content that can be repeated for things like menus, posts, lists and taxonomy.
 
-Our main collections are Pages, News and Events, Case Studies and FAQs. These are the areas we populate the most and will have the most updates throughout the sigstore development.[image of collections sidebar]
+Our main collections are Pages, News and Events, Case Studies and FAQs. These are the areas we populate the most and will have the most updates throughout the sigstore development.
+
+<img alt="collections" src="static/img/screenshots/Screenshot-2021-08-17-at-12.50.04.png" width="700">
 
 ## Media
 
 Here is where you will add and edit all media for the site. You can add straight in here or when editing content in pages or sections you can add media in the Image widget that uploads straight to the media directory in the `static` folder.
-[image of media overlay]
+
+<img alt="media overlay" src="static/img/screenshots/Screenshot-2021-08-17-at-12.44.31.png" width="700">
 
 ## Globals
+
+<img alt="media overlay" src="static/img/screenshots/Screenshot-2021-08-17-at-12.47.20.png" width="700">
 
 This area is split into 4 sections below:
 
@@ -67,12 +84,19 @@ Some basic content on the site such as title, Description and some meta info reg
 
 To add social links click 'Add links +' and create a new link to point to another social platform of your choice. these links can be used as a block of links or you can choose these links elsewhere as single elements.
 
-[image of social links]
+<img alt="social links collection" src="static/img/screenshots/Screenshot-2021-08-17-at-12.48.58.png" width="700">
 
 #### Header
 
 This is where you will generate the main navigation at the top of the site header area and where you will organise the order of the nav items.
-[image of header links and how to add/edit them]
+
+#### Header menu
+
+<img alt="header globals menu" src="static/img/screenshots/Screenshot-2021-08-17-at-12.47.32.png" width="700">
+
+#### Header menu links
+
+<img alt="header menu links" src="static/img/screenshots/Screenshot-2021-08-17-at-12.47.56.png" width="700">
 
 ## Menu navigation
 
@@ -81,7 +105,6 @@ The menu navigation lives under globals but here we need to explain the menu and
 - The menu items are added inside the Globals -> Header collection.
 - The Header component uses the globals to expose the navigation items.
 - The Page menu link is a relationship that uses the Pages slug to attach the correct url for routing to the right page.
-- [show image of the menu item link itself]
 
 ## Publishing content
 
