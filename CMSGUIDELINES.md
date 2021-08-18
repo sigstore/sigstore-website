@@ -18,23 +18,23 @@ To log into the CMS you need to be invited through main admin users via Netlify 
 
 https://docs.netlify.com/visitor-access/identity/
 
-1.  Go to the admin page by visiting this url https://sigstore.dev/admin where you will be greeted by this:
-
-![login screen][login]
-
-[login]: /static/img/screenshots/Screenshot 2021-08-17 at 12.43.02.png 'login screen'
-2.  Enter your email address and password you used to set the account up.[image of email and password]
-![login creds screen][login]
-
-[logincreds]: /static/img/screenshots/Screenshot 2021-08-17 at 12.43.38.png 'login creds screen'
+1.  Go to the admin page by visiting this url https://sigstore.dev/admin where you will be greeted by a login screen
+2.  Enter your email address and password you used to set the account up.
 3.  Once you have added the correct details you can start exploring the different sections of the CMS on the left menu bar.
-![welcome screen][welcome]
 
-[welcome]: /static/img/screenshots/Screenshot 2021-08-17 at 12.44.05.png 'welcome screen'
+### Log in screen
+
+<img alt="login screen" src="static/img/screenshots/Screenshot-2021-08-17-at-12.43.02.png" width="700">
+
+### Add credentials
+
+<img alt="login screen" src="static/img/screenshots/Screenshot-2021-08-17-at-12.43.38.png" width="700">
 
 ## Pages
 
 The pages of the CMS are made up of drag and drop components that are added when required. This enables us to create content rich pages throughout the site and it also means we can move away from the standard template look of a markdown created file. The output of the page is standard markdown but it leverages the use of frontmatter to build out the complex sections within the page itself.
+
+<img alt="pages collection image" src="static/img/screenshots/Screenshot-2021-08-17-at-12.44.44.png" width="700">
 
 ## Page components
 
