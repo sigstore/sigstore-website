@@ -7,7 +7,7 @@
 The content on sigstore.dev is managed and easily editable by any with [an invite](#authentication-and-login).
 
 - [About Netlify CMS](#about-netlify-cms)
-- [What content to edit](#what-to-edit)
+- [What content to edit](#what-content-to-edit)
 - [Authentication and login](#authentication-and-login)
 - [How to edit content](#how-to-edit-content)
 - [Site structure](#site-structure)
