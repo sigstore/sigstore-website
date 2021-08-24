@@ -1,16 +1,60 @@
-# sigstore CMS guidelines
+# sigstore.dev content management
 
 <img alt="netlify cms home screen image" src="static/img/screenshots/Screenshot-2021-08-17-at-12.55.18.png" width="700">
 
 ## Overview
 
+The content on sigstore.dev is managed and easily editable by any with [an invite](#authentication-and-login).
+
+- [About Netlify CMS](#about-netlify-cms)
+- [What content to edit](#what-to-edit)
+- [Authentication and login](#authentication-and-login)
+- [How to edit content](#how-to-edit-content)
+- [Site structure](#site-structure)
+- [Publishing content](#publishing-content)
+
+## About Netlify CMS
+
 Netlify CMS is open source and it allows us to create content that is markdown centric so we can edit and change content easily through the CMS or through .md files directly.
 
 There is a process to go through when editing content. Right now any content that is edited gets pushed directly to the `develop` branch on the main sigstore website repo which is here: https://github.com/sigstore/sigstore-website. Upon this being pushed to the branch above it can then be approved and merged to `main`.
 
-Read more about Netlify CMS below to dig into the docs:
+[Read more about Netlify CMS](https://www.netlifycms.org/).
 
-https://www.netlifycms.org/
+
+## What content to edit
+
+We encourage the community to **add new material to the site**. For example, jump in on the following:
+
+### Latest news and upcoming events
+This could include upcoming **conferences and talks**, project milestones or calls for collaboration.
+
+<img alt="pages collection image" src="static/img/screenshots/news.png" width="700">
+
+Can be edited here: https://www.sigstore.dev/admin/#/collections/events
+
+
+### Case studies and press
+You can use this section to highlight influential or important press and case studies. Things that are good examples of sigstore making waves in the ecosystem.
+
+Try to keep the number of items in the carousel to 5 or fewer. Delete older or less relevant ones.
+
+<img alt="pages collection image" src="static/img/screenshots/case-studies.png" width="700">
+
+Can be edited here: https://www.sigstore.dev/admin/#/collections/caseStudies
+
+### Future plans and roadmap
+Project milestones and vision for the future.
+
+<img alt="pages collection image" src="static/img/screenshots/plans.png" width="700">
+
+Can be edited here: https://www.sigstore.dev/admin/#/collections/story/entries/storyDates
+
+### Updated written information throughout the site
+Jump in! Inaccuracies, clarifications, expansions...all are welcome.
+
+We've written some quick tips on writing style - for both this website and documentation - here:
+https://docs.sigstore.dev/contributing/#overview
 
 
 ## Authentication and login
@@ -31,16 +75,18 @@ https://docs.netlify.com/visitor-access/identity/
 
 <img alt="login screen" src="static/img/screenshots/Screenshot-2021-08-17-at-12.43.38.png" width="700">
 
-### Editing via CMS
+## How to edit content
+
+### Editing content via CMS
 
 This is the preferred way of editing content of the site. There is much more control over what you are editing and you can use the schema we created for it in a much clearer way.
- 
+
 1. Navigate to content you would like to edit in the CMS eg, Case Studies.
 2. Edit a post or create a new entry within this collection.
 3. Once you are happy with the content, hit 'Publish' in the top right. This will generate a commit to the `develop` branch where it will create a deploy preview on netlify on this url: https://clever-cray-18c671.netlify.app.
 4. You can preview and check any edits on here before allowing this to be merged into the `main` branch.
 
-### Editing via .md files
+### Editing content via .md files
 
 ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ Warning ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
 
@@ -54,7 +100,9 @@ This is not the preferred way of editing content but if that is what you want to
 4. Once you are happy to save changes, give the commit some detail, please commit those changes by ticking the bottom radio button **Create a new branch for this commit and start a pull request**.
 5. This PR will then get merged once someone is happy on the team with the changes and you can check the progress on https://clever-cray-18c671.netlify.app.
 
-## Pages
+## Site structure
+
+### Pages
 
 The pages of the CMS are made up of drag and drop components that are added when required. This enables us to create content rich pages throughout the site and it also means we can move away from the standard template look of a markdown created file. The output of the page is standard markdown but it leverages the use of frontmatter to build out the complex sections within the page itself.
 
@@ -64,7 +112,7 @@ The pages of the CMS are made up of drag and drop components that are added when
 
 <img alt="pages collection image" src="static/img/screenshots/Screenshot-2021-08-17-at-12.45.43.png" width="700">
 
-## Page components
+### Page components
 
 These are the items that live inside pages and can be used to build out the important structures within them. They are directly tied to the `components` directory in the main site and we dynamically load in these components from the front-end using the page block handle that is created.
 
@@ -80,7 +128,7 @@ To add a new section in a page, find the dropdown to the right and select a comp
 
 Some of the components have related collections such as Brands. These can be then added to repeated items within the components such as Case Studies.
 
-## Collections
+### Collections
 
 The collections in the site are nested sets of content that can be repeated for things like menus, posts, lists and taxonomy.
 
@@ -88,13 +136,13 @@ Our main collections are Pages, News and Events, Case Studies and FAQs. These ar
 
 <img alt="collections" src="static/img/screenshots/Screenshot-2021-08-17-at-12.50.04.png" width="700">
 
-## Media
+### Media
 
 Here is where you will add and edit all media for the site. You can add straight in here or when editing content in pages or sections you can add media in the Image widget that uploads straight to the media directory in the `static` folder.
 
 <img alt="media overlay" src="static/img/screenshots/Screenshot-2021-08-17-at-12.44.31.png" width="700">
 
-## Globals
+### Globals
 
 <img alt="media overlay" src="static/img/screenshots/Screenshot-2021-08-17-at-12.47.20.png" width="700">
 
@@ -110,19 +158,19 @@ To add social links click 'Add links +' and create a new link to point to anothe
 
 <img alt="social links collection" src="static/img/screenshots/Screenshot-2021-08-17-at-12.48.58.png" width="700">
 
-#### Header
+### Header
 
 This is where you will generate the main navigation at the top of the site header area and where you will organise the order of the nav items.
 
-#### Header menu
+### Header menu
 
 <img alt="header globals menu" src="static/img/screenshots/Screenshot-2021-08-17-at-12.47.32.png" width="700">
 
-#### Header menu links
+### Header menu links
 
 <img alt="header menu links" src="static/img/screenshots/Screenshot-2021-08-17-at-12.47.56.png" width="700">
 
-## Menu navigation
+### Menu navigation
 
 The menu navigation lives under globals but here we need to explain the menu and how it appears on the site.
 
