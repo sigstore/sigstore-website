@@ -1,13 +1,23 @@
 # sigstore-website
 
+![sigstore logo][logo]
+
+[logo]: /assets/icons/logo.svg 'sigstore logo'
+
 ## Security
 
-Should you discover any security issues, please refer to sigstores [security
+Should you discover any security issues, please refer to sigstore's [security
 process](https://github.com/sigstore/community/blob/main/SECURITY.md)
 
 # sigstore
 
-## Build Setup
+The sigstore website is run on an open source framework called Nuxt JS, a VUE app framework. You can read more about it [here](https://nuxtjs.org/). The reason we chose this had many factors that included greater SEO support, SPA's, and the ability to connect an API of our choice being easy.
+
+sigstore content is created with Netlify CMS, which is an open source content management system that generates markdown content. The integration within the Nuxt app was perfect and the query interface for getting content was very clear and easy to set up.
+
+To log into the CMS you need to be invited via Netlify identity to access the CMS itself. Once you have gone through the necessary steps to creating and verifying your account you can go in and start editing content.
+
+## Build setup
 
 ```bash
 # install dependencies
@@ -24,9 +34,7 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
+## Special directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
@@ -73,3 +81,9 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+### `css`
+
+We use Tailwind for our css which uses SASS, and it is highly configurable from the smallest config option(type sizes) through to more larger config(variables for hover states and buttons). It is a styleguide for the front-end and it borrows the same idea that you get within design systems.
+
+["Go read about tailwind"](https://tailwindcss.com/)
