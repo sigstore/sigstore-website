@@ -34,7 +34,7 @@
     },
     {
       "question": "Can I use the transparency log on its own?",
-      "answer": "Yes. Anyone can stand up a Rekor instance, if you perform your own signing. Rekor has a pluggable PKI and support for GPG, X.509 and Minisign. It also has a customizable manifest schema (pluggable types), so you can get it to work with whatever values you need. There’s more details in our documentation about pluggable types, and you can find information on the Rekor client CLI for adding an entry to a transparency log."
+      "answer": "Yes. Anyone can stand up a Rekor instance, if you perform your own signing. Rekor has a pluggable PKI and support for GPG, X.509 and Minisign. It also has a customizable manifest schema (plugable types), so you can get it to work with whatever values you need. There’s more details in our documentation about plugable types, and you can find information on the Rekor client CLI for adding an entry to a transparency log."
     },
     {
       "question": "Why not blockchain?",
