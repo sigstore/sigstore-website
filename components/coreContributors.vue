@@ -44,7 +44,7 @@ export default {
           disableOnInteraction: true
         },
         names: [
-            'Jake Sanders', 'Asra Ali', 'Priya Wadhwa', 'Carlos Tadeu', 'Panato Junior'
+            'Jake Sanders', 'Asra Ali', 'Priya Wadhwa', 'Carlos Tadeu Panato Junior'
         ]
     }),
 
