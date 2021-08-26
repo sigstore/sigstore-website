@@ -15,9 +15,9 @@ The content on sigstore.dev is managed and easily editable by any with [an invit
 
 ## About Netlify CMS
 
-Netlify CMS is open source and it allows us to create content that is markdown centric so we can edit and change content easily through the CMS or through .md files directly.
+Netlify CMS is open source and it allows us to create content that is markdown-centric, meaning we can edit and change content easily through the CMS or through editing .md files directly.
 
-There is a process to go through when editing content. Right now any content that is edited gets pushed directly to the `develop` branch on the main sigstore website repo which is here: https://github.com/sigstore/sigstore-website. Upon this being pushed to the branch above it can then be approved and merged to `main`.
+Right now any content that's edited gets pushed directly to the `develop` branch on the main sigstore website repo which is here: https://github.com/sigstore/sigstore-website. Upon this being pushed to the branch above it can then be approved and merged to `main`.
 
 [Read more about Netlify CMS](https://www.netlifycms.org/).
 
