@@ -25,10 +25,6 @@
       "answer": "As easy as we can make it. Signing and verifying seems like a lot of extra effort with a lot of pitfalls. Our aim is to design away the manual effort and risk of error, automating the signing into a few simple commands. Verification checks can be made much easier by using the data in our transparency logs, and work is currently underway to explore integrations and development to support that."
     },
     {
-      "question": "How do I verify downloaded code?",
-      "answer": "Rekor lets you send an artifact’s signature or URL to verify an inclusion proof, which shows that an artifact’s stored in the log. You can retrieve an entry using the `get` command with either the log index or the artifact’s universally unique identifier (UUID), or search to look through the log for artifacts, public keys or a SHA hash. Or you can retrieve public keys using `loginfo`, which finds a public key which is then used to verify signatures. This data is freely available, and anyone can deploy and run a Rekor instance."
-    },
-    {
       "question": "Is there live support?",
       "answer": "The fastest way to get answers, ideas and feedback is to jump into our working group on Slack. We’re all developing this together, so we’d be happy to help you out."
     },
@@ -38,7 +34,7 @@
     },
     {
       "question": "Can I use the transparency log on its own?",
-      "answer": "Yes. Anyone can stand up a Rekor instance, if you perform your own signing. Rekor has a pluggable PKI and support for GPG, X.509 and Minisign. It also has a customizable manifest schema (pluggable types), so you can get it to work with whatever values you need. There’s more details in our documentation about pluggable types, and you can find information on the Rekor client CLI for adding an entry to a transparency log."
+      "answer": "Yes. Anyone can stand up a Rekor instance, if you perform your own signing. Rekor has a pluggable PKI and support for GPG, X.509 and Minisign. It also has a customizable manifest schema (plugable types), so you can get it to work with whatever values you need. There’s more details in our documentation about plugable types, and you can find information on the Rekor client CLI for adding an entry to a transparency log."
     },
     {
       "question": "Why not blockchain?",

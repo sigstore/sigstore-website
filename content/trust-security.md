@@ -4,25 +4,20 @@ date: 2021-07-09T15:26:53.431Z
 description: A description here
 sections:
   - card1:
-      header: Trust root
+      header: "Trust root: operating in the open"
       imageAsset: ""
-      text: >-
-        ##### Operating in the open
-
-
-        The sigstore trust root is made up of five key holders from the community, responsible for any changes to policy and rotated as we grow in the future.
+      text: The sigstore trust root is made up of five key holders from the community,
+        responsible for any changes to policy and rotated as we grow in the
+        future.
       ctaText: See how it works
       ctaLink: https://github.com/sigstore/root-signing
     card2:
-      header: Threat model
+      header: "Threat model: coming soon"
       imageAsset: ""
-      text: >-
-        ##### Coming soon
-
-
-        Our threat model will provide a way to plan against and prevent known threats to sigstore's infrastructure. This is currently in development.
-      ctaText: ""
-      ctaLink: ""
+      text: Our threat model will provide a way to plan against and prevent known
+        threats to sigstore's infrastructure. This is currently in development.
+      ctaText: Read about our progress
+      ctaLink: https://blog.sigstore.dev/sigstore-project-update-may-2021-ad8df9ac8dc5
     text: An open, accessible foundation behind the policies and protocols sigstore
       needs to work, grounded in an open source, distributed community.
     header: Our foundations of trust
@@ -31,6 +26,43 @@ sections:
     textColour: text-white
     type: textBannerWithcards
     isScreenHeight: true
+  - type: threeColumnTextGrid
+    column1:
+      github: https://github.com
+      ctaLink: ""
+      socialLinks: true
+      subHeader: Security Eng Lead @ Red Hat CTO Office
+      text: sigstore is Luke’s brainchild. Luke is focused on the Root CA and
+        transaparency logs as well as chairing the community meetings.
+      header: Luke Hinds
+      twitter: https://twitter.com
+      imageAsset: ""
+      isCardStyle: false
+      ctaText: ""
+    column2:
+      github: https://github.com
+      ctaLink: ""
+      socialLinks: true
+      subHeader: OSS Supply Chain Security at Google
+      text: Dan joined Luke to collaborate on building out container signing and
+        verification.
+      header: Dan Lorenc
+      twitter: https://twitter.com
+      imageAsset: ""
+      isCardStyle: false
+      ctaText: ""
+    column3:
+      header: Bob Callaway
+      subHeader: Chief Architect, Red Hat / IBM Synergy Offerings
+      isCardStyle: false
+      socialLinks: false
+      imageAsset: ""
+      text: Bob joined to do X and Y or offer Z.
+      ctaText: ""
+      ctaLink: ""
+    subHeader: The people behind the project
+  - type: coreContributors
+    isCoreContributors: true
 ---
 
 Body text

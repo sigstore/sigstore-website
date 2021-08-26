@@ -186,6 +186,17 @@ collections:
                   required: false,
                   default: true,
                 }
+          - label: 'Show Core Contributors'
+            name: 'coreContributors'
+            widget: object
+            fields:
+              - {
+                  label: Show Core Contributors,
+                  name: isCoreContributors,
+                  widget: boolean,
+                  required: false,
+                  default: true,
+                }
           - label: 'Sponsors list'
             name: 'sponsorsList'
             widget: object
@@ -750,6 +761,12 @@ collections:
             widget: object
             fields:
               - { label: Header, name: header, widget: string, required: false }
+              - {
+                  label: Sub Header,
+                  name: subHeader,
+                  widget: string,
+                  required: false,
+                }
               - { label: Text, name: text, widget: markdown, required: false }
               - label: 'Column 1'
                 name: 'column1'
@@ -763,11 +780,46 @@ collections:
                       required: false,
                     }
                   - {
+                      label: Sub Header,
+                      name: subHeader,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+                  - {
                       label: Is Card style,
                       name: isCardStyle,
                       widget: boolean,
                       required: false,
                       default: false,
+                    }
+                  - {
+                      label: Has social links,
+                      name: socialLinks,
+                      widget: boolean,
+                      required: false,
+                      default: false,
+                    }
+                  - {
+                      label: Twitter,
+                      name: twitter,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: GitHub,
+                      name: github,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: LinkedIn,
+                      name: linkedin,
+                      widget: string,
+                      default: null,
+                      required: false,
                     }
                   - {
                       label: Background Colour,
@@ -823,11 +875,46 @@ collections:
                       required: false,
                     }
                   - {
+                      label: Sub Header,
+                      name: subHeader,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+                  - {
                       label: Is Card style,
                       name: isCardStyle,
                       widget: boolean,
                       required: false,
                       default: false,
+                    }
+                  - {
+                      label: Has social links,
+                      name: socialLinks,
+                      widget: boolean,
+                      required: false,
+                      default: false,
+                    }
+                  - {
+                      label: Twitter,
+                      name: twitter,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: GitHub,
+                      name: github,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: LinkedIn,
+                      name: linkedin,
+                      widget: string,
+                      default: null,
+                      required: false,
                     }
                   - {
                       label: Background Colour,
@@ -883,11 +970,46 @@ collections:
                       required: false,
                     }
                   - {
+                      label: Sub Header,
+                      name: subHeader,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+                  - {
                       label: Is Card style,
                       name: isCardStyle,
                       widget: boolean,
                       required: false,
                       default: false,
+                    }
+                  - {
+                      label: Has social links,
+                      name: socialLinks,
+                      widget: boolean,
+                      required: false,
+                      default: false,
+                    }
+                  - {
+                      label: Twitter,
+                      name: twitter,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: GitHub,
+                      name: github,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: LinkedIn,
+                      name: linkedin,
+                      widget: string,
+                      default: null,
+                      required: false,
                     }
                   - {
                       label: Background Colour,
