@@ -5,7 +5,7 @@
     :class="[backgroundColour,isScreenHeight ? 'min-h-screen md:flex-col' : 'h-auto py-128']"
     :data-header-text="[(backgroundColour === 'bg-purple-dark') ? 'text-white' : (backgroundColour === 'bg-pastel-blue') ? 'text-purple-dark' : 'text-gray-dark']"
     >
-        <div class="flex items-center justify-center pt-128 md:pt-30" :class="[showSupportedBy ? 'text_banner--main' : '']">
+        <div class="flex items-center justify-center pt-216">
             <div class="container inner relative" :class="[showSupportedBy ? 'md:h-180' : '',textAlign === 'center' ? 'text-left md:text-center' : 'text-left']">
                 <h1 v-if="header" v-animate-on-scroll :class="[textColour]" class="delay-step_1 mb-30 text-gray-dark">{{header}}</h1>
                 <div 
@@ -18,9 +18,9 @@
             </div>
         </div>
         <div class="container container--card">
-            <div class="p-0 md:p-32 lg:p-128 w-full mx-auto px-24 md:px-0">
+            <div class="p-0 md:p-32 lg:px-128 lg:pt-164 w-full mx-auto px-24 md:px-0">
                 <div class="md:flex items-start justify-between md:-ml-30 md:-mr-30 mt-32 md:mt-64">
-                    <div class="px-30 w-full md:w-1/2">
+                    <div class="w-full md:w-1/2" :class="[$route.params.slug === 'trust-security' ? 'px-15' : 'px-30']">
                         <div class="mb-32 md:mb-16 w-full p-32 md:p-32 rounded-xl border border-white text-white md:min-h-320">
                             <img v-if="card1.imageAsset" :src="card1.imageAsset" :alt="`${card1.header} image`" class="mb-24" />
                             <h4 class="mb-24 text-24">{{card1.header}}</h4>
@@ -37,7 +37,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="px-30 w-full md:w-1/2">
+                    <div class="w-full md:w-1/2" :class="[$route.params.slug === 'trust-security' ? 'px-15' : 'px-30']">
                         <div class="mb-32 md:mb-16 w-full p-32 md:p-32 rounded-xl border border-white text-white md:min-h-320">
                             <img v-if="card2.imageAsset" :src="card2.imageAsset" :alt="`${card2.header} image`" class="mb-24" />
                             <h4 class="mb-24 text-24">{{card2.header}}</h4>

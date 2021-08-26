@@ -1,6 +1,6 @@
 <template>
   <div>
-    <component :is="section.type" v-for="(section, index) in page.sections" :key="index" :class="[section.type != 'carousel' ? 'page--component-border' : 'page--component-border' ]" v-bind="section" /> 
+    <component :is="section.type" v-for="(section, index) in page.sections" :key="index" v-bind="section" /> 
   </div>
 </template>
 

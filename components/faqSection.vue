@@ -2,7 +2,9 @@
 <template>
     <section class="py-64 bg-pastel-blue" data-header-text="text-purple-dark">
         <div class="text-gray-dark container inner text-center">
-            <h3 class="text-36 pb-64">Frequently asked questions</h3>
+            <h3 class="text-36 pb-32">Frequently asked questions</h3>
+            <p>Looking for something detailed around the API?</p>
+            <p class="pb-40">Check out our <a href="https://docs.sigstore.dev/faq" target="_blank">developer docs</a></p>
             <article 
                 v-if="faqs.length > 0" 
                 v-for="(faq, index) in faqs" 
