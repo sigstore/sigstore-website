@@ -31,7 +31,7 @@ sections:
       github: https://github.com
       ctaLink: ""
       socialLinks: true
-      subHeader: Security Eng Lead @ Red Hat CTO Office
+      subHeader: Security Eng Lead, Red Hat CTO Office
       text: sigstore is Luke’s brainchild. Luke is focused on the Root CA and
         transaparency logs as well as chairing the community meetings.
       header: Luke Hinds
@@ -43,7 +43,7 @@ sections:
       github: https://github.com
       ctaLink: ""
       socialLinks: true
-      subHeader: OSS Supply Chain Security at Google
+      subHeader: OSS Supply Chain Security, Google
       text: Dan joined Luke to collaborate on building out container signing and
         verification.
       header: Dan Lorenc
@@ -53,11 +53,11 @@ sections:
       ctaText: ""
     column3:
       header: Bob Callaway
-      subHeader: Chief Architect, Red Hat / IBM Synergy Offerings
+      subHeader: Chief Architect, Red Hat IBM Synergy Offerings
       isCardStyle: false
       socialLinks: false
       imageAsset: ""
-      text: Bob joined to do X and Y or offer Z.
+      text: Bob joined early on to provide key direction, development and strategy.
       ctaText: ""
       ctaLink: ""
     subHeader: The people behind the project
