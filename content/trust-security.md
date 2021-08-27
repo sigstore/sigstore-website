@@ -57,7 +57,7 @@ sections:
       isCardStyle: false
       socialLinks: false
       imageAsset: ""
-      text: Bob joined to do X and Y or offer Z.
+      text: ""
       ctaText: ""
       ctaLink: ""
     subHeader: The people behind the project
