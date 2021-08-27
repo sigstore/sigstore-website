@@ -1,9 +1,9 @@
+import Headroom from "headroom.js";
+import { mapGetters } from "vuex";
 import Navigation from "@/modules/Navigation/Navigation.vue";
 import Logo from "@/assets/icons/logo.svg?inline";
 import NavButton from "@/assets/icons/menu-button.svg?inline"
 import NavCloseButton from "@/assets/icons/menu-button-close.svg?inline"
-import Headroom from "headroom.js";
-import { mapGetters } from "vuex";
 
 export default {
 
