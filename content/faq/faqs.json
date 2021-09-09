@@ -10,7 +10,7 @@
     },
     {
       "question": "What's the current status?",
-      "answer": "We’re working hard to release v1.0 in July. At the time of writing, we have a working transparency log that’s fully operational as a standalone service, Rekor. It consists of a server and client tooling to make entries and query for inclusion. Files are available to run this in GKE. Work’s also underway to mature the WebPKI (Fulcio) and develop client tools for different package managers and upstream communities."
+      "answer": "sigstore is available as an experimental service. The cosign client reached its 1.0 release in July 2021. We currently have a working transparency log that’s fully operational as a standalone service, Rekor. It consists of a server and client tooling to make entries and query for inclusion. Files are available to run this in GKE. Work’s also underway to mature the WebPKI (Fulcio) and develop client tools for different package managers and upstream communities."
     },
     {
       "question": "How can people get involved?",
