@@ -28,26 +28,26 @@ sections:
     isScreenHeight: true
   - type: threeColumnTextGrid
     column1:
-      github: https://github.com
+      github: https://github.com/lukehinds
       ctaLink: ""
       socialLinks: true
       subHeader: Security Eng Lead @ Red Hat CTO Office
       text: sigstore is Luke’s brainchild. Luke is focused on the Root CA and
         transaparency logs as well as chairing the community meetings.
       header: Luke Hinds
-      twitter: https://twitter.com
+      twitter: https://twitter.com/decodebytes
       imageAsset: ""
       isCardStyle: false
       ctaText: ""
     column2:
-      github: https://github.com
+      github: https://github.com/dlorenc
       ctaLink: ""
       socialLinks: true
       subHeader: OSS Supply Chain Security at Google
       text: Dan joined Luke to collaborate on building out container signing and
         verification.
       header: Dan Lorenc
-      twitter: https://twitter.com
+      twitter: https://twitter.com/lorenc_dan
       imageAsset: ""
       isCardStyle: false
       ctaText: ""
