@@ -1,10 +1,8 @@
 ---
-title: "Payload Format"
+title: "KMS Support"
 category: "Cosign"
 position: 14
 ---
-
-# Key Management System Integrations
 
 This page contains detailed instructions on how to configure `cosign` to work with KMS providers.
 Right now `cosign` supports Hashicorp Vault, AWS KMS, and GCP KMS, and we are hoping to support more in the future!

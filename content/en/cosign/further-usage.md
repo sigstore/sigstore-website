@@ -4,8 +4,6 @@ category: "Cosign"
 position: 5
 ---
 
-# Fun Tips And Tricks!
-
 ## Signing Git Commits - Three Ways!
 
 You thought Git signatures were always GPG?

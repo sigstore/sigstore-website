@@ -1,5 +1,5 @@
 ---
-title: "Hardware tokens"
+title: "OpenID Connect signing"
 category: "Cosign"
 position: 11
 ---

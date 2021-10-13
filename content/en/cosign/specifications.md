@@ -1,10 +1,8 @@
 ---
-title: "Payload Format"
+title: "Signature Specification"
 category: "Cosign"
 position: 15
 ---
-
-# Signature Specification
 
 `cosign` is inspired by tools like [minisign](https://jedisct1.github.io/minisign/) and
 [signify](https://www.openbsd.org/papers/bsdcan-signify.html).

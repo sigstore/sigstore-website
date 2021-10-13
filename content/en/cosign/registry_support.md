@@ -4,8 +4,6 @@ category: "Cosign"
 position: 11
 ---
 
-# Registry Support
-
 `cosign` uses [go-containerregistry](https://github.com/google/go-containerregistry) for registry
 interactions, which has generally excellent compatibility, but some registries may have quirks.
 

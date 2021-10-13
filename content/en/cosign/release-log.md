@@ -1,7 +1,7 @@
 ---
 title: "Release log"
 category: "Cosign"
-position: 6
+position: 50
 ---
 
 ## `Cosign` is 1.0!

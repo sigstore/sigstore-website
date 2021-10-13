@@ -4,8 +4,6 @@ category: "Cosign"
 position: 16
 ---
 
-# Payload Format
-
 `cosign` only supports Red Hat's [simple signing](https://www.redhat.com/en/blog/container-image-signing)
 format for payloads.
 

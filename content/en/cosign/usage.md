@@ -4,8 +4,6 @@ category: "Cosign"
 position: 4
 ---
 
-# Detailed Usage
-
 ## Sign a container multiple times
 
 Multiple signatures can be "attached" to a single container image:

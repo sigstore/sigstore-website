@@ -4,8 +4,6 @@ category: "Cosign"
 position: 12
 ---
 
-# OCI Artifacts
-
 Push an artifact to a registry using [oras](https://github.com/deislabs/oras) (in this case, `cosign` itself!):
 
 ```shell
