@@ -27,7 +27,8 @@ Cosign is being developed as part of the sigstore project. Join us on our [Slack
 
 ## Usage and installation
 
-Coming soon
+Instructions will be available here soon, in the meantime you can find a guide in PDF format [here](../sigstore_getting_started-v1.2.pdf).
+
 
 ## API
 
