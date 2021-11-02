@@ -24,4 +24,4 @@ Rekor releases are available on the [Release page](https://github.com/sigstore/r
 
 Releases are available for the server, `rekor-server` and the CLI tool `rekor-cli`.
 
-See [release-verify](release-verify.md) for details of to verify Rekor release binaries.
+See [Verify a release](verify-release.md) for details of to verify Rekor release binaries.
