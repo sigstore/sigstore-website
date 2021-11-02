@@ -1,7 +1,7 @@
 ---
 title: "Installation"
 category: "Rekor"
-position: 2
+position: 310
 ---
 
 There are serveral methods to install Rekor which we will cover here for both the `rekor-cli` and `rekor-server`.

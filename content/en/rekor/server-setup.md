@@ -1,7 +1,7 @@
 ---
 title: "Server setup"
 category: "Rekor"
-position: 7
+position: 330
 ---
 
 # Rekor Server Set up

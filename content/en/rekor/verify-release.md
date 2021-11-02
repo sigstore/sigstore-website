@@ -1,7 +1,7 @@
 ---
 title: "Verify binaries"
 category: "Rekor"
-position: 11
+position: 311
 ---
 
 > 📓 We will refine this process over time to be more streamlined with a higher consensus threshold
