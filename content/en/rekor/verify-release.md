@@ -5,9 +5,9 @@ position: 311
 ---
 
 > 📓 We will refine this process over time to be more streamlined with a higher consensus threshold
-   as well as an implementation of a [TUF](https://theupdateframework.io/) style policy. For now this is quite a
-   multi step process. We will also deep dive a fair amount here, as its a good opporuntity to pull the covers aside
-   and see how this all works.
+> as well as an implementation of a [TUF](https://theupdateframework.io/) style policy. For now this is quite a
+> multi step process. We will also deep dive a fair amount here, as its a good opporuntity to pull the covers aside
+> and see how this all works.
 
 Rekor releases are currently signed and verified using Fulcio OpenID connect based short lived signing certificates.
 
@@ -74,8 +74,7 @@ Hr/+CxFvaJWmpYqNkLDGRU+9orzh5hI2RrcuaQ==
 
 Save this locally to your machine as `fulcio-root.pem`
 
-> 📓 We are looking at leveraging other trust stores for our Root CA
-   , so consider getting the root CA from here, a temporary approach.
+> 📓 We are looking at leveraging other trust stores for our Root CA, so consider getting the root CA from here, a temporary approach.
 
 Let's now validate the cert chain:
 
