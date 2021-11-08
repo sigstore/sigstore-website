@@ -8,7 +8,7 @@
             <div class="w-full md:w-1/2 md:mt-0 mt-32">
                 <Navigation nav-type="social" :nav-list="socialLinks" />
             </div>
-            <p class="text-12 text-gray-dark mt-32">Copyright © 2021 The Linux Foundation®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our Trademark Usage page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use. Forms on this site are protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+            <p class="text-12 text-gray-dark mt-32">Copyright © 2021 The Linux Foundation®. All rights reserved. <a href="https://linuxfoundation.org/">The Linux Foundation</a> has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage/">Trademark Usage</a> page. Linux is a registered trademark of Linus Torvalds. Privacy Policy and Terms of Use.
 </p>
         </div>
     </footer>
