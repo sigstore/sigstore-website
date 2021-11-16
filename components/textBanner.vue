@@ -2,8 +2,8 @@
 <template>
     <section>
         <div
-        ref="textBanner" 
-        class="text_banner md:flex justify-center items-center relative" 
+        ref="textBanner"
+        class="text_banner md:flex justify-center items-center relative"
         :class="[backgroundColour,isScreenHeight ? 'min-h-screen md:flex-col' : 'h-auto py-128']"
         :data-header-text="[(backgroundColour === 'bg-purple-dark') ? 'text-white' : (backgroundColour === 'bg-pastel-blue') ? 'text-purple-dark' : 'text-gray-dark']"
         :data-bg-color="backgroundColour"
@@ -23,10 +23,14 @@
                 <div class="container inner">
                     <p class="h mb-16 text-gray-dark">In collaboration with </p>
                     <div class="flex items-center justify-between md:justify-start">
+                        <img class="md:w-122 w-55 md:mr-20" src="/img/chainguard.svg" alt="Chainguard sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20" src="/img/cisco.png" alt="Cisco sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/googlelogo.png" alt="Google sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20" src="/img/hoe.png" alt="HPE sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/linuxfoundationlogo.png" alt="Linux Foundation sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/redhatlogo.png" alt="RedHat sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/purdueunilogo.png" alt="Purdue University sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20" src="/img/redhatlogo.png" alt="RedHat sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20" src="/img/vmware.png" alt="RedHat sponsor logo" />
                     </div>
                 </div>
             </div>
@@ -93,7 +97,7 @@ export default {
         info: {
             type: Object,
             default: null
-        } 
+        }
     }),
 
     computed: {
@@ -114,8 +118,8 @@ export default {
             const t = globalData.reduce((info, g) => {
                 if (g.slug === 'info') info = g;
                 return info;
-            }, {});  
-            this.info = t;                      
+            }, {});
+            this.info = t;
         }
     }
 
