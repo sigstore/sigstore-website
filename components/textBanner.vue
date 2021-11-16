@@ -26,11 +26,11 @@
                         <img class="md:w-122 w-55 md:mr-20" src="/img/chainguard.svg" alt="Chainguard sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/cisco.png" alt="Cisco sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/googlelogo.png" alt="Google sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/hoe.png" alt="HPE sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20" src="/img/hpe.png" alt="HPE sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/linuxfoundationlogo.png" alt="Linux Foundation sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/purdueunilogo.png" alt="Purdue University sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/redhatlogo.png" alt="RedHat sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/vmware.png" alt="RedHat sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20" src="/img/vmware.png" alt="VMware sponsor logo" />
                     </div>
                 </div>
             </div>
