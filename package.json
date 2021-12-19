@@ -7,10 +7,10 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" .gitignore .",
-    "lint:style": "stylelint \"./**/*.{vue,css,scss}\" .gitignore",
+    "lint:js": "eslint --ext \".js,.vue\" .",
+    "lint:style": "stylelint \"./**/*.{vue,css,scss}\" .",
     "prepare": "husky install",
-    "lint": "yarn lint:js && yarn lint:style"
+    "lint": "yarn lint:js"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
