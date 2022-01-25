@@ -8,7 +8,7 @@ position: 102
 
 If you have Go 1.16+, you can directly install by running:
 
-```shell
+```console
 $ go install github.com/sigstore/cosign/cmd/cosign@latest
 ```
 
@@ -18,7 +18,7 @@ and the resulting binary will be placed at `$GOPATH/bin/cosign` (or `$GOBIN/cosi
 
 If you are using Homebrew (or Linuxbrew), you can install `cosign` by running:
 
-```shell
+```console
 $ brew install cosign
 ```
 
@@ -26,7 +26,7 @@ $ brew install cosign
 
 If you are using Arch Linux, you can install `cosign` by running:
 
-```shell
+```console
 $ pacman -S cosign
 ```
 
@@ -35,13 +35,13 @@ $ pacman -S cosign
 If you are using Alpine Linux edge, with the community repository enabled,
 you can install `cosign` by running:
 
-```shell
+```console
 $ apk add cosign
 ```
 
 The `sget` tool is also available:
 
-```shell
+```console
 $ apk add sget
 ```
 
@@ -49,7 +49,7 @@ $ apk add sget
 
 If you are using Nix, you can install `cosign` by running:
 
-```shell
+```console
 $ nix-env -iA nixpkgs.cosign
 ```
 
@@ -57,7 +57,7 @@ $ nix-env -iA nixpkgs.cosign
 
 If you are on NixOS, you can install `cosign` by running:
 
-```shell
+```console
 $ nix-env -iA nixos.cosign
 ```
 
@@ -84,7 +84,7 @@ Signed release images are available at `gcr.io/projectsigstore/cosign`.
 They are tagged with the release name (e.g. `gcr.io/projectsigstore/cosign:v1.0.0`).
 They can be found with `crane ls`:
 
-```shell
+```console
 $ crane ls gcr.io/projectsigstore/cosign
 sha256-7e9a6ca62c3b502a125754fbeb4cde2d37d4261a9c905359585bfc0a63ff17f4.sig
 v0.4.0
@@ -95,7 +95,7 @@ CI Built containers are published for every commit at `gcr.io/projectsigstore/co
 They are tagged with the commit.
 They can be found with `crane ls`:
 
-```shell
+```console
 $ crane ls gcr.io/projectsigstore/cosign/ci/cosign
 749f896
 749f896bb378aca5cb45c5154fc0cb43f6728d48
@@ -109,7 +109,7 @@ Releases are published in this repository under the [Releases page](https://gith
 
 They can be viewed with `gsutil`:
 
-```shell
+```console
 $ gsutil ls gs://cosign-releases/v1.0.0
 gs://cosign-releases/v1.0.0/cosign-darwin-amd64
 gs://cosign-releases/v1.0.0/cosign-darwin-amd64.sig
