@@ -5,7 +5,7 @@ menuTitle: "FAQs"
 position: 900
 ---
 
-This FAQ is intended to go as in depth as possible for anyone using sigstore. 
+This FAQ is intended to go as in depth as possible for anyone using sigstore.
 
 _[Looking for general FAQs?](https://www.sigstore.dev/how-it-works)_
 
@@ -25,4 +25,4 @@ Public blockchains often end up using a centralized entry point for canonicaliza
 
 ## Can I get Rekor to work with my X format, framework standard?
 
-- Yes. Using plugable types you can create your own manifest layout and send it to Rekor. Head over to [plugable types](/rekor/plugable-types/)
+- Yes. Using plugable types you can create your own manifest layout and send it to Rekor. Head over to [plugable types](/rekor/plugable-types.md)
