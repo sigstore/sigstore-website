@@ -1,6 +1,6 @@
 ---
 title: sigstore featured in Wired
-date: June 18th, 2021
+pubDate: 2021-06-18
 entryTag: article
 link: https://www.wired.com/story/sigstore-open-source-supply-chain-code-signing/
 ---
