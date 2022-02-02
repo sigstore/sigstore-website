@@ -70,7 +70,27 @@ export default {
     methods: {
         async getNewsAndEvents(){
             const globalData = await this.$content('events').fetch();
-            const articles = globalData;
+
+            let articlesFromBlog = [];
+            try {
+                const results = await this.$axios.$get("https://api.rss2json.com/v1/api.json?rss_url=https://blog.sigstore.dev/feed");
+                articlesFromBlog = results.items;
+            } catch {
+                console.error("Cannot retrieve blog RSS feed");
+            }
+
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            const articles = globalData.concat(articlesFromBlog)
+                .sort((a, b) => {
+                    return new Date(b["pubDate"]) - new Date(a["pubDate"])
+                }).map((e) => {
+                    if ("entryTag" in e === false) {
+                        e["entryTag"] = "Article";
+                    }
+                    e["date"] = new Date(e["pubDate"]).toLocaleDateString('en', options);
+                    return e;
+                });
+
             this.articlesArray = articles;
         },
     },
