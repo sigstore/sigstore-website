@@ -70,6 +70,8 @@ export default {
 
     '@nuxtjs/proxy',
 
+    '@nuxtjs/axios',
+
   ],
 
   proxy: [

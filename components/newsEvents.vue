@@ -13,8 +13,8 @@
                     </span>
                 </a>
             </div>
-            <div v-if="articlesArray.length > 0" class="w-full md:w-1/2">
-                <article v-for="(article, index) in articlesArray" :key="index" class="text-gray-dark border-b-2 border-gray-medium pb-6 mb-32">
+            <div v-if="total > 0" class="w-full md:w-1/2">
+                <article v-for="(article, index) in paginatedArticles" :key="index" class="text-gray-dark border-b-2 border-gray-medium pb-6 mb-32">
                     <p class="text-24 leading-32 text-gray-dark h">{{article.title}}</p>
                     <div class="flex justify-start items-center">
                         <div class="tag bg-white text-gray-dark rounded-lg md:px-8 px-10 py-12 md:py-12 text-12 h my-12 capitalize mr-14 leading-none">{{article.entryTag}}</div>
@@ -32,6 +32,11 @@
                         </a>
                     </div>
                 </article>
+                <div v-if="$route.params.slug == 'community'">
+                  <ul>
+                    <li v-for="i in totalPages" :key="i" :class="{'current': i === currentPage}" @click="currentPage = i">{{i}}</li>
+                  </ul>
+                </div>
                 <a v-if="$route.params.slug != 'community'" class="flex md:hidden items-center inline--button-grey h md:text-16 text-12" href="/community">
                     View more news
                     <span class="ml-12">
@@ -53,14 +58,27 @@ export default {
         // LinkButton
     },
 
-    data: () => ({
-        articlesArray: {
-            type: Array,
-            default: null
-        }
-    }),
+    data () {
+      return {
+        articlesArray: [],
+        total: 0,
+        perPage: 5,
+        currentPage: 1,
+      }
+    },
 
     computed: {
+        totalPages() {
+          return Math.ceil(this.total / this.perPage);
+        },
+        paginatedArticles() {
+          const start = (this.currentPage-1) * this.perPage
+          let end = this.currentPage * this.perPage
+          if (end > this.total) {
+            end = this.total
+          }
+          return this.articlesArray.slice(start, end)
+        },
     },
 
     created() {
@@ -68,12 +86,51 @@ export default {
     },
 
     methods: {
-        async getNewsAndEvents(){
+        async getNewsAndEvents() {
             const globalData = await this.$content('events').fetch();
-            const articles = globalData;
+
+            let articlesFromBlog = [];
+            try {
+                const results = await this.$axios.$get("https://api.rss2json.com/v1/api.json?rss_url=https://blog.sigstore.dev/feed");
+                articlesFromBlog = results.items;
+            } catch {
+                console.error("Cannot retrieve blog RSS feed");
+            }
+
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            const articles = globalData.concat(articlesFromBlog)
+                .sort((a, b) => {
+                    return new Date(b["pubDate"]) - new Date(a["pubDate"])
+                }).map((e) => {
+                    if ("entryTag" in e === false) {
+                        e["entryTag"] = "Article";
+                    }
+                    e["date"] = new Date(e["pubDate"]).toLocaleDateString('en', options);
+                    return e;
+                });
+
             this.articlesArray = articles;
+            this.total = this.articlesArray.length
         },
     },
 
 };
 </script>
+<style scoped>
+ul {
+  display: flex;
+  align-items: center;
+      justify-content: center;
+      height: 100%;
+}
+ul li {
+  padding: 1em;
+  margin: 1em;
+  border-bottom-width: 2px;
+  border-color: transparent;
+}
+.current {
+  font-weight: bold;
+  border-color: rgba(175, 175, 175, 1);
+}
+</style>
