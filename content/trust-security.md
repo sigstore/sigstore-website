@@ -53,7 +53,7 @@ sections:
       ctaText: ""
     column3:
       header: Bob Callaway
-      subHeader: Tech Lead and Manager, Google Open Source Security Team
+      subHeader: Tech Lead & Manager, Google Open Source Security Team
       github: https://github.com/bobcallaway
       twitter: https://twitter.com/rdcallaw
       text: Bob focuses on the transparency logs, certificate authority, and OSS
@@ -61,10 +61,9 @@ sections:
       isCardStyle: false
       socialLinks: true
       imageAsset: ""
-      text: ""
       ctaText: ""
       ctaLink: ""
-    subHeader: The people behind the project
+    subHeader: Technical advisory council
   - type: coreContributors
     isCoreContributors: true
 ---
