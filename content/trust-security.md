@@ -43,7 +43,7 @@ sections:
       github: https://github.com/dlorenc
       ctaLink: ""
       socialLinks: true
-      subHeader: CEO at Chainguard
+      subHeader: CEO @ Chainguard
       text: Dan joined Luke to collaborate on building out container signing and
         verification.
       header: Dan Lorenc
@@ -53,7 +53,7 @@ sections:
       ctaText: ""
     column3:
       header: Bob Callaway
-      subHeader: Tech Lead & Manager, Google Open Source Security Team
+      subHeader: Tech Lead and Manager, Google Open Source Security Team
       github: https://github.com/bobcallaway
       twitter: https://twitter.com/rdcallaw
       text: Bob focuses on the transparency logs, certificate authority, and OSS
