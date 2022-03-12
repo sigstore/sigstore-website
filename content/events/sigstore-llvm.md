@@ -1,6 +1,6 @@
 ---
 title: Sigstore Used for LLVM Releases
-date: Jan 15th, 2022
+pubDate: 2022-01-15
 entryTag: event
 link: https://apt.llvm.org/#sigstore
 ---

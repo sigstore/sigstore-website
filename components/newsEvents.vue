@@ -34,7 +34,7 @@
                 </article>
                 <div v-if="$route.params.slug == 'community'">
                   <ul>
-                    <li v-for="i in totalPages" :key="i" :class="{'current': i === currentPage}" @click="currentPage = i">{{i}}</li>
+                    <li v-for="i in totalPages" :key="i" :class="{'current': i === currentPage}" class="cursor-pointer" @click="currentPage = i">{{i}}</li>
                   </ul>
                 </div>
                 <a v-if="$route.params.slug != 'community'" class="flex md:hidden items-center inline--button-grey h md:text-16 text-12" href="/community">
