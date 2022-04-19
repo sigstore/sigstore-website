@@ -111,6 +111,8 @@ metadata:
   ...
 ```
 
+See the [Configuring Cosigned ClusterImagePolicy](kubernetes#configuring-cosigned-clusterimagepolicy) instructions for more details on configuration.
+
 ## Container Images
 
 Signed release images are available at `gcr.io/projectsigstore/cosign`.
