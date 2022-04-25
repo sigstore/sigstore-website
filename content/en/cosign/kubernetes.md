@@ -54,24 +54,43 @@ Enforcement is configured on a per-namespace basis, and multiple keys are suppor
 
 We're actively working on more features here, including support for Attestations.
 
+### Enable Cosigned Admission Controller for Namespaces
+
+The `cosigned` admission controller will only validate resources in namespaces
+that have chosen to opt-in. This can be done by adding the label
+`cosigned.sigstore.dev/include: "true"` to the namespace resource.
+
+```bash
+kubectl label namespace my-secure-namespace cosigned.sigstore.dev/include=true
+```
 
 ### Admission of Images
 
-An image is admitted after it has been validated against all `ClusterImagePolicy` that matches and
-that there was a valid signature obtained from the authorities provided in each of the matched `ClusterImagePolicy`.
+An image is admitted after it has been validated against all `ClusterImagePolicy` that matched the digest of the image
+and that there was at least one valid signature obtained from the authorities provided in each of the matched `ClusterImagePolicy`.
+
+See the [Configuring Image Pattern](#configuring-image-patterns) for more information.
+
+If no policy is matched against the image digest, the [deprecated cosigned validation behavior](#deprecated-cosigned-validation-behavior) will occur.
 
 An example of an allowed admission would be:
 1. If the image matched against `policy1` and `policy3`
-1. A valid signature was obtained for `policy1` with any of the `policy1` authorities
-1. A valid signature was obtained for `policy3` with any of the `policy3` authorities
+1. A valid signature was obtained for `policy1` with at least one of the `policy1` authorities
+1. A valid signature was obtained for `policy3` with at least one of the `policy3` authorities
 1. The image is admitted
 
-An example of a blocked admission would be:
+An example of a denied admission would be:
 1. If the image matched against `policy1` and `policy2`
-1. A valid signature was obtained for `policy1` with any of the `policy1` authorities
-1. No valid signature was obtained for `policy2` with any of the `policy2` authorities
+1. A valid signature was obtained for `policy1` with at least one of the `policy1` authorities
+1. No valid signature was obtained for `policy2` with at least one of the `policy2` authorities
 1. The image is not admitted
 
+An example of no policy matched:
+1. If the image does not match against any policy
+1. Fallback to [deprecated cosigned validation behavior](#deprecated-cosigned-validation-behavior)
+1. Validation will be attempted against the secret defined under `cosign.secretKeyRef.name` during helm installation.
+  1. If a valid signature is obtained, image is admitted
+  1. If no valid signature is obtained, image is denied
 
 ### Configuring Cosigned ClusterImagePolicy
 
@@ -82,6 +101,7 @@ A policy is enforced when an image pattern for the policy is matched against the
 #### Configuring Image Patterns
 
 The `ClusterImagePolicy` specifies `spec.images` which specifies a list of `glob` and/or `regex` matching patterns.
+These matching patterns will be matched against the image digest of PodSpec resources attempting to be deployed.
 
 **Note:** `glob` currently only supports a single trailing wildcard `*` character.
 
@@ -100,9 +120,10 @@ spec:
 
 #### Configuring `key` Authorities
 
-When a policy is selected to be evaluated against for the matched image, the authorities will be used to validate signatures.
-If any one authority is satisfied and a signature is validated, the policy is validated.
+When a policy is selected to be evaluated against the matched image, the authorities will be used to validate signatures.
+If at least one authority is satisfied and a signature is validated, the policy is validated.
 
+**Note:** Currently, only ECDSA public keys are supported.
 
 Authorities can be `key` specifications, for example:
 
@@ -132,8 +153,8 @@ Each `key` authority can contain these properties:
 
 #### Configuring `keyless` Authorities
 
-When a policy is selected to be evaluated against for the matched image, the authorities will be used to validate signatures.
-If any one authority is satisfied and a signature is validated, the policy is validated.
+When a policy is selected to be evaluated against the matched image, the authorities will be used to validate signatures.
+If at least one authority is satisfied and a signature is validated, the policy is validated.
 
 
 Authorities can be `keyless` specifications. For example:
@@ -200,19 +221,35 @@ spec:
 
 TLog specifies the URL to a transparency log that holds signature and public key information.
 
-When `tlog` key is specified with no value `tlog: {}`, then the public rekor instance will be used.
+When `tlog` key is not specified, the public rekor instance will be used.
 
 ```yaml
 spec:
   authorities:
-    - key:
-        data: |
-          -----BEGIN PUBLIC KEY-----
-          ...
-          -----END PUBLIC KEY-----
-      tlog: {}
     - keyless:
         url: https://fulcio.example.com
       tlog:
         url: https://rekor.example.com
 ```
+
+### Deprecated Cosigned Validation Behavior
+
+**Note:** This behavior is being deprecated in favor of using `ClusterImagePolicy` resources.
+
+During the admission validation, if no `ClusterImagePolicy` is matched, the deprecated behavior will occur.
+Image digests will be validated against the public key secret defined by `cosign.secretKeyRef.name` during installation.
+
+When installing `cosigned` through helm, `cosign.secretKeyRef.name` can be specified.
+```bash
+helm install cosigned -n cosign-system sigstore/cosigned --devel --set cosign.secretKeyRef.name=mysecret
+```
+
+The secret specified should contain the key `cosign.pub` and the public key data content.
+
+Where `cosign.pub` is a file containing the public key, the kubernetes secret can be created with:
+```bash
+kubectl create secret generic mysecret -n cosign-system --from-file=cosign.pub=./cosign.pub
+```
+
+If the public key is able to validate a signature for the image digest, the admission controller will admit the image.
+If the public key is not able to validate a signature for the image digest, the admission controller will deny the image.
