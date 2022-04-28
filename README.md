@@ -88,4 +88,4 @@ We use Tailwind for our css which uses SASS, and it is highly configurable from 
 ## Security
 
 Should you discover any security issues, please refer to sigstore's [security
-process](https://github.com/sigstore/community/blob/main/SECURITY.md)
+process](https://github.com/sigstore/.github/blob/main/SECURITY.md)
