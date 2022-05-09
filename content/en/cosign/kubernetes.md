@@ -6,7 +6,7 @@ position: 102
 
 ## Kubernetes Secrets
 
-Cosign can use keys stored in Kubernetes Secrets to so sign and verify signatures.
+Cosign can use keys stored in Kubernetes Secrets to sign and verify signatures.
 In order to generate a secret you have to pass `cosign generate-key-pair` a
 `k8s://[NAMESPACE]/[NAME]` URI specifying the namespace and secret name:
 
@@ -52,7 +52,7 @@ See the [installation instructions](installation#cosigned) for more information.
 Today, `cosigned` can automatically validate signatures on container images.
 Enforcement is configured on a per-namespace basis, and multiple keys are supported.
 
-We're actively working on more features here, including support for Attestations.
+We're actively working on more features here.
 
 ### Enable Cosigned Admission Controller for Namespaces
 
@@ -139,7 +139,7 @@ spec:
 
 #### Configuring `key` Authorities
 
-When a policy is selected to be evaluated against the matched image, the authorities will be used to validate signatures.
+When a policy is selected to be evaluated against the matched image, the authorities will be used to validate signatures and attestations.
 If at least one authority is satisfied and a signature is validated, the policy is validated.
 
 **Note:** Currently, only ECDSA public keys are supported.
@@ -192,7 +192,7 @@ spec:
     - keyless:
         identities:
           - issuer: https://accounts.google.com
-            subject: *@example.com
+            subject: .*@example.com
           - issuer: https://token.actions.githubusercontent.com
             subject: https://github.com/mycompany/*/.github/workflows/*@*
 
@@ -203,7 +203,7 @@ Each `keyless` authority can contain these properties:
 - `keyless.ca-cert`: specifies `ca-cert` information for the `keyless` authority
   - `secretRef.name`: specifies the secret location name in the same namespace where `cosigned` is installed. <br/>The first key value will be used in the secret for the `ca-cert`.
   - `data`: specifies the inline certificate data
-- `keyless.identities`: Identity may contain an array of `issuer` and/or the `subject` found in the transparency log. Either field supports a pattern glob.
+- `keyless.identities`: Identity may contain an array of `issuer` and/or the `subject` found in the transparency log. Either field supports a regex.
   - `issuer`: specifies the issuer found in the transparency log. Regex patterns are supported.
   - `subject`: specifies the subject found in the transparency log. Regex patterns are supported.
 
@@ -253,9 +253,9 @@ spec:
 #### Configuring policy that validates attestations
 
 Just like with `cosign` CLI you can verify attestations (using `verify-attestation`),
-you can configure policies to validate that a particular attestation signed by
+you can configure policies to validate that a particular attestation was signed by
 a trusted authority. You do this by using `attestations` array within an `authorities`
-section. For example, to configure that a `custom` predicate has to present and
+section. For example, to configure that a `custom` predicate has to exist and is
 attested by the specified `issuer` and `subject`, and the actual `Data` section
 of the predicate matches the string `foobar e2e test`:
 
