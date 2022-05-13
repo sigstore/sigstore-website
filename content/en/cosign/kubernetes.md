@@ -234,7 +234,7 @@ spec:
         - oci: registry.example.com/project/signature-location
 ```
 
-#### Configure SignatureImagePullSecrets
+#### Configure SignaturePullSecrets
 
 If the signatures / attestations are in a different repo or they use different
 PullSecrets, you can configure `source` to point to a `secret` which must live
@@ -259,8 +259,6 @@ spec:
 ```
 
 **Note:** The secret has to be in the format `type: dockerconfigjson`.
-
-
 
 #### Configuring Transparency Log
 
