@@ -1,16 +1,17 @@
 ---
-title: "policy-controller"
-category: "policy-ontroller"
+title: "Policy Controller"
+category: "Policy Controller"
+menuTitle: "Overview"
 position: 102
 ---
 
-# policy-controller Admission Controller
+# Policy Controller Admission Controller
 
 The `policy-controller` admission controller can be used to enforce policy on a Kubernetes cluster based on verifiable supply-chain metadata from `cosign`.
 
 `policy-controller` also resolves the image tags to ensure the image being ran is not different from when it was admitted.
 
-See the [installation instructions](installation#policy-controller) for more information.
+See the [installation instructions](installation) for more information.
 
 **This component is still actively under development!**
 

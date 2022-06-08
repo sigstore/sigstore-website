@@ -1,101 +1,17 @@
 ---
 title: "Installation"
-category: "Cosign"
+category: "Policy Controller"
+menuTitle: "Installation"
 position: 102
 ---
 
-## With Go 1.17+
+# Installation
 
-If you have Go 1.17+, you can directly install by running:
-
-```console
-go install github.com/sigstore/cosign/cmd/cosign@latest
-```
-
-and the resulting binary will be placed at `$GOPATH/bin/cosign` (or `$GOBIN/cosign`, if set).
-
-
-## With the cosign binary or rpm/dpkg package
-
-check for the file in https://github.com/sigstore/cosign/releases
-
-```console
-# binary
-wget "https://github.com/sigstore/cosign/releases/download/v1.6.0/cosign-linux-amd64"
-mv cosign-linux-amd64 /usr/local/bin/cosign
-chmod +x /usr/local/bin/cosign
-
-# rpm
-wget "https://github.com/sigstore/cosign/releases/download/v1.6.0/cosign-1.6.0.x86_64.rpm"
-rpm -ivh cosign-1.6.0.x86_64.rpm
-
-# dkpg
-wget "https://github.com/sigstore/cosign/releases/download/v1.6.0/cosign_1.6.0_amd64.deb"
-dpkg -i "cosign_1.6.0_amd64.deb
-```
-
-## Homebrew/Linuxbrew
-
-If you are using Homebrew (or Linuxbrew), you can install `cosign` by running:
-
-```console
-brew install cosign
-```
-
-## Arch Linux
-
-If you are using Arch Linux, you can install `cosign` by running:
-
-```console
-pacman -S cosign
-```
-
-## Alpine Linux
-
-If you are using Alpine Linux edge, with the community repository enabled,
-you can install `cosign` by running:
-
-```console
-apk add cosign
-```
-
-The `sget` tool is also available:
-
-```console
-apk add sget
-```
-
-## Nix
-
-If you are using Nix, you can install `cosign` by running:
-
-```console
-nix-env -iA nixpkgs.cosign
-```
-
-## NixOS
-
-If you are on NixOS, you can install `cosign` by running:
-
-```console
-nix-env -iA nixos.cosign
-```
-
-## GitHub Action
-
-`cosign` can easily be installed in your GitHub actions using [`sigstore/cosign-installer`](https://github.com/marketplace/actions/cosign-installer):
-
-```yaml
-uses: sigstore/cosign-installer@main
-with:
-  cosign-release: 'v1.2.1' # optional
-```
-
-## Policy-controller
-
-The `policy-controller` project contains an admission controller known as
-`policy-controller`, which can be installed on your Kubernetes cluster in a
-form of a
+The
+[`policy-controller`]
+(https://github.com/sigstore/policy-controller) project contains
+an admission controller for Kubernetes, which can be installed on
+your Kubernetes cluster in a form of a
 [`helm chart`](https://github.com/sigstore/helm-charts/tree/main/charts/cosigned).
 
 The webhook can be used to automatically validate that all the container images have been signed.
@@ -103,9 +19,9 @@ The webhook also resolves the image tags to ensure the image being ran is not di
 
 The `policy-controller` admission controller will only validate resources in
 namespaces that have chosen to opt-in. See the
-[Enable policy-controller Admission Controller for Namespaces](kubernetes#enable-policy-controller-admission-controller-for-namespaces) instructions for more details.
+[Enable policy-controller Admission Controller for Namespaces](overview#enable-policy-controller-admission-controller-for-namespaces) instructions for more details.
 
-See the [Configuring policy-controller ClusterImagePolicy](kubernetes#configuring-policy-controller-clusterimagepolicy) instructions for more details on configuration.
+See the [Configuring policy-controller ClusterImagePolicy](overview#configuring-policy-controller-clusterimagepolicy) instructions for more details on configuration.
 
 ## Container Images
 
