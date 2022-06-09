@@ -26,6 +26,8 @@ Cosign supports:
 
 Cosign is part of the sigstore project. Join us on our [Slack channel](https://sigstore.slack.com/) (need an [invite](https://links.sigstore.dev/slack-invite)?)
 
+[//]: # (In case the invite link is expired, ping Dan on Slack or via Twitter: @lorenc_dan)
+
 ## Getting Started
 
 ### Quick Start

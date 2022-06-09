@@ -15,6 +15,8 @@ Fulcio was designed to run as a centralized, public-good instance backed up by o
 
 Fulcio is being developed as part of the sigstore project. Join us on our [Slack channel](https://sigstore.slack.com/) (need an [invite](https://links.sigstore.dev/slack-invite)?)
 
+[//]: # (In case the invite link is expired, ping Dan on Slack or via Twitter: @lorenc_dan)
+
 ## Usage and installation
 
 _Whoops! This doesn't exist yet.
