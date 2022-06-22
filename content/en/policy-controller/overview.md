@@ -2,7 +2,7 @@
 title: "Policy Controller"
 category: "Policy Controller"
 menuTitle: "Overview"
-position: 102
+position: 100
 ---
 
 # Policy Controller Admission Controller
