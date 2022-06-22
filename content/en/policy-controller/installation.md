@@ -2,7 +2,7 @@
 title: "Installation"
 category: "Policy Controller"
 menuTitle: "Installation"
-position: 102
+position: 142
 ---
 
 # Installation
