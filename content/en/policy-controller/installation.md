@@ -8,8 +8,7 @@ position: 142
 # Installation
 
 The
-[`policy-controller`]
-(https://github.com/sigstore/policy-controller) project contains
+[`policy-controller`](https://github.com/sigstore/policy-controller) project contains
 an admission controller for Kubernetes, which can be installed on
 your Kubernetes cluster in a form of a
 [`helm chart`](https://github.com/sigstore/helm-charts/tree/main/charts/policy-controller).
