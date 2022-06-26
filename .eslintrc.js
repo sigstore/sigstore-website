@@ -20,5 +20,8 @@ module.exports = {
     'camelcase': 0,
     'dot-notation': 0,
     'snakecase': 0
-  }
+  },
+  "ignorePatterns": [
+    "/static/swagger/*.js"
+  ]
 }
