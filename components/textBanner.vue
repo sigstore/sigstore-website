@@ -23,11 +23,11 @@
                 <div class="container inner">
                     <p class="h mb-16 text-gray-dark">In collaboration with </p>
                     <div class="flex items-center justify-between md:justify-start">
+                        <img class="md:w-122 w-55 md:mr-20" src="/img/openssf-horizontal-color.svg" alt="OpenSSF Logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/chainguard.svg" alt="Chainguard sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/cisco.png" alt="Cisco sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/googlelogo.png" alt="Google sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/hpe.png" alt="HPE sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/linuxfoundationlogo.png" alt="Linux Foundation sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/purdueunilogo.png" alt="Purdue University sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/redhatlogo.png" alt="RedHat sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/vmware.png" alt="VMware sponsor logo" />

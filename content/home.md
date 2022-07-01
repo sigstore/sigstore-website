@@ -77,7 +77,7 @@ sections:
       make it safer to distribute and use open source software.
 
 
-      **A standardized approach** 
+      **A standardized approach**
 
 
       This means that open source software uploaded for distribution has a stricter, more standardized way of checking who’s been involved, that it hasn’t been tampered with. There’s no risk of key compromise, so third parties can’t hijack a release and slip in something malicious.
@@ -85,7 +85,7 @@ sections:
     bgColour: bg-white
     imageAsset: /img/system_architecture_summary-01.svg
     textBottom: >-
-                   **Building for future integrations** 
+                  **Building for future integrations**
 
 
                   With the help of a working partnership that includes Google, the Linux Foundation, Red Hat and Purdue University, we’re in constant collaboration to find new ways to improve the sigstore technology, to make it easy to adopt, integrate and become a long-lasting standard.
