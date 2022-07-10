@@ -1,7 +1,7 @@
 {
-  "commits": 675,
-  "members": 465,
+  "commits": 2800,
+  "members": 1200,
   "organizations": 20,
   "sitename": "Sigstore",
-  "sitedescription": "Sigstore description"
+  "sitedescription": "A new standard for signing, verifying and protecting software"
 }
