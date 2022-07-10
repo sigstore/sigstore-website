@@ -52,25 +52,25 @@ export default {
         meta: [
           { charset: 'utf-8' },
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { hid: 'description', name: 'description', content: this.page.description },
+          { hid: 'description', name: 'description', content: 'Sigstore: a new standard for signing, verifying and protecting software' },
           { name: 'format-detection', content: 'telephone=no' },
           // Twitter Card
         {
           name: "twitter:card",
           content: process.env.VUE_APP_SITENAME
         },
-        { name: "twitter:title", content: this.page.title },
+        { name: "twitter:title", content: "Sigstore"},
         {
           name: "twitter:description",
-          content: this.page.description
+          content: "A new standard for signing, verifying and protecting software"
         },
         // image must be an absolute path
         {
           name: "twitter:image",
-          content: this.page.description
+          content: '../static/img/sigstore_logo.png'
         },
         // Facebook OpenGraph
-        { property: "og:title", content: this.page.title },
+        { property: "og:title", content: "Sigstore" },
         {
           property: "og:site_name",
           content: process.env.VUE_APP_SITENAME
@@ -78,11 +78,11 @@ export default {
         { property: "og:type", content: "website" },
         {
           property: "og:image",
-          content: ''
+          content: '../static/img/sigstore_logo.png'
         },
         {
           property: "og:description",
-          content: this.page.description
+          content: "A new standard for signing, verifying and protecting software"
         }
         ],
         link: [
