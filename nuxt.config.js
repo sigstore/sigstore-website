@@ -10,12 +10,23 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'sigstore',
+    title: 'Sigstore',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: "msapplication-TileColor", content: "#da532c" },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'A new standard for signing, verifying and protecting software'
+      },
+      { 
+        hid: 'og:image', 
+        property: 'og:image',
+        content: 'https://sigstore.dev/img/sigstore_logo.png'
+      },
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

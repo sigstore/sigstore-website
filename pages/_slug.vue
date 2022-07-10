@@ -67,7 +67,7 @@ export default {
         // image must be an absolute path
         {
           name: "twitter:image",
-          content: '../static/img/sigstore_logo.png'
+          content: '/img/sigstore_logo.png'
         },
         // Facebook OpenGraph
         { property: "og:title", content: "Sigstore" },
@@ -78,9 +78,11 @@ export default {
         { property: "og:type", content: "website" },
         {
           property: "og:image",
-          content: '../static/img/sigstore_logo.png'
+          content: '/img/sigstore_logo.png'
         },
         {
+          hid: "og:description",
+          name: "og:description",
           property: "og:description",
           content: "A new standard for signing, verifying and protecting software"
         }
