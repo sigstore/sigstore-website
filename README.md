@@ -1,10 +1,10 @@
 # sigstore-website
 
+A new standard for signing, verifying and protecting software
+
 ![sigstore logo][logo]
 
 [logo]: /assets/icons/logo.svg 'sigstore logo'
-
-# sigstore
 
 The sigstore website is run on an open source framework called Nuxt JS, a VUE app framework. You can read more about it [here](https://nuxtjs.org/). The reason we chose this had many factors that included greater SEO support, SPA's, and the ability to connect an API of our choice being easy.
 
