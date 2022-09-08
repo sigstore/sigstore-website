@@ -50,7 +50,7 @@ a signature of the `sub` claim. For challenge and CSR are verified using the pro
 
 ## 4 — Constructing a certificate
 
-![Fulcio construct the certificate](/fulcio-4-construct-certificate.png)
+![Fulcio constructs the certificate](/fulcio-4-construct-certificate.png)
 
 The client is now authenticated and has proved possession of the private key. Fulcio now
 can issue a code signing certificate for the identity from the ID token.
