@@ -94,7 +94,7 @@ publicly auditable.
 A special X.509 extension, called a poison extension, is included in the certificate before it
 is appended to the log. This certificate is called a precertificate, and is not yet usuable by clients.
 
-![Fulcio upload the certificate to the transparency log](/fulcio-6-transparency-log-inclusion.png)
+![Fulcio uploads the certificate to the transparency log](/fulcio-6-transparency-log-inclusion.png)
 
 The certificate transparency log returns a _Signed Certificate Timestamp_
 (SCT). The SCT is a promise of inclusion in the log, signed by the CT log. It can be
