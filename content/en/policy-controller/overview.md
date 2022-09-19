@@ -54,12 +54,7 @@ An example of a denied admission would be:
 1. No valid signature or attestation was obtained for `policy2` with at least one of the `policy2` authorities
 1. The image is not admitted
 
-An example of no policy matched:
-1. If the image does not match against any policy
-1. Fallback to [deprecated policy-controller validation behavior](#deprecated-policy-controller-validation-behavior)
-1. Validation will be attempted against the secret defined under `cosign.secretKeyRef.name` during helm installation.
-  1. If a valid signature or attestation is obtained, image is admitted
-  1. If no valid signature or attestation is obtained, image is denied
+**If an image does not match a policy, it will be admitted**
 
 ## Configuring policy-controller `ClusterImagePolicy`
 
@@ -106,6 +101,7 @@ Authorities can be `key` specifications, for example:
 spec:
   authorities:
     - key:
+        hashAlgorithm: sha256
         data: |
           -----BEGIN PUBLIC KEY-----
           ...
@@ -119,6 +115,7 @@ spec:
 
 Each `key` authority can contain these properties:
 - `key.data`: specifies the plain text string of the public key
+- `key.hashAlgorithm` (optional): specifies the signature digest for the key, e.g. `sha512`, `sha256`, `sha384` or `sha224`
 - `key.secretRef.name`: specifies the secret location name in the same namespace where `policy-controller` is installed. <br/> The first key value will be used in the secret.
 - `key.kms`: specifies the location for the public key. Supported formats include:
   - `azurekms://[VAULT_NAME][VAULT_URI]/[KEY]`
