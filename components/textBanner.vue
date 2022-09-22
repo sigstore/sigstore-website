@@ -25,6 +25,7 @@
                     <div class="flex items-center justify-between md:justify-start">
                         <img class="md:w-122 w-55 md:mr-20" src="/img/openssf-horizontal-color.svg" alt="OpenSSF sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/chainguard.svg" alt="Chainguard sponsor logo" />
+                        <img class="md:w-70 w-55 md:mr-20" src="/img/github-logo.svg" alt="GitHub sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/cisco.png" alt="Cisco sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/googlelogo.png" alt="Google sponsor logo" />
                         <img class="md:w-122 w-55 md:mr-20" src="/img/hpe.png" alt="HPE sponsor logo" />
