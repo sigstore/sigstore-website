@@ -57,7 +57,7 @@
                     </div>
                     <div class="w-full md:w-full lg:w-1/2 lg:max-w-470 mt-28">
                         <div class="bg-white rounded-full p-28 text-gray-dark flex items-center justify-around">
-                            <p class="text-11 md:text-12 pr-22 md:w-auto w-1/2">Currently in beta<br>Stable release due Spring 2022</p>
+                            <p class="text-11 md:text-12 pr-22 md:w-auto w-1/2">Currently in beta<br>Stable release due October 2022</p>
                             <a href="https://github.com/sigstore" target="_blank" class="button button--transparent-border md:w-auto w-1/2">Find out more</a>
                         </div>
                     </div>
