@@ -12,7 +12,7 @@ sigstore content is created with Netlify CMS, which is an open source content ma
 
 To log into the CMS you need to be invited via Netlify identity to access the CMS itself. Once you have gone through the necessary steps to creating and verifying your account you can go in and start editing content.
 
-**NOTE**: The docs page ([docs.sigstore.dev](https://docs.sigstore.dev)) is hosted out of the `docs` branch of this repository.
+**NOTE**: The docs page ([docs.sigstore.dev](https://docs.sigstore.dev)) is hosted out of the [sigstore/docs](https://github.com/sigstore/docs) repository.
 
 ## Build setup
 
