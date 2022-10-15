@@ -1,31 +1,7 @@
 # docs
 
-This branch contains the documentation section on [sigstore.dev](https://sigstore.dev), hosted at [docs.sigstore.dev](https://docs.sigstore.dev/).
+Sigstore docs have been moved to their [own repo](https://github.com/sigstore/docs). This branch will be sunset. 
 
-See the `main` branch for the rest of the site.
+Please go to [sigstore/docs](https://github.com/sigstore/docs) in order to review the docs repo, or contribute to Sigstore docs.
 
-## Setup
-
-Install dependencies:
-
-```bash
-yarn install
-```
-
-## Development
-
-```bash
-yarn dev
-```
-
-## Static Generation
-
-This will create the `dist/` directory for publishing to static hosting:
-
-```bash
-yarn generate
-```
-
-To preview the static generated app, run `yarn start`
-
-For detailed explanation on how things work, checkout [nuxt/content](https://content.nuxtjs.org) and [@nuxt/content theme docs](https://content.nuxtjs.org/themes-docs).
+If you have any questions, find us on the #docs channel of [Sigstore Slack](https://links.sigstore.dev/slack-invite).
