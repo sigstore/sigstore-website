@@ -41,8 +41,12 @@
       "answer": "Public blockchains often end up using a centralized entry point for canonicalization and authentication. Consensus algorithms can be susceptible to majority attacks, and transparency logs are more mature and capable for what we aim to build with sigstore."
     },
     {
-      "question": "How does this relate to the work of TUF or in-toto?",
-      "answer": "Sigstore is complementary to TUF and in-toto. Project members of both communities are collaborating with us, too. "
+      "question": "How does Sigstore integrate in-toto?",
+      "answer": "Sigstore is co-led by Santiago Torres-Arias, the lead of the in-toto project, and the two efforts are complementary. Sigstore supports and uses in-toto in a number of ways. Cosign can be used to generate and verify in-toto attestations and Rekor can store those attestations. in-toto also supports the use of PKI semantics for signing metadata which will be used in future to support Fulcio for developer key management."
+    },
+    {
+      "question": "How does Sigstore use / interact with TUF?",
+      "answer": "Sigstore's root of trust for Fulcio and Rekor are distributed using TUF.  The releases for Cosign, Rekor, and Fulcio are also signed by a key distributed with TUF.  The projects solve a similar problem of signing and verifying software that will be distributed via a repository. Sigstore provides key signing without requiring developers to manage keys by using OIDC.  In contrast, TUF typically requires keys to be managed by developers, but addresses a threat model where all online servers and keys could be compromised.  The projects are collaborating and can be used cooperatively.  More guidance on this will be forthcoming as the communities collaborate on their first large co-deployments. "
     },
     {
       "question": "Do you plan on running a monitor?",

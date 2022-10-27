@@ -2,7 +2,7 @@
   "product": [
     {
       "productName": "Cosign",
-      "productOverview": "For container signing, verification and storage in an Open Container Initiative (OCI) registry, making signatures invisible infrastructure.",
+      "productOverview": "For container signing, verification and storage in an Open Container Initiative (OCI) registry, making signatures and in-toto/SLSA attestations invisible infrastructure.",
       "productCTALink": "https://github.com/sigstore/cosign",
       "productCTA": "View the repo"
     },
@@ -30,9 +30,9 @@
     },
     {
       "productName": "Trust root",
-      "productOverview": "The foundation for trust behind the whole of sigstore, our keyholders and ways of working to protect the root keys.",
+      "productOverview": "The foundation for trust behind the whole of sigstore utilizes TUF  This repository describes this process, our keyholders, and ways of working to protect the root keys.",
       "productCTA": "sigstore's trust root",
-      "productCTALink": "https://github.com/sigstore"
+      "productCTALink": "https://github.com/sigstore/root-signing"
     }
   ]
 }
