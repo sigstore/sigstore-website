@@ -1053,6 +1053,200 @@ collections:
                       default: '',
                       required: false,
                     }
+          - label: 'Two Column Text Grid'
+            name: 'twoColumnTextGrid'
+            widget: object
+            fields:
+              - label: 'Column 1'
+                name: 'column1'
+                widget: object
+                fields:
+                  - {
+                      label: Header,
+                      name: header,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: Sub Header,
+                      name: subHeader,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: Is Card style,
+                      name: isCardStyle,
+                      widget: boolean,
+                      required: false,
+                      default: false,
+                    }
+                  - {
+                      label: Has social links,
+                      name: socialLinks,
+                      widget: boolean,
+                      required: false,
+                      default: false,
+                    }
+                  - {
+                      label: Twitter,
+                      name: twitter,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: GitHub,
+                      name: github,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: LinkedIn,
+                      name: linkedin,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: Background Colour,
+                      name: bgColour,
+                      widget: select,
+                      required: false,
+                      options:
+                        [
+                          { label: 'Purple', value: 'bg-purple-dark' },
+                          { label: 'Pastel Orange', value: 'bg-pastel-orange' },
+                          { label: 'Orange', value: 'bg-orange-medium' },
+                          { label: 'Pastel Blue', value: 'bg-pastel-blue' },
+                          { label: 'White', value: 'bg-white' },
+                        ],
+                    }
+                  - {
+                      label: Image Asset,
+                      name: imageAsset,
+                      widget: image,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: markdown,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: CTA text,
+                      name: ctaText,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: CTA link,
+                      name: ctaLink,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+              - label: 'Column 2'
+                name: 'column2'
+                widget: object
+                fields:
+                  - {
+                      label: Header,
+                      name: header,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: Sub Header,
+                      name: subHeader,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: Is Card style,
+                      name: isCardStyle,
+                      widget: boolean,
+                      required: false,
+                      default: false,
+                    }
+                  - {
+                      label: Has social links,
+                      name: socialLinks,
+                      widget: boolean,
+                      required: false,
+                      default: false,
+                    }
+                  - {
+                      label: Twitter,
+                      name: twitter,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: GitHub,
+                      name: github,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: LinkedIn,
+                      name: linkedin,
+                      widget: string,
+                      default: null,
+                      required: false,
+                    }
+                  - {
+                      label: Background Colour,
+                      name: bgColour,
+                      widget: select,
+                      required: false,
+                      options:
+                        [
+                          { label: 'Purple', value: 'bg-purple-dark' },
+                          { label: 'Pastel Orange', value: 'bg-pastel-orange' },
+                          { label: 'Orange', value: 'bg-orange-medium' },
+                          { label: 'Pastel Blue', value: 'bg-pastel-blue' },
+                          { label: 'White', value: 'bg-white' },
+                        ],
+                    }
+                  - {
+                      label: Image Asset,
+                      name: imageAsset,
+                      widget: image,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: Text,
+                      name: text,
+                      widget: markdown,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: CTA text,
+                      name: ctaText,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
+                  - {
+                      label: CTA link,
+                      name: ctaLink,
+                      widget: string,
+                      default: '',
+                      required: false,
+                    }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: 'Story so far'
     name: 'story'

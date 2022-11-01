@@ -44,7 +44,8 @@ export default {
           disableOnInteraction: true
         },
         names: [
-            'Jake Sanders', 'Asra Ali', 'Priya Wadhwa', 'Carlos Tadeu Panato Junior'
+	    'Ville Aikas', 'Asra Ali', 'Hayden Blauzvern', 'Jason Hall', 'Kenny Leung', 'Dan Lorenc',
+            'Billy Lynch',  'Carlos Tadeu Panato Junior',  'Jake Sanders', 'Lily Sturmann'
         ]
     }),
 
