@@ -1,5 +1,5 @@
 <template>
-    <section class="py-64 md:py-128 md:px-16" :class="[$route.params.slug === 'trust-security' ? 'bg-purple-dark' : 'bg-white']" data-header-text="text-gray-dark">
+    <section class="py-64 md:py-0 md:px-16" :class="[$route.params.slug === 'trust-security' ? 'bg-purple-dark' : 'bg-white']" data-header-text="text-gray-dark">
         <div class="container">
             <div class="md:max-w-1/2 w-full">
                 <h3 v-animate-on-scroll class="pb-64 delay-step_1" :class="[$route.params.slug === 'community' ? 'text-orange-dark' : 'text-purple-dark']">{{ header }}</h3>
