@@ -41,7 +41,7 @@ latest release, and download the appropriate `.deb` file.
 
 ```console
 wget https://github.com/sigstore/gitsign/releases/download/v0.3.0/gitsign_0.3.0_linux_amd64.deb
-sudo dpkg -i gitsign_0.3.0_linux_amd64.deb
+sudo dpkg -i gitsign_0.4.1_linux_amd64.deb
 ```
 
 ### Installing Gitsign with the `.rpm` Package (Fedora Linux)
@@ -51,7 +51,7 @@ latest release, and download the appropriate `.rpm` file.
 
 ```console
 wget https://github.com/sigstore/gitsign/releases/download/v0.3.0/gitsign_0.3.0_linux_amd64.rpm
-rpm -ivh gitsign_0.3.0_linux_amd64.rpm
+rpm -ivh gitsign_0.4.1_linux_amd64.rpm
 ```
 
 ## Checking your Installation
@@ -61,7 +61,20 @@ ensure that it can be found on your $PATH by running a `gitsign` command.
 
 ```shell
 $ gitsign --version
-gitsign version v0.3.0
+gitsign version v0.4.1
+parsed config:
+{
+  "Fulcio": "https://fulcio.sigstore.dev",
+  "FulcioRoot": "",
+  "Rekor": "https://rekor.sigstore.dev",
+  "ClientID": "sigstore",
+  "RedirectURL": "",
+  "Issuer": "https://oauth2.sigstore.dev/auth",
+  "ConnectorID": "",
+  "TimestampURL": "",
+  "TimestampCert": "",
+  "LogPath": ""
+}
 ```
 
 ### Troubleshooting
