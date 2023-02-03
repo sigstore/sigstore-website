@@ -7,7 +7,7 @@ sections:
   - ctaStyle: solidCtaPurple
     showSupportedBy: true
     text: Making sure your software’s what it claims to be.
-    header: A new standard for signing, verifying and protecting software
+    header: sign. verify. protect.
     showStatsBanner: true
     bgColour: bg-pastel-orange
     ctaButtons: []
