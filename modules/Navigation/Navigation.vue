@@ -25,7 +25,7 @@
             </li>
             <ul v-if="navType == 'header'" class="flex items-start">
                 <li>
-                    <a class="mr-16 lg:mr-36 flex justify-between" :class="[text]" target="_blank" href="https://medium.com/sigstore">
+                    <a class="mr-16 lg:mr-36 flex justify-between" :class="[text]" target="_blank" href="https://blog.sigstore.dev">
                         Blog
                     </a>
                 </li>
