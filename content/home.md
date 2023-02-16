@@ -6,7 +6,7 @@ thumbnail: /img/icon.png
 sections:
   - ctaStyle: solidCtaPurple
     showSupportedBy: true
-    text: Making sure your software’s what it claims to be.
+    text: Making sure your software is what it claims to be.
     header: sign. verify. protect.
     showStatsBanner: true
     bgColour: bg-pastel-orange
