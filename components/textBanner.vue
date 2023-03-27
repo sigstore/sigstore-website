@@ -23,15 +23,15 @@
                 <div class="container inner">
                     <p class="h mb-16 text-gray-dark">In collaboration with </p>
                     <div class="flex items-center justify-between md:justify-start">
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/openssf-horizontal-color.svg" alt="OpenSSF sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/chainguard.svg" alt="Chainguard sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/cisco.png" alt="Cisco sponsor logo" />
-                        <img class="md:w-70 w-55 md:mr-20" src="/img/github-logo.svg" alt="GitHub sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/googlelogo.png" alt="Google sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/hpe.png" alt="HPE sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/purdueunilogo.png" alt="Purdue University sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/redhatlogo.png" alt="RedHat sponsor logo" />
-                        <img class="md:w-122 w-55 md:mr-20" src="/img/vmware.png" alt="VMware sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20 mobile:w-20" src="/img/openssf-horizontal-color.svg" alt="OpenSSF sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20 mobile:w-20" src="/img/chainguard.svg" alt="Chainguard sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20 mobile:w-20" src="/img/cisco.png" alt="Cisco sponsor logo" />
+                        <img class="md:w-70 w-55 md:mr-20 mobile:w-15" src="/img/github-logo.svg" alt="GitHub sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20 mobile:w-20" src="/img/googlelogo.png" alt="Google sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20 mobile:w-20" src="/img/hpe.png" alt="HPE sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20 mobile:w-20" src="/img/purdueunilogo.png" alt="Purdue University sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20 mobile:w-20" src="/img/redhatlogo.png" alt="RedHat sponsor logo" />
+                        <img class="md:w-122 w-55 md:mr-20 mobile:w-20" src="/img/vmware.png" alt="VMware sponsor logo" />
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ export default {
             this.info = t;
         }
     }
-
+    
 };
 </script>
 <style lang="scss">
@@ -131,6 +131,16 @@ export default {
     &--main{
         height: 100vh;
     }
+}
+@media (max-width: 767px) {
+  .mobile\:w-20 {
+    width: 32px;
+    margin-right: 2px;
+  }
+  .mobile\:w-15 {
+    width: 15px;
+    margin-right: 2px;
+  }
 }
 </style>
 <!-- eslint-enable -->
