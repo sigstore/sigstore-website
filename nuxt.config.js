@@ -19,7 +19,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'A new standard for signing, verifying and protecting software'
+        content: 'sign. verify. protect. Make sure your software is what it claims to be.'
       },
       { 
         hid: 'og:image', 

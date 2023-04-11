@@ -52,7 +52,7 @@ export default {
         meta: [
           { charset: 'utf-8' },
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { hid: 'description', name: 'description', content: 'Sigstore: a new standard for signing, verifying and protecting software' },
+          { hid: 'description', name: 'description', content: 'Sigstore: sign, verify, and protect your software.' },
           { name: 'format-detection', content: 'telephone=no' },
           // Twitter Card
         {
@@ -62,7 +62,7 @@ export default {
         { name: "twitter:title", content: "Sigstore"},
         {
           name: "twitter:description",
-          content: "A new standard for signing, verifying and protecting software"
+          content: "sign. verify. protect. Make sure your software is what it claims to be."
         },
         // image must be an absolute path
         {
@@ -84,7 +84,7 @@ export default {
           hid: "og:description",
           name: "og:description",
           property: "og:description",
-          content: "A new standard for signing, verifying and protecting software"
+          content: "sign. verify. protect. Make sure your software is what it claims to be."
         }
         ],
         link: [
