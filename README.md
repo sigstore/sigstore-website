@@ -1,6 +1,6 @@
 # sigstore-website
 
-A new standard for signing, verifying and protecting software
+Sign, verify and protect your software
 
 ![sigstore logo][logo]
 
