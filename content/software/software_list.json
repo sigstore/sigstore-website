@@ -30,9 +30,15 @@
     },
     {
       "productName": "Trust root",
-      "productOverview": "The foundation for trust behind the whole of sigstore utilizes TUF  This repository describes this process, our keyholders, and ways of working to protect the root keys.",
+      "productOverview": "The foundation for trust behind the whole of sigstore utilizes TUF. This repository describes this process, our keyholders, and ways of working to protect the root keys.",
       "productCTA": "sigstore's trust root",
       "productCTALink": "https://github.com/sigstore/root-signing"
+    },
+    {
+      "productName": "Policy Controller",
+      "productOverview": "Policy Controller is used to enforce policy on a cluster on verifiable supply-chain metadata from Cosign.",
+      "productCTA": "View the repo",
+      "productCTALink": "https://github.com/sigstore/policy-controller"
     }
   ]
 }
