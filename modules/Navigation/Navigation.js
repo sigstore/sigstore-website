@@ -1,11 +1,13 @@
 import { mapGetters } from "vuex";
 import GitHubLogo from "@/assets/icons/github.svg?inline";
 import TwitterLogo from "@/assets/icons/twitter.svg?inline";
+import SlackLogo from "@/assets/icons/slack.svg?inline"
 
 export default {
     components: {
         GitHubLogo,
-        TwitterLogo
+        TwitterLogo,
+        SlackLogo
     },
     computed: mapGetters({
         text: 'settings/textColor'

@@ -20,6 +20,9 @@
                     <span v-if="navType == 'social' && navItem.name == 'Twitter'" class="mr-16">
                         <TwitterLogo :class="['fill-grey']" />
                     </span>
+                    <span v-if="navType == 'social' && navItem.name == 'Slack'" class="mr-16">
+                        <SlackLogo :class="['fill-grey']" />
+                    </span>
                     {{ navItem.name }}
                 </a>
             </li>
