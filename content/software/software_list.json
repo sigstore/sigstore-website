@@ -13,6 +13,12 @@
       "productCTALink": "https://github.com/sigstore/rekor"
     },
     {
+      "productName": "Policy Controller",
+      "productOverview": "Policy Controller is used to enforce policy on a cluster on verifiable supply-chain metadata from Cosign.",
+      "productCTA": "View the repo",
+      "productCTALink": "https://github.com/sigstore/policy-controller"
+    },
+    {
       "productName": "OpenID Connect",
       "productOverview": "An identity layer that checks if you're who you say you are. It lets clients request and receive information about authenticated sessions and users.",
       "productCTA": "Learn more",
@@ -25,14 +31,14 @@
       "productCTALink": "https://github.com/sigstore/fulcio"
     },
     {
-      "productName": "Certificate Authority",
-      "productOverview": "A mechanism that generates certificates, binding cryptographic keys to an identity and an independent check over an artifact's information."
-    },
-    {
       "productName": "Trust root",
-      "productOverview": "The foundation for trust behind the whole of sigstore utilizes TUF  This repository describes this process, our keyholders, and ways of working to protect the root keys.",
+      "productOverview": "The foundation for trust behind the whole of sigstore utilizes TUF. This repository describes this process, our keyholders, and ways of working to protect the root keys.",
       "productCTA": "sigstore's trust root",
       "productCTALink": "https://github.com/sigstore/root-signing"
+    },
+    {
+      "productName": "Certificate Authority",
+      "productOverview": "A mechanism that generates certificates, binding cryptographic keys to an identity and an independent check over an artifact's information."
     }
   ]
 }
