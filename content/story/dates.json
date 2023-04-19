@@ -2,13 +2,28 @@
   "step": [
     {
       "date": "Now",
-      "title": "Active development",
-      "text": "Ongoing improvements by the community on Cosign and Rekor, pathfinding, feature requests and release roadmaps"
+      "title": "Continuted development",
+      "text": "Integration with SLSA and package repositories like npm, developing per-ecosystem Sigstore clients"
+    },
+    {
+      "date": "FEBRUARY 2023",
+      "title": "Cosign 2.0 released",
+      "text": "Leveraging identity-based signing by default, building on GA release"
+    },
+    {
+      "date": "OCTOBER 2022",
+      "title": "General Availability for Public Good Instance",
+      "text": "Fulcio and Rekor, hosted by the Sigstore community, offer a 99.5% uptime SLO and 24/7 pager support"
+    },
+    {
+      "date": "OCTOBER 2022",
+      "title": "Fulcio and Rekor 1.0 released",
+      "text": "Feature complete, stable APIs and commitment to long term support"
     },
     {
       "date": "JULY 2021",
-      "title": "Cosign 1.0 release",
-      "text": "Includes hardware support for Yubico PIV devices, cloud KMS,   SPDX and Cyclone DX SBOMs, #wasm"
+      "title": "Cosign 1.0 released",
+      "text": "Includes hardware support for Yubico PIV devices, cloud KMS, SPDX and Cyclone DX SBOMs, #wasm"
     }
   ]
 }
