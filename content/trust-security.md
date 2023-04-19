@@ -12,12 +12,12 @@ sections:
       ctaText: See how it works
       ctaLink: https://github.com/sigstore/root-signing
     card2:
-      header: "Threat model: coming soon"
+      header: "Security model"
       imageAsset: ""
-      text: Our threat model will provide a way to plan against and prevent known
-        threats to sigstore's infrastructure. This is currently in development.
-      ctaText: Read about our progress
-      ctaLink: https://blog.sigstore.dev/sigstore-project-update-may-2021-ad8df9ac8dc5
+      text: The security model details how trust is established and identity is
+        used in signing and verification.
+      ctaText: Learn more
+      ctaLink: https://docs.sigstore.dev/security
     text: An open, accessible foundation behind the policies and protocols sigstore
       needs to work, grounded in an open source, distributed community.
     header: Our foundations of trust
