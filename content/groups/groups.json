@@ -3,7 +3,7 @@
     {
       "groupDiagram": "/img/alt_landscapelayout_overview.svg",
       "groupName": "Overview",
-      "textOverview": "First, tell sigstore to do the signing for you. Using Fulcio, sigstore requests a certificate from our Certificate Authority (CA). This checks you are who you say you are using OpenID Connect, which looks at an identity, such as an email address, to prove you’re the author. Fulcio grants a short-lived certificate, associating a provided public key with your identity.\n\nYou don’t have to manage keys yourself, and sigstore never obtains your private key. The public key that Cosign creates gets bound to your certificate.\n\nYour certificate then comes back to a sigstore client, which signs an artifact. The artifact hash, signature, and certificate are uploaded to a Rekor transparency log, for public auditability of the signing event."
+      "textOverview": "First, tell Sigstore to do the signing for you. Using Fulcio, Sigstore requests a certificate from our Certificate Authority (CA). This checks you are who you say you are using OpenID Connect, which looks at an identity, such as an email address, to prove you’re the author. Fulcio grants a short-lived certificate, associating a provided public key with your identity.\n\nYou don’t have to manage keys yourself, and Sigstore never obtains your private key. The public key that Cosign creates gets bound to your certificate.\n\nYour certificate then comes back to a Sigstore client, which signs an artifact. The artifact hash, signature, and certificate are uploaded to a Rekor transparency log, for public auditability of the signing event."
     },
     {
       "groupDiagram": "/img/alt_landscapelayout_developers.svg",

@@ -32,7 +32,7 @@
     },
     {
       "productName": "Trust root",
-      "productOverview": "The foundation for trust underpinning Sigstore utilizes TUF. This repository describes this process, our keyholders, andhow the root keys are protected.",
+      "productOverview": "The foundation for trust underpinning Sigstore utilizes TUF. This repository describes this process, our keyholders, and how the root keys are protected.",
       "productCTA": "Sigstore's trust root",
       "productCTALink": "https://github.com/sigstore/root-signing"
     }
