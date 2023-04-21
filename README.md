@@ -1,10 +1,11 @@
 # sigstore-website
 
-Sign, verify and protect your software
-
-![sigstore logo][logo]
-
-[logo]: /assets/icons/logo.svg 'sigstore logo'
+<div align="center">
+    <img src="/assets/icons/logo.svg">
+    <p>
+    Sign, verify and protect your software
+    </p>
+</div>
 
 The sigstore website is run on an open source framework called Nuxt JS, a VUE app framework. You can read more about it [here](https://nuxtjs.org/). The reason we chose this had many factors that included greater SEO support, SPA's, and the ability to connect an API of our choice being easy.
 
@@ -12,7 +13,7 @@ sigstore content is created with Netlify CMS, which is an open source content ma
 
 To log into the CMS you need to be invited via Netlify identity to access the CMS itself. Once you have gone through the necessary steps to creating and verifying your account you can go in and start editing content.
 
-**NOTE**: The docs page ([docs.sigstore.dev](https://docs.sigstore.dev)) is hosted on [sigstore/docs](https://github.com/sigstore/docs). Please go there to review the docs repo or contribute to the Sigstore docs. 
+**NOTE**: The docs page ([docs.sigstore.dev](https://docs.sigstore.dev)) is hosted on [sigstore/docs](https://github.com/sigstore/docs). Please go there to review the docs repo or contribute to the Sigstore docs.
 
 ## Build setup
 
@@ -84,6 +85,10 @@ More information about the usage of this directory in [the documentation](https:
 We use Tailwind for our css which uses SASS, and it is highly configurable from the smallest config option(type sizes) through to more larger config(variables for hover states and buttons). It is a styleguide for the front-end and it borrows the same idea that you get within design systems.
 
 ["Go read about tailwind"](https://tailwindcss.com/)
+
+## How to Get Involved?
+
+The sigstore welcomes contributions. You can submit an issue or pull request if you have an idea for a new feature or a bug fix. Please read the [Contributor Guidelines](/CONTRIBUTORS.md) as well.
 
 ## Security
 
