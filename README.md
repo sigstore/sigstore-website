@@ -1,10 +1,8 @@
 # sigstore-website
 
 <div align="center">
-    <img src="/assets/icons/logo.svg">
-    <p>
-    Sign, verify and protect your software
-    </p>
+    <img src="https://github.com/sigstore/sigstore-website/blob/main/assets/icons/logo.svg" alt='logo'>
+    <p> Sign, verify and protect your software</p>
 </div>
 
 The sigstore website is run on an open source framework called Nuxt JS, a VUE app framework. You can read more about it [here](https://nuxtjs.org/). The reason we chose this had many factors that included greater SEO support, SPA's, and the ability to connect an API of our choice being easy.
