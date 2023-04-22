@@ -42,7 +42,7 @@ sections:
       text: Data stored in the logs is readily auditable, a foundation for future
         monitors and integrations to build into your security workflow.
       ctaText: Learn more
-      ctaLink: https://github.com/sigstore/examples
+      ctaLink: https://github.com/sigstore/rekor-monitor
       isCardStyle: true
       bgColour: "#ddeff1"
     header: How can you use it?

@@ -2,13 +2,13 @@
   "product": [
     {
       "productName": "Cosign",
-      "productOverview": "For container signing, verification and storage in an Open Container Initiative (OCI) registry, making signatures and in-toto/SLSA attestations invisible infrastructure.",
+      "productOverview": "For signing and verification of artifacts and containers, with storage in an Open Container Initiative (OCI) registry, making signatures and in-toto/SLSA attestations invisible infrastructure.",
       "productCTALink": "https://github.com/sigstore/cosign",
       "productCTA": "View the repo"
     },
     {
       "productName": "Rekor",
-      "productOverview": "A built in transparency and timestamping service, Rekor records signed metadata to a ledger that can be searched, but can’t be tampered with.\n\n\n",
+      "productOverview": "Append-only, auditable transparency log service, Rekor records signed metadata to a ledger that can be queried, but can’t be tampered with.\n\n\n",
       "productCTA": "View the repo",
       "productCTALink": "https://github.com/sigstore/rekor"
     },
@@ -26,19 +26,15 @@
     },
     {
       "productName": "Fulcio",
-      "productOverview": "A free root certification authority, issuing temporary certificates to an authorized identity and publishing them in the Rekor transparency log.",
+      "productOverview": "Code-signing certificate authority, issuing short-lived certificates to an authenticated identity and publishing them to a certificate transparency log.",
       "productCTA": "View the repo",
       "productCTALink": "https://github.com/sigstore/fulcio"
     },
     {
       "productName": "Trust root",
-      "productOverview": "The foundation for trust behind the whole of sigstore utilizes TUF. This repository describes this process, our keyholders, and ways of working to protect the root keys.",
-      "productCTA": "sigstore's trust root",
+      "productOverview": "The foundation for trust underpinning Sigstore utilizes TUF. This repository describes this process, our keyholders, and how the root keys are protected.",
+      "productCTA": "Sigstore's trust root",
       "productCTALink": "https://github.com/sigstore/root-signing"
-    },
-    {
-      "productName": "Certificate Authority",
-      "productOverview": "A mechanism that generates certificates, binding cryptographic keys to an identity and an independent check over an artifact's information."
     }
   ]
 }
