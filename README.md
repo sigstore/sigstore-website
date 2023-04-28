@@ -86,7 +86,7 @@ We use Tailwind for our css which uses SASS, and it is highly configurable from 
 
 ## How to Get Involved?
 
-The sigstore welcomes contributions. You can submit an issue or pull request if you have an idea for a new feature or a bug fix. Please read the [Contributor Guidelines](/CONTRIBUTORS.md) as well.
+Community contributions are welcome. To suggest a new feature or report a bug, please feel free to submit an issue. Prior to contributing, please review our [Contributor Guidelines](https://github.com/CONTRIBUTORS.md).
 
 ## Security
 
