@@ -14,14 +14,14 @@
                     {{ navItem.name }}
                 </NuxtLink>
                 <a v-else class="footer--nav-button md:mr-30 mr-16 flex justify-between h text-16 leading-24 text-gray-dark" target="_blank" :href="`${navItem.url ? navItem.url : navItem.externalLink}`">
-                    <span v-if="navType == 'social' && navItem.name == 'GitHub'" class="mr-16">
-                        <GitHubLogo :class="['fill-grey']" />
+                    <span v-if="navType == 'social' && navItem.name == 'GitHub'" class="mr-4 lg:mr-12">
+                        <GitHubLogo :class="['fill-grey']" class="w-20 h-20 lg:w-24 lg:h-24" />
                     </span>
-                    <span v-if="navType == 'social' && navItem.name == 'Twitter'" class="mr-16">
-                        <TwitterLogo :class="['fill-grey']" />
+                    <span v-if="navType == 'social' && navItem.name == 'Twitter'" class="mr-4 lg:mr-12">
+                        <TwitterLogo :class="['fill-grey']" class="w-20 h-20 lg:w-24 lg:h-24" />
                     </span>
-                    <span v-if="navType == 'social' && navItem.name == 'Slack'" class="mr-16">
-                        <SlackLogo :class="['fill-grey']" />
+                    <span v-if="navType == 'social' && navItem.name == 'Slack'" class="mr-4 lg:mr-12">
+                        <SlackLogo :class="['fill-grey']" class="w-20 h-20 lg:w-24 lg:h-24" />
                     </span>
                     {{ navItem.name }}
                 </a>
