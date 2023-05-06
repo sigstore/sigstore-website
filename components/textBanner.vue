@@ -42,15 +42,15 @@
                     <div class="w-full md:w-full lg:w-1/2 lg:max-w-440">
                         <div class="flex items-center justify-start">
                             <div class="md:pr-24">
-                                <h2 class="text-21 lg:text-54 text-orange-dark mb-10 lg:mb-16">{{ info.commits }}+</h2>
+                                <h2 id="number" class="text-16 lg:text-54 text-orange-dark mb-10 lg:mb-16">{{ info.commits }}+</h2>
                                 <h4 class="h4 text-orange-dark uppercase">Commits</h4>
                             </div>
                             <div class="md:pr-24 pl-24">
-                                <h2 class="text-21 lg:text-54 text-orange-dark mb-10 lg:mb-16">{{ info.members }}+</h2>
+                                <h2 id="number" class="text-16 lg:text-54 text-orange-dark mb-10 lg:mb-16">{{ info.members }}+</h2>
                                 <h4 class="h4 text-21 text-orange-dark uppercase">Members</h4>
                             </div>
                             <div class="md:pr-24 pl-24">
-                                <h2 class="text-21 lg:text-54 text-orange-dark mb-10 lg:mb-16">{{ info.organizations }}+</h2>
+                                <h2 id="number" class="text-16 lg:text-54 text-orange-dark mb-10 lg:mb-16">{{ info.organizations }}+</h2>
                                 <h4 class="h4 text-orange-dark uppercase">Orgs</h4>
                             </div>
                         </div>
@@ -144,6 +144,14 @@ export default {
     margin-right: 10px;
     padding-bottom: 7px;
   }
+
+  .h4{
+  font-size:1em;
+  }
+  #number{
+    font-size:1.5em;
+    text-align:center;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -156,6 +164,14 @@ export default {
     width: 35px;
     margin-right: 10px;
     padding-bottom: 7px;
+  }
+
+  .h4{
+  font-size:2em;
+  }
+  #number{
+  font-size:2em;
+  text-align:center;
   }
 }
 

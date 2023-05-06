@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <ul class="flex items-start" :class="[navType == 'social' ? 'justify-start md:justify-end w-full' : 'justify-start flex-wrap']">
+        <ul class="flex flex-wrap items-start" id="social-link" :class="[navType == 'social' ? 'justify-start md:justify-end w-full' : 'justify-start flex-wrap']">
             <li>
                 <NuxtLink v-if="navType == 'header'" class="mr-16 lg:mr-36 flex justify-between" :class="[text]" :to="`/`">
                     Overview
@@ -13,14 +13,14 @@
                 <NuxtLink v-else-if="navType == 'footer'" class="footer--nav-button mr-16 lg:mr-36 flex justify-between h text-16 leading-24 text-gray-dark" :to="`${navItem.footerMenuLink}`">
                     {{ navItem.name }}
                 </NuxtLink>
-                <a v-else class="footer--nav-button md:mr-30 mr-16 flex justify-between h text-16 leading-24 text-gray-dark" target="_blank" :href="`${navItem.url ? navItem.url : navItem.externalLink}`">
-                    <span v-if="navType == 'social' && navItem.name == 'GitHub'" class="mr-16">
+                <a v-else class="footer--nav-button md:mr-30 mr-16 flex justify-between items-center h text-16 leading-24 text-gray-dark" target="_blank" :href="`${navItem.url ? navItem.url : navItem.externalLink}`">
+                    <span v-if="navType == 'social' && navItem.name == 'GitHub'" class="mr-16 mb-5">
                         <GitHubLogo :class="['fill-grey']" />
                     </span>
-                    <span v-if="navType == 'social' && navItem.name == 'Twitter'" class="mr-16">
+                    <span v-if="navType == 'social' && navItem.name == 'Twitter'" class="mr-16 mb-5">
                         <TwitterLogo :class="['fill-grey']" />
                     </span>
-                    <span v-if="navType == 'social' && navItem.name == 'Slack'" class="mr-16">
+                    <span v-if="navType == 'social' && navItem.name == 'Slack'" class="mr-16 mb-5">
                         <SlackLogo :class="['fill-grey']" />
                     </span>
                     {{ navItem.name }}
