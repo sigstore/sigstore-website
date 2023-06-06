@@ -17,8 +17,8 @@
       "answer": "As easy as we can make it. Signing and verifying seems like a lot of extra effort with a lot of pitfalls. Our aim is to design away the manual effort and risk of error, automating the signing into a few simple commands. Verification and signing is greatly simplified by leveraging identity-based, or keyless, workflows."
     },
     {
-    "question":"How do I learn more about the project?",
-    "answer": "Read more about Sigstore at https://docs.sigstore.dev"
+      "question":"How do I learn more about the project?",
+      "answer": "Read more about Sigstore at https://docs.sigstore.dev"
     },
     {
       "question": "Is there live support?",
