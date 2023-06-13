@@ -5,48 +5,24 @@
       "answer": "Sigstore tooling supports signing any artifacts, such as files or containers. Rekor supports many file formats, such as in-toto attestations, JARs, RPMs, or Alpine images. Sigstore is also actively being integrated with package repositories to ease the adoption of signing for their communities."
     },
     {
-      "question": "Are there any privacy issues?",
-      "answer": "No. The only personal data sigstore uses is provided from an OpenID Connect grant, and even that’s as lean as it can be (just the user’s email address) - there’s no need to access contacts, email contents, cloud drives or calendars. Just what’s necessary to map a signing event to someone who has access to an identity provider account, which allows for a trust root."
-    },
-    {
       "question": "What's the current status?",
       "answer": "Sigstore announced general availability (GA) for the Rekor transparency log and Fulcio certificate authority public benefit services in October 2022. Cosign, one of the Sigstore clients, had its v2.0 release in February 2023, and other Sigstore clients, including sigstore-js and sigstore-python, have had v1.0 releases. Sigstore is actively developing client tooling for other package repositories and upstream communities."
     },
     {
-      "question": "How can people get involved?",
+      "question": "How can I report security issues?",
       "answer": "The best way is to try out the technologies and let us know your thoughts - it’ll help us keep developing sigstore’s functionality and see where we can improve. It grows the community too, and we’d always welcome new members to the working group over on Slack, https://links.sigstore.dev/slack-invite. You can also follow us on Twitter at @projectsigstore or the blog for updates, or join the mailing list at sigstore-dev@googlegroups.com."
-    },
-    {
-      "question": "What security checks do you use internally?",
-      "answer": "We’ve adopted a security disclosures and response policy to make sure we can responsibly handle critical issues. We have an initial Security Response Committee, who for each vulnerability reported will coordinate to create the fix and release, and keep the committee looped in. The policy in full is here: <https://github.com/sigstore/.github/blob/main/SECURITY.md>"
     },
     {
       "question": "How easy is it to use?",
       "answer": "As easy as we can make it. Signing and verifying seems like a lot of extra effort with a lot of pitfalls. Our aim is to design away the manual effort and risk of error, automating the signing into a few simple commands. Verification and signing is greatly simplified by leveraging identity-based, or keyless, workflows."
     },
     {
+      "question": "How do I learn more about the project?",
+      "answer": "Read more about Sigstore at https://docs.sigstore.dev"
+    },
+    {
       "question": "Is there live support?",
       "answer": "The fastest way to get answers, ideas and feedback is to jump into our working group on Slack, or post an issue on one of Sigstore's repositories."
-    },
-    {
-      "question": "Is the transparency log monitored?",
-      "answer": "Purdue University operates a log monitor, checking that the log remains append-only. Sigstore provides an easy-to-use GitHub Actions-based monitor for consistency and identity at https://github.com/sigstore/rekor-monitor."
-    },
-    {
-      "question": "Can I run my own transparency log monitor?",
-      "answer": "We would love that, you’re definitely encouraged to do so. The more people monitoring the logs and providing useful services to users, the better. Check out https://github.com/sigstore/rekor-monitor for a GitHub Actions based monitor."
-    },
-    {
-      "question": "Why not blockchain?",
-      "answer": "Public blockchains often end up using a centralized entry point for canonicalization and authentication. Consensus algorithms can be susceptible to majority attacks, and transparency logs are more mature and capable for what we aim to build with sigstore."
-    },
-    {
-      "question": "How does Sigstore integrate in-toto?",
-      "answer": "Sigstore is co-led by Santiago Torres-Arias, the lead of the in-toto project, and the two efforts are complementary. Sigstore supports and uses in-toto in a number of ways. Cosign can be used to generate and verify in-toto attestations and Rekor can store those attestations. in-toto also supports the use of PKI semantics for signing metadata which will be used in future to support Fulcio for developer key management."
-    },
-    {
-      "question": "How does Sigstore use / interact with TUF?",
-      "answer": "Sigstore's root of trust for Fulcio and Rekor are distributed using TUF.  The releases for Cosign, Rekor, and Fulcio are also signed by a key distributed with TUF.  The projects solve a similar problem of signing and verifying software that will be distributed via a repository. Sigstore provides key signing using multiple techniques, including without requiring developers to manage keys by using OIDC.  In contrast, TUF typically requires keys to be managed by developers, but addresses a threat model where all online servers and keys could be compromised.  The projects are collaborating and can be used cooperatively.  More guidance on this will be forthcoming as the communities collaborate on their first large co-deployments. "
     }
   ]
 }
