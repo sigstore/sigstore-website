@@ -10,5 +10,5 @@ caseColour: bg-pastel-blue
 caseStudyText: "An integration to sign images . . . and push the signatures to a
   registry so that users can ensure the chain of custody of a generated
   artifact. "
-caseStudyLink: https://github.com/stormqueen1990/kpack/blob/cosign-integration/rfcs/0000-cosign-integration.md
+caseStudyLink: https://github.com/pivotal/kpack/blob/main/rfcs/0007-cosign-integration.md
 ---
