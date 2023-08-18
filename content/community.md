@@ -27,7 +27,7 @@ sections:
         happening.
       ctaText: Join us on Slack
       bgColour: bg-white
-      ctaLink: https://join.slack.com/t/sigstore/shared_invite/zt-21ky9s4ur-04bhXrTgIimboJgLx3QB2A
+      ctaLink: https://sigstore.slack.com/join/shared_invite/zt-1z7jzpemb-xEKSUtpgDFXpIEMwMYZQKQ
     column2:
       header: Share your stories
       imageAsset: /img/stories.svg
