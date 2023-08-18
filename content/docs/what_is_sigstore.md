@@ -138,7 +138,7 @@ WebPKI (fuclio) and develop client tools for various package managers and upstre
 ## Want to find out more?
 
 * Come on over to our [slack
-workplace](https://join.slack.com/t/sigstore/shared_invite/zt-19g6gxfu9-G4rD1hrvFMr08uDc1_OtDg)
+workplace](https://sigstore.slack.com/join/shared_invite/zt-1z7jzpemb-xEKSUtpgDFXpIEMwMYZQKQ)
 * follow us on [twitter @projectsigstore](https://twitter.com/projectsigstore) (we are quite busy there with updates)
 * follow our [blog](https://blog.sigstore.dev)
 * join our mailing list at [sigstore-dev@googlegroups.com](https://groups.google.com/g/sigstore-dev)
