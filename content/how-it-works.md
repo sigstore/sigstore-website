@@ -42,7 +42,7 @@ sections:
       text: Data stored in the logs is readily auditable, a foundation for future
         monitors and integrations to build into your security workflow.
       ctaText: Learn more
-      ctaLink: https://github.com/logging/overview
+      ctaLink: https://docs.sigstore.dev/logging/overview
       isCardStyle: true
       bgColour: "#ddeff1"
     header: How can you use it?
