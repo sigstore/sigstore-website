@@ -30,8 +30,8 @@ sections:
     column2:
       header: Verify
       imageAsset: /img/howtouseit_verify.svg
-      text: Rekor transparency logs store unique identification like who created it
-        and where it was built, so you know it hasn’t been changed.
+      text: Transparency logs store unique identification like who created it
+        and where it was built, so you know it hasn’t been changed when you verify.
       ctaText: Learn more
       ctaLink: https://docs.sigstore.dev/verifying/verify
       isCardStyle: true
