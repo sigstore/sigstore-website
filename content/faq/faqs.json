@@ -9,20 +9,20 @@
       "answer": "Sigstore announced general availability (GA) for the Rekor transparency log and Fulcio certificate authority public benefit services in October 2022. Cosign, one of the Sigstore clients, had its v2.0 release in February 2023, and other Sigstore clients, including sigstore-js and sigstore-python, have had v1.0 releases. Sigstore is actively developing client tooling for other package repositories and upstream communities."
     },
     {
-      "question": "How can I report security issues?",
-      "answer": "The best way is to try out the technologies and let us know your thoughts - it’ll help us keep developing sigstore’s functionality and see where we can improve. It grows the community too, and we’d always welcome new members to the working group over on Slack, https://sigstore.slack.com/join/shared_invite/zt-1z7jzpemb-xEKSUtpgDFXpIEMwMYZQKQ. You can also follow us on Twitter at @projectsigstore or the blog for updates, or join the mailing list at sigstore-dev@googlegroups.com."
-    },
-    {
       "question": "How easy is it to use?",
       "answer": "As easy as we can make it. Signing and verifying seems like a lot of extra effort with a lot of pitfalls. Our aim is to design away the manual effort and risk of error, automating the signing into a few simple commands. Verification and signing is greatly simplified by leveraging identity-based, or keyless, workflows."
     },
     {
       "question": "How do I learn more about the project?",
-      "answer": "Read more about Sigstore at https://docs.sigstore.dev"
+      "answer": "Read more about Sigstore at https://docs.sigstore.dev, and check out the FAQs at https://docs.sigstore.dev/about/faq/."
     },
     {
-      "question": "Is there live support?",
-      "answer": "The fastest way to get answers, ideas and feedback is to jump into our working group on Slack, or post an issue on one of Sigstore's repositories."
+      "question": "How do I get help if I have a question?",
+      "answer": "The fastest way to get answers, ideas and feedback is on Sigstore's Slack, or post an issue on one of Sigstore's repositories."
+    },
+    {
+      "question": "How can I get involved with the project?",
+      "answer": "The best way is to try out the technologies and let us know your thoughts! We welcome new members to the working group over on Slack, https://sigstore.slack.com/join/shared_invite/zt-1z7jzpemb-xEKSUtpgDFXpIEMwMYZQKQ. You can also follow us on Twitter at @projectsigstore or the blog, https://blog.sigstore.dev, for updates, or join the mailing list at sigstore-dev@googlegroups.com."
     }
   ]
 }
