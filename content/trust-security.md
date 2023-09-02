@@ -31,7 +31,7 @@ sections:
       github: https://github.com/lukehinds
       ctaLink: ""
       socialLinks: true
-      subHeader: Security Eng Lead @ Red Hat CTO Office
+      subHeader: CTO, Stacklok
       text: sigstore is Luke’s brainchild. Luke is focused on the Root CA and
         transparency logs as well as chairing the community meetings.
       header: Luke Hinds
