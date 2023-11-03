@@ -20,9 +20,9 @@
                 </div>
             </div>
             <div v-if="showSupportedBy" v-animate-on-scroll class="absolute bottom-0 mb-24 w-full delay-step_5">
-                <div class="container inner text-center md:text-left">
-                    <p class="h mb-16 text-gray-dark">In collaboration with </p>
-                    <div class="flex items-center justify-center md:justify-start flex-wrap">
+                <div class="container inner text-center">
+                    <p class="h mb-16 text-gray-dark">In collaboration with</p>
+                    <div class="flex items-center justify-center flex-nowrap">
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/openssf-horizontal-color.svg" alt="OpenSSF sponsor logo" />
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/chainguard.svg" alt="Chainguard sponsor logo" />
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-110 md:mr-20 mobile:w-20" src="/img/cisco.png" alt="Cisco sponsor logo" />
@@ -31,6 +31,7 @@
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/hpe.png" alt="HPE sponsor logo" />
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/purdueunilogo.png" alt="Purdue University sponsor logo" />
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/redhatlogo.png" alt="RedHat sponsor logo" />
+                        <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/stacklok.png" alt="Stacklok sponsor logo" />
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/vmware.png" alt="VMware sponsor logo" />
                     </div>
                 </div>
