@@ -114,6 +114,8 @@ sections:
   - type: carousel
     header: Image Gallery
     carouselCaseItems:
+      - stacklok
+      - npm
       - bleeping-computer
       - google
       - kpack
