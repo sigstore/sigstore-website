@@ -175,28 +175,6 @@ collections:
                   required: false,
                   default: true,
                 }
-          - label: 'Contributors list'
-            name: 'contributorsList'
-            widget: object
-            fields:
-              - {
-                  label: Show Contributors list,
-                  name: isContributorsList,
-                  widget: boolean,
-                  required: false,
-                  default: true,
-                }
-          - label: 'Show Core Contributors'
-            name: 'coreContributors'
-            widget: object
-            fields:
-              - {
-                  label: Show Core Contributors,
-                  name: isCoreContributors,
-                  widget: boolean,
-                  required: false,
-                  default: true,
-                }
           - label: 'Sponsors list'
             name: 'sponsorsList'
             widget: object
