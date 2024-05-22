@@ -33,7 +33,7 @@ sections:
       socialLinks: true
       subHeader: CTO, Stacklok
       text: sigstore is Luke’s brainchild. Luke is focused on the Root CA and
-        transparency logs as well as chairing the community meetings.
+        transparency logs.
       header: Luke Hinds
       twitter: https://twitter.com/decodebytes
       imageAsset: ""
@@ -86,8 +86,6 @@ sections:
       imageAsset: ""
       ctaText: ""
       ctaLink: ""
-  - type: coreContributors
-    isCoreContributors: true
 ---
 
 Body text
