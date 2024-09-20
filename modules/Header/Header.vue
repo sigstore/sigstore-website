@@ -1,6 +1,8 @@
 <template>
     <header ref="header" class="headroom py-30 fixed w-full z-50" :class="[bg,isScrolling ? 'scrolled' : '']">
         <div class="container">
+            <a href=https://events.linuxfoundation.org/sigstorecon-supply-chain-day/ ><img src=~/static/img/announcementbanner.svg></img></a>
+            <br>
             <div class="flex flex-wrap justify-between items-start">
                 <a href="/" title="Home link" class="logo"><Logo :class="[$route.params.slug === 'trust-security' ? 'logo-white' : 'logo-black']" /></a>
                 <Navigation class="hidden md:block" :scrolled="isScrolling" nav-type="header" :nav-list="navigation" />
