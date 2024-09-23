@@ -1,5 +1,5 @@
 <template>
-    <section class="py-80 md:py-160" 
+    <section class="py-80 md:py-80" 
     :class="[backgroundColour]" 
     :data-header-text="[(backgroundColour === 'bg-purple-dark') ? 'text-white' : (backgroundColour === 'bg-pastel-blue') ? 'text-purple-dark' : 'text-gray-dark']"
     >

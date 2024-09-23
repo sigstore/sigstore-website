@@ -5,6 +5,12 @@ description: We’re a working partnership aligned by the values of open source
   and safer software. We continue to develop sigstore to make sure it’s for
   everyone.
 sections:
+  - type: twoColumnBanner
+    text: Register now for our Co-located KubeCon event! 
+      November 12, 2024 Salt Lake City, Utah
+    header: Join us for SigstoreCon 2024
+    imageAsset: /img/SigstoreCon2024.svg
+    textAlign: left
   - ctaStyle: transparentCta
     showSupportedBy: false
     text: We’re a working partnership aligned by the values of open source and safer
