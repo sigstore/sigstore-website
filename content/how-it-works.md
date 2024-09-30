@@ -24,7 +24,7 @@ sections:
       text: Easy authentication and smart cryptography work in the background. Just
         push your code, sigstore can handle the rest.
       ctaText: Learn more
-      ctaLink: https://docs.sigstore.dev/signing/overview
+      ctaLink: https://docs.sigstore.dev/quickstart/quickstart-cosign/
       isCardStyle: true
       bgColour: "#ddeff1"
     column2:
@@ -33,7 +33,7 @@ sections:
       text: Transparency logs store unique identification like who created it
         and where it was built, so you know it hasn’t been changed when you verify.
       ctaText: Learn more
-      ctaLink: https://docs.sigstore.dev/verifying/verify
+      ctaLink: https://docs.sigstore.dev/cosign/verifying/verify/
       isCardStyle: true
       bgColour: "#ddeff1"
     column3:
