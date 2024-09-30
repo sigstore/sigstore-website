@@ -4,7 +4,6 @@
       loading...
   </div>
   <div v-else>
-    <a href=https://events.linuxfoundation.org/sigstorecon-supply-chain-day/ ><img src=~/static/img/SigstoreCon2024Banner.svg></img></a>
     <Header :navigation="headerNavLinks" :socialLinks="footerSocialLinks" />
         <main>
             <Nuxt />
