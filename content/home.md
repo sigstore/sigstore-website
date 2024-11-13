@@ -4,15 +4,6 @@ date: 2021-07-12T15:33:03.264Z
 description: Homepage
 thumbnail: /img/icon.png
 sections:
-  - type: twoColumnAnnouncement
-    alignment: imageRight
-    bgColour: bg-pastel-orange
-    cardTitle: Join us in Salt Lake City for [SigstoreCon!](https://events.linuxfoundation.org/sigstorecon-supply-chain-day/)
-    text: Register now for our [Co-located KubeCon event](https://events.linuxfoundation.org/sigstorecon-supply-chain-day/), November 12, 2024
-    header: Join us in Salt Lake City for SigstoreCon!
-    imageAsset: /img/sigstorecon2024.svg
-    isScreenHeight: false
-    link: https://events.linuxfoundation.org/sigstorecon-supply-chain-day/
   - ctaStyle: solidCtaPurple
     showSupportedBy: true
     text: Making sure your software is what it claims to be.
