@@ -115,7 +115,7 @@ Mostly for these reasons:
 sigstore is complementary to TUF / in-toto, and project members of the TUF / in-toto
 communities are collaborating with sigstore. For more details and the latest status
 please jump onto our [slack
-workplace](https://join.slack.com/t/sigstore/shared_invite/zt-21ky9s4ur-04bhXrTgIimboJgLx3QB2A).
+workplace](https://join.slack.com/t/sigstore/shared_invite/zt-2ub0ztl5z-PkWb_Ldwef5d6nb~oryaTA).
 
 ### Do you plan to run a monitor?
 
@@ -126,7 +126,7 @@ Yes, we do in some form. Currently some folks from Purdue university are working
 Yes, very much! The more people monitoring the logs and rendering or providing useful services to users, the better.
 
 We have published OpenAPI interfaces for both [Rekor](https://sigstore.dev/swagger/index.html?urls.primaryName=Rekor) and [Fulcio](https://sigstore.dev/swagger/index.html?urls.primaryName=Fulcio)
-The goal is to make it easier to integrate directly with sigstore services. You can always jump on our [slack workspace](https://sigstore.slack.com/join/shared_invite/zt-1z7jzpemb-xEKSUtpgDFXpIEMwMYZQKQ)
+The goal is to make it easier to integrate directly with sigstore services. You can always jump on our [slack workspace](https://join.slack.com/t/sigstore/shared_invite/zt-2ub0ztl5z-PkWb_Ldwef5d6nb~oryaTA)
 to run your ideas past us.
 
 ### What is the current status of the project
@@ -138,7 +138,7 @@ WebPKI (fuclio) and develop client tools for various package managers and upstre
 ## Want to find out more?
 
 * Come on over to our [slack
-workplace](https://sigstore.slack.com/join/shared_invite/zt-1z7jzpemb-xEKSUtpgDFXpIEMwMYZQKQ)
+workplace](https://join.slack.com/t/sigstore/shared_invite/zt-2ub0ztl5z-PkWb_Ldwef5d6nb~oryaTA)
 * follow us on [twitter @projectsigstore](https://twitter.com/projectsigstore) (we are quite busy there with updates)
 * follow our [blog](https://blog.sigstore.dev)
 * join our mailing list at [sigstore-dev@googlegroups.com](https://groups.google.com/g/sigstore-dev)
