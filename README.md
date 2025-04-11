@@ -84,6 +84,28 @@ We use Tailwind for our css which uses SASS, and it is highly configurable from 
 
 ["Go read about tailwind"](https://tailwindcss.com/)
 
+## Tips for contributing to website content
+
+As website content grows, matures and adapts, it can be tricky to keep the content’s style and tone of voice consistent. This is crucial in making things feel they’ve been written by one single author, which helps create trust and authority, and keeps the user experience streamlined. Here’s a few pointers to help guide your changes:
+
+- Write like you’re onboarding a new colleague. You want to help them get up to speed. Prioritise your points and be action-focused, cut anything that’s not really necessary. Be friendly but direct, and focus on the end goal together.
+
+- Who’s your audience? They’re a wide mix of readers with different levels of know-how. Good, accessible website content tends to keep things simple and more entry level rather than diving straight in at the deep end.
+
+- Branded terms. Sigstore, Cosign, Fulcio, Rekor, and Gitsign are title case. Meanwhile, `policy-controller` is all lower-case with a hyphen. Keeping these consistent establishes the branding and can prevent confusion.
+
+- Compare similar content before making new changes. This will help pick out things like syntax and grammar, which should help you know what conventions to follow and keep things consistent.
+
+- Let the context do some of the work. A sentence doesn’t have to overwork or spell out every single subtext. You can let the surrounding parts do their job to carry the weight, and that way you keep things simple.
+
+- Read things out loud! Does something you’ve written sound like what you’d expect from a regular conversation? Aim for this - website content lands best when it matches your reader’s inner monologue and expected patterns of speech.
+
+- The more prominent something is in design, the more risky it is to change. That’s because their impact is partly down to what the words mean, and partly about their visual, subtle impact. Only change these if it’s absolutely crucial.
+
+- Always check your assumptions. It’s easy to assume your reader knows exactly what you do. If you’re introducing something difficult for the first time, state it, explain it as simply as you can, and then move to its application using consistent language.
+
+- And above all, be consistent. This applies both to the words you use, and the way you use them - so things like grammar and formatting, whether you capitalise a word or not, etc.
+
 ## How to Get Involved
 
 Community contributions are welcome. To suggest a new feature or report a bug, please feel free to submit an issue. Prior to contributing, please review our [Contributor Guidelines](https://github.com/CONTRIBUTORS.md).
