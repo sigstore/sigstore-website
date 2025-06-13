@@ -31,7 +31,7 @@ sections:
       github: https://github.com/lukehinds
       ctaLink: ""
       socialLinks: true
-      subHeader: CTO, Stacklok
+      subHeader: CEO, Red Dot Rocket
       text: sigstore is Luke’s brainchild. Luke is focused on the Root CA and
         transparency logs.
       header: Luke Hinds
