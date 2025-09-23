@@ -1,7 +1,7 @@
 ---
-title: How sigstore works
+title: How Sigstore works
 date: 2021-07-09T08:36:41.054Z
-description: How sigstore works
+description: How Sigstore works
 thumbnail: /img/icon.png
 sections:
   - ctaStyle: transparentCta
@@ -22,7 +22,7 @@ sections:
       header: Sign
       imageAsset: /img/howtouseit_signcode.svg
       text: Easy authentication and smart cryptography work in the background. Just
-        push your code, sigstore can handle the rest.
+        push your code, Sigstore can handle the rest.
       ctaText: Learn more
       ctaLink: https://docs.sigstore.dev/quickstart/quickstart-cosign/
       isCardStyle: true

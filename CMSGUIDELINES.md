@@ -17,7 +17,7 @@ The content on sigstore.dev is managed and easily editable by any with [an invit
 
 Netlify CMS is open source and it allows us to create content that is markdown-centric, meaning we can edit and change content easily through the CMS or through editing .md files directly.
 
-Right now any content that's edited gets pushed directly to the `develop` branch on the main sigstore website repo which is here: https://github.com/sigstore/sigstore-website. Upon this being pushed to the branch above it can then be approved and merged to `main`.
+Right now any content that's edited gets pushed directly to the `develop` branch on the main Sigstore website repo which is here: https://github.com/sigstore/sigstore-website. Upon this being pushed to the branch above it can then be approved and merged to `main`.
 
 [Read more about Netlify CMS](https://www.netlifycms.org/).
 
@@ -35,7 +35,7 @@ Can be edited here: https://www.sigstore.dev/admin/#/collections/events
 
 
 ### Case studies and press
-You can use this section to highlight influential or important press and case studies. Things that are good examples of sigstore making waves in the ecosystem.
+You can use this section to highlight influential or important press and case studies. Things that are good examples of Sigstore making waves in the ecosystem.
 
 Try to keep the number of items in the carousel to 5 or fewer. Delete older or less relevant ones.
 
@@ -94,7 +94,7 @@ This is not the preferred way of editing content but if that is what you want to
 
 **via GitHub:**
 
-1. Go to the sigstore repo here: https://github.com/sigstore/sigstore-website.
+1. Go to the Sigstore repo here: https://github.com/sigstore/sigstore-website.
 2. Change the origin branch you are on so it points to `develop` NOT `main`.
 3. Move into `/content` folder and inside here you can edit content in any of the subfolders.
 4. Once you are happy to save changes, give the commit some detail, please commit those changes by ticking the bottom radio button **Create a new branch for this commit and start a pull request**.
@@ -132,7 +132,7 @@ Some of the components have related collections such as Brands. These can be the
 
 The collections in the site are nested sets of content that can be repeated for things like menus, posts, lists and taxonomy.
 
-Our main collections are Pages, News and Events, Case Studies and FAQs. These are the areas we populate the most and will have the most updates throughout the sigstore development.
+Our main collections are Pages, News and Events, Case Studies and FAQs. These are the areas we populate the most and will have the most updates throughout the Sigstore development.
 
 <img alt="collections" src="static/img/screenshots/Screenshot-2021-08-17-at-12.50.04.png" width="700">
 
@@ -150,7 +150,7 @@ This area is split into 4 sections below:
 
 #### Site Info
 
-Some basic content on the site such as title, Description and some meta info regarding historic data about sigstore.
+Some basic content on the site such as title, Description and some meta info regarding historic data about Sigstore.
 
 #### Social links
 
