@@ -28,9 +28,9 @@ sections:
     ctaButtons: []
     ctaStyle: transparentCta
   - alignment: textRight
-    cardTitle: What makes sigstore different?
+    cardTitle: What makes Sigstore different?
     text:
-      sigstore was started to improve supply chain technology for anyone using
+      Sigstore was started to improve supply chain technology for anyone using
       open source projects. It's for open source maintainers, by open source
       maintainers.
     header: Our vision
@@ -62,7 +62,7 @@ sections:
     column3:
       header: Driven by our community
       imageAsset: /img/community.svg
-      text: Everyone involved in sigstore believes in an open, transparent and
+      text: Everyone involved in Sigstore believes in an open, transparent and
         accountable future for open source software. Everything we do comes from
         that shared vision.
   - type: sigstoreDivider
@@ -70,7 +70,7 @@ sections:
   - alignment: imageRight
     cardTitle: How can you use it?
     text: >-
-      sigstore is a set of tools developers, software maintainers, package
+      Sigstore is a set of tools developers, software maintainers, package
       managers and security experts can benefit from. Bringing together
       free-to-use open source technologies like Fulcio, Cosign and Rekor, it
       handles digital signing, verification and checks for provenance needed to
@@ -81,14 +81,14 @@ sections:
 
 
       This means that open source software uploaded for distribution has a stricter, more standardized way of checking who’s been involved, that it hasn’t been tampered with. There’s no risk of key compromise, so third parties can’t hijack a release and slip in something malicious.
-    header: How sigstore works
+    header: How Sigstore works
     bgColour: bg-white
     imageAsset: /img/system_architecture_summary-01.svg
     textBottom: >-
                   **Building for future integrations**
 
 
-                  With the help of a working partnership that includes GitHub, Google, the Linux Foundation, Red Hat and Purdue University, we’re in constant collaboration to find new ways to improve the sigstore technology, to make it easy to adopt, integrate and become a long-lasting standard.
+                  With the help of a working partnership that includes GitHub, Google, the Linux Foundation, Red Hat and Purdue University, we’re in constant collaboration to find new ways to improve the Sigstore technology, to make it easy to adopt, integrate and become a long-lasting standard.
     type: twoColumnBannerWithCard
     column1:
       header: Sign code

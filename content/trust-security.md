@@ -6,7 +6,7 @@ sections:
   - card1:
       header: "Trust root: operating in the open"
       imageAsset: ""
-      text: The sigstore trust root is made up of five key holders from the community,
+      text: The Sigstore trust root is made up of five key holders from the community,
         responsible for any changes to policy and rotated as we grow in the
         future.
       ctaText: See how it works
@@ -18,7 +18,7 @@ sections:
         used in signing and verification.
       ctaText: Learn more
       ctaLink: https://docs.sigstore.dev/security
-    text: An open, accessible foundation behind the policies and protocols sigstore
+    text: An open, accessible foundation behind the policies and protocols Sigstore
       needs to work, grounded in an open source, distributed community.
     header: Our foundations of trust
     bgColour: bg-purple-dark
@@ -32,7 +32,7 @@ sections:
       ctaLink: ""
       socialLinks: true
       subHeader: CEO, Red Dot Rocket
-      text: sigstore is Luke’s brainchild. Luke is focused on the Root CA and
+      text: Sigstore is Luke’s brainchild. Luke is focused on the Root CA and
         transparency logs.
       header: Luke Hinds
       twitter: https://twitter.com/decodebytes
@@ -56,7 +56,7 @@ sections:
       subHeader: Software Engineer, Chainguard
       github: https://github.com/priyawadhwa
       twitter: https://twitter.com/priyawadhwa16
-      text: Priya is a maintainer on sigstore and its infrastructure.
+      text: Priya is a maintainer on Sigstore and its infrastructure.
       isCardStyle: false
       socialLinks: true
       imageAsset: ""

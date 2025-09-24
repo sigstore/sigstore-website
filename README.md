@@ -5,9 +5,9 @@
 [logo]: /assets/icons/logo.svg 'sigstore logo'
 Sign, verify and protect your software
 
-The sigstore website is run on an open source framework called Nuxt JS, a VUE app framework. You can read more about it [here](https://nuxtjs.org/). The reason we chose this had many factors that included greater SEO support, SPA's, and the ability to connect an API of our choice being easy.
+The Sigstore website is run on an open source framework called Nuxt JS, a VUE app framework. You can read more about it [here](https://nuxtjs.org/). The reason we chose this had many factors that included greater SEO support, SPA's, and the ability to connect an API of our choice being easy.
 
-sigstore content is created with Netlify CMS, which is an open source content management system that generates markdown content. The integration within the Nuxt app was perfect and the query interface for getting content was very clear and easy to set up.
+Sigstore content is created with Netlify CMS, which is an open source content management system that generates markdown content. The integration within the Nuxt app was perfect and the query interface for getting content was very clear and easy to set up.
 
 To log into the CMS you need to be invited via Netlify identity to access the CMS itself. Once you have gone through the necessary steps to creating and verifying your account you can go in and start editing content.
 
@@ -112,5 +112,5 @@ Community contributions are welcome. To suggest a new feature or report a bug, p
 
 ## Security
 
-Should you discover any security issues, please refer to sigstore's [security
+Should you discover any security issues, please refer to Sigstore's [security
 process](https://github.com/sigstore/.github/blob/main/SECURITY.md)

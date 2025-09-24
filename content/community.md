@@ -2,13 +2,13 @@
 title: Community
 date: 2021-07-09T15:26:36.522Z
 description: We’re a working partnership aligned by the values of open source
-  and safer software. We continue to develop sigstore to make sure it’s for
+  and safer software. We continue to develop Sigstore to make sure it’s for
   everyone.
 sections:
   - ctaStyle: transparentCta
     showSupportedBy: false
     text: We’re a working partnership aligned by the values of open source and safer
-      software. We continue to develop sigstore to make sure it’s for everyone.
+      software. We continue to develop Sigstore to make sure it’s for everyone.
     header: Driven forward by community
     showStatsBanner: false
     bgColour: bg-orange-medium
@@ -31,7 +31,7 @@ sections:
     column2:
       header: Share your stories
       imageAsset: /img/stories.svg
-      text: Already working with sigstore? Sharing and self-reporting helps us track
+      text: Already working with Sigstore? Sharing and self-reporting helps us track
         community health, the state of the tooling and how it’s all being used.
       ctaText: Leave a user story
       bgColour: bg-white
