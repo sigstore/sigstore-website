@@ -14,6 +14,10 @@ window.onload = function() {
   window.ui = SwaggerUIBundle({
     urls: [
       {
+	      "name": "Rekor v2",
+	      "url": "https://raw.githubusercontent.com/sigstore/rekor-tiles/main/docs/openapi/rekor/v2/rekor_service.swagger.json"
+      },
+      {
 	      "name": "Rekor",
 	      "url": "https://raw.githubusercontent.com/sigstore/rekor/main/openapi.yaml"
       },
