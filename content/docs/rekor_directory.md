@@ -6,7 +6,7 @@ section: single
 type: page
 ---
 
-A list of current public instances of rekor
+A list of current public instances of Rekor
 
 | Server                                                               | Purpose |
 | -------------------------------------------------------------------- | ------- |
