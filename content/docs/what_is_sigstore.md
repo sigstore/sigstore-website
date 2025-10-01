@@ -38,13 +38,13 @@ current tooling (outside of controlled environments) all too often [feel inappro
 transparency logs.
 
 Users generate ephemeral short-lived key pairs using the sigstore client tooling. The sigstore PKI service will then
-provide a signing certificate generated upon a successful OpenID connect grant. All certificates are recorded into a
+provide a signing certificate generated upon a successful OpenID Connect grant. All certificates are recorded into a
 certificate transparency log and software signing materials are sent to a signature transparency log. The use of
 transparency logs introduces a trust root to the user's OpenID account. We can then have guarantees that the claimed
 user was in control of an identity service provider's account at the time of signing. Once the signing operation is
 complete, the keys can be discarded, removing any need for further key management or need to revoke or rotate.
 
-Using OpenID connect identities allows users to take advantage of existing security controls such as 2FA, OTP
+Using OpenID Connect identities allows users to take advantage of existing security controls such as 2FA, OTP
 and hardware token generators.
 
 sigstore's transparency logs can act as a source of provenance, integrity, and discoverability. Being public
@@ -79,11 +79,11 @@ At present the WebPKI and client signing tooling is under prototype development 
 
 ### Can I use the transparency log on its own?
 
-Sure, anyone can stand up a rekor instance (rekor is the name of the transparency log project under sigstore). We
+Sure, anyone can stand up a Rekor instance (Rekor is the name of the transparency log project under sigstore). We
 originally planned to just run a t-log, but then we realised not many were likely to use it as the whole signing UX [is
 less than desirable](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html). So we extended the project to include
-an 'easy to use' signing system. So we very much intend to keep rekor in its current state where it can be run in on its
-own. So if you perform your own signing, you can just use rekor on its own.
+an 'easy to use' signing system. So we very much intend to keep Rekor in its current state where it can be run in on its
+own. So if you perform your own signing, you can just use Rekor on its own.
 
 Rekor has a pluggable PKI and support present for the following:
 
@@ -91,14 +91,14 @@ Rekor has a pluggable PKI and support present for the following:
 * X.509
 * Minisign
 
-It also has a customizable manifest schema (pluggable types), so you can get rekor to work with whatever values you need
+It also has a customizable manifest schema (pluggable types), so you can get Rekor to work with whatever values you need
 (within reason).
 
 More details of pluggable types can be found on the related [documentation page](../docs/plugable_types).
 
-Documentation on running a rekor server [is available here](../get_started/server).
+Documentation on running a Rekor server [is available here](../get_started/server).
 
-Documentation on the rekor client CLI (for adding an entry to a rekor transparency log) [is available here](../get_started/client).
+Documentation on the Rekor client CLI (for adding an entry to a Rekor transparency log) [is available here](../get_started/client).
 
 ### Why not blockchain?
 
@@ -131,7 +131,7 @@ to run your ideas past us.
 
 ### What is the current status of the project
 
-As of time of writing [24/06/2021] we have a working transparency log (rekor), that is fully operation as a standalone
+As of time of writing [24/06/2021] we have a working transparency log (Rekor), that is fully operation as a standalone
 service. Files are available to run this in GKE. Work is now underway to mature the
 WebPKI (fuclio) and develop client tools for various package managers and upstream communities
 

@@ -2,7 +2,7 @@
 <template>
     <section class="py-64 md:py-128 bg-white" data-header-text="text-gray-dark">
         <div class="text-gray-dark container inner text-center">
-            <h3 class="text-36 pb-44">The sigstore ecosystem</h3>
+            <h3 class="text-36 pb-44">The Sigstore ecosystem</h3>
             <div class="flex justify-start md:justify-center items-start mb-64 overflow-x-scroll md:overflow-x-visible relative">
                 <button
                     v-for="(group, index) in groupTabs" 
