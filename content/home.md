@@ -8,7 +8,7 @@ sections:
     showSupportedBy: true
     text: Making sure your software is what it claims to be.
     header: sign. verify. protect.
-    showStatsBanner: true
+    showStatsBanner: false
     bgColour: bg-pastel-orange
     ctaButtons: []
     textAlign: left
@@ -24,6 +24,14 @@ sections:
     alignment: imageRight
     ctaButtons: []
     ctaStyle: transparentCta
+  - type: textBanner
+    showSupportedBy: false
+    text: Sigstore is a collection of open source tools that can be used individually or in concert to improve your software supply chain security. The Sigstore framework empowers software developers and consumers to securely sign and verify software artifacts. 
+    header: What is Sigstore?
+    showStatsBanner: false
+    bgColour: bg-pastel-blue
+    textAlign: center
+    textColour: text-purple-dark
   - alignment: textRight
     cardTitle: What makes Sigstore different?
     text:
@@ -31,35 +39,26 @@ sections:
       open source projects. It's made for open source maintainers, by open source
       maintainers.
     header: Our vision
-    bgColour: bg-pastel-blue
+    bgColour: bg-pastel-orange
     imageAsset: ''
     textBottom:
       Sigstore is a direct response to today’s supply chain challenges. We are working towards a future where there is a broadly accepted (and achievable) project integrity standard.
     type: twoColumnBannerWithCard
     column1:
-      header: Automatic key management
+      header: Key management and short-lived certificates
       imageAsset: /img/keys.svg
-      text: We use Cosign to generate the key pairs needed to sign and verify
-        artifacts, automating as much as possible so there’s no risk of losing
-        or leaking them.
+      text: Worried about leaked or lost keys? Sigstore's Cosign uses short-lived certificates to automatically generate the key pairs needed to sign and verify artifacts.
     column2:
       header: Transparent ledger technology
       imageAsset: /img/ledger.svg
-      text:
-        A transparency log means anyone can find and verify signatures, and check
-        whether someone’s changed the source code, the build platform or the
-        artifact repository.
-    cardText: We’ve automated how you digitally sign and check components, for a
-      safer chain of custody tracing software back to the source. We want to
-      remove the effort, time and risk of error this usually comes with. And for
-      anyone whose software depends on open source, future integrations can make
-      it easier to check for authenticity, wherever it’s come from.
+      text: Sigstore's Rekor provides an immutable, tamper-resistant, transparent ledger of signatures and software metadata. Our public Rekor instance makes it easy to find and verify signatures, and check whether someone’s changed the source code, the build platform or the artifact repository. You can also create your own Rekor instance. 
+    cardText: Sigstore streamlines how you digitally sign and verify components. Our automated tooling makes it   easy to trace your software back to the source. Sigstore is the easiest way to understand your software's chain of custody, and it is a great solution for all open source software producers and users. 
     column3:
       header: Driven by our community
       imageAsset: /img/community.svg
-      text: Everyone involved in Sigstore believes in an open, transparent and
+      text: Sigstore is maintained by passionate believers in an open, transparent, and
         accountable future for open source software. Everything we do comes from
-        that shared vision.
+        a love of open source software and a desire to help others use it securely. 
   - type: sigstoreDivider
     showSigstoreDivider: true
   - type: carousel
