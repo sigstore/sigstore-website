@@ -16,10 +16,10 @@ sections:
     type: textBanner
     showBetaCard: true
   - type: twoColumnBanner
-    header: The problem with open source security
+    header: The problem with software supply chain security
     imageAsset: /img/problemwithopensource_update.svg
     text:
-      Open source software, although a powerful developement tool, can leave your project open to breaches, exploits, and supply chain attacks. The risks can be difficult to spot, and safely using open source dependencies can require constant identity checks and careful safety protocols for keys and secrets. 
+      Modern software projects are built upon software libraries and tools from a variety of sources. This leaves your project open to to breaches, exploits, and supply chain attacks. The risks can be difficult to spot, and safely software dependencies can require constant identity checks and careful safety protocols for keys and secrets. 
     bgColour: bg-purple-dark
     alignment: imageRight
     ctaButtons: []
@@ -35,9 +35,7 @@ sections:
   - alignment: textRight
     cardTitle: What makes Sigstore different?
     text:
-      Sigstore's goal is to improve supply chain technology for anyone using
-      open source projects. It's made for open source maintainers, by open source
-      maintainers.
+      Sigstore's goal is to improve supply chain technology for anyone using software dependencies. Sigstore is made for open source maintainers, by open source maintainers, and is applicable to proprietary projects as well.
     header: Our vision
     bgColour: bg-pastel-orange
     imageAsset: ''
@@ -47,11 +45,11 @@ sections:
     column1:
       header: Key management and short-lived certificates
       imageAsset: /img/keys.svg
-      text: Worried about leaked or lost keys? Sigstore's Cosign uses short-lived certificates to automatically generate the key pairs needed to sign and verify artifacts.
+      text: Worried about leaked or lost keys? Sigstore's Cosign can use ephemeral key material and short-lived certificates to sign and verify artifacts.
     column2:
       header: Transparent ledger technology
       imageAsset: /img/ledger.svg
-      text: Sigstore's Rekor provides an immutable, tamper-resistant, transparent ledger of signatures and software metadata. Our public Rekor instance makes it easy to find and verify signatures, and check whether someone’s changed the source code, the build platform or the artifact repository. You can also create your own Rekor instance. 
+      text: Sigstore's Rekor provides an immutable, tamper-resistant, transparent ledger of signatures and software metadata. Our public Rekor instance makes it easy to find and verify signatures, and detect changes to the source code, the build platform, or the artifact repository. You can also host your own Rekor instance.
     cardText: Sigstore streamlines how you digitally sign and verify components. Our automated tooling makes it   easy to trace your software back to the source. Sigstore is the easiest way to understand your software's chain of custody, and it is a great solution for all open source software producers and users. 
     column3:
       header: Driven by our community
