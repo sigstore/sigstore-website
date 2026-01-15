@@ -28,7 +28,7 @@ sections:
       github: https://github.com/lukehinds
       ctaLink: ""
       socialLinks: true
-      subHeader: CEO, Red Dot Rocket
+      subHeader: CEO, Always Further, Inc
       text: Sigstore is Luke’s brainchild. Luke is focused on the Root CA and
         transparency logs.
       header: Luke Hinds
