@@ -8,6 +8,23 @@
             <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_2">
                 <div class="text-gray-dark markdown" v-html="$md.render(story.textBlock)"></div>
             </div>
+            </div>
+        <br><br>
+        <div v-if="story.recentTextBlock" class="md:flex justify-between items-start container inner">
+            <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_1">
+                <h2 class="text-36 leading-32 mb-32 text-gray-dark">{{story.recentHeader}}</h2>
+            </div>
+            <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_2">
+                <div class="text-gray-dark markdown" v-html="$md.render(story.recentTextBlock)"></div>
+        </div>
+        </div>
+        <br><br>
+        <div v-if="story.initiativesTextBlock" class="md:flex justify-between items-start container inner">
+            <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_1">
+                <h2 class="text-36 leading-32 mb-32 text-gray-dark">{{story.initiativesHeader}}</h2>
+            </div>
+            <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_2">
+                <div class="text-gray-dark markdown" v-html="$md.render(story.initiativesTextBlock)"></div>
         </div>
         </div>
     </section>
