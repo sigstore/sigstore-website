@@ -1,5 +1,4 @@
 {
-  "header": "Story so far",
-  "textBlock": "It’s still early days, but Sigstore’s already growing up fast. We began as a collaboration between Red Hat and the Google Open Source Security Team to look at technologies for signing and verifying code, working together to make freely available, automated solutions for open source maintainers to verify the provenance of all software. And for software developers to sign releases in the first place.\n\nDeveloping with the continuous help, support and encouragement from the Linux Foundation, Red Hat, Purdue, Google and open source experts across the industry, Sigstore’s become an active community collaborating to push it even further forwards and become a mainstay for the future.",
-  "releaseDate": "**Now generally available!**"
+  "header": "The Sigstore story",
+  "textBlock": "Sigstore began as a collaboration between Red Hat and Google's Open Source Security Team to design technologies for signing and verifying code. The team created freely available, automated solutions for developers to sign their releases and to verify the provenance of all software.\n\nSigstore is now developed by Red Hat, Google, Purdue, and open source experts across the industry with the support and encouragement from the Linux Foundation. Sigstore's active community drives the project forward towards our goal of being the industry standard solution for signing and verifying software."
 }
