@@ -19,7 +19,7 @@ sections:
     header: The problem with software supply chain security
     imageAsset: /img/problemwithopensource_update.svg
     text:
-      Modern software projects are built upon software libraries and tools from a variety of sources. This leaves your project open to to breaches, exploits, and supply chain attacks. The risks can be difficult to spot, and safely software dependencies can require constant identity checks and careful safety protocols for keys and secrets. 
+      Modern software projects are built upon software libraries and tools from a variety of sources. This leaves your project open to breaches, exploits, and supply chain attacks. The risks can be difficult to spot, and safely software dependencies can require constant identity checks and careful safety protocols for keys and secrets.
     bgColour: bg-purple-dark
     alignment: imageRight
     ctaButtons: []
@@ -35,7 +35,7 @@ sections:
   - alignment: textRight
     cardTitle: What makes Sigstore different?
     text:
-      Sigstore's goal is to improve supply chain technology for anyone using software dependencies. Sigstore is made for open source maintainers, by open source maintainers, and is applicable to proprietary projects as well.
+      Sigstore's goal is to improve supply chain technology for anyone using software dependencies. Sigstore is made for open source maintainers, by open source maintainers, and is applicable to proprietary software as well.
     header: Our vision
     bgColour: bg-pastel-orange
     imageAsset: ''
