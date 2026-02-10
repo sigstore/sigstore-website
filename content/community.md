@@ -5,7 +5,7 @@ description: ""
 sections:
   - ctaStyle: transparentCta
     showSupportedBy: false
-    text: We're a diverse group of contributors who believe in the values of open source and seek to secure software supply chains. We're committed to ensuring that Sigstore is easy-to-adopt and easy-to-use because secure software benefits everyone.
+    text: As a community, we believe in the values of open source software and seek to secure software supply chains. We've built Sigstore to be an easy-to-adopt, easy-to-use software signing solution. Secure software benefits everyone. 
     header: Driven forward by community
     showStatsBanner: false
     bgColour: bg-orange-medium
