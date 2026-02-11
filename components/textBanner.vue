@@ -31,7 +31,6 @@
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/hpe.png" alt="HPE sponsor logo" />
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/purdueunilogo.png" alt="Purdue University sponsor logo" />
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/redhatlogo.png" alt="RedHat sponsor logo" />
-                        <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/stacklok.png" alt="Stacklok sponsor logo" />
                         <img class="md:w-122 w-1/3 lg:w-55 lg:mu-2.5 xl:w-122 md:mr-20 mobile:w-20" src="/img/vmware.png" alt="VMware sponsor logo" />
                     </div>
                 </div>
