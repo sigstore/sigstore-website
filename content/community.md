@@ -1,14 +1,11 @@
 ---
 title: Community
 date: 2021-07-09T15:26:36.522Z
-description: We’re a working partnership aligned by the values of open source
-  and safer software. We continue to develop Sigstore to make sure it’s for
-  everyone.
+description: ""
 sections:
   - ctaStyle: transparentCta
     showSupportedBy: false
-    text: We’re a working partnership aligned by the values of open source and safer
-      software. We continue to develop Sigstore to make sure it’s for everyone.
+    text: As a community, we believe in the values of open source software and seek to secure software supply chains. We've built Sigstore to be an easy-to-adopt, easy-to-use software signing solution. Secure software benefits everyone. 
     header: Driven forward by community
     showStatsBanner: false
     bgColour: bg-orange-medium
@@ -16,6 +13,14 @@ sections:
     textColour: text-orange-dark
     type: textBanner
     isScreenHeight: true
+  - type: sigstoreDivider
+    showSigstoreDivider: true
+  - type: sponsorsList
+    isSponsorsList: true
+  - type: sigstoreDivider
+    showSigstoreDivider: true
+  - type: storySoFar
+    showStory: true
   - type: sigstoreDivider
     showSigstoreDivider: true
   - type: threeColumnTextGrid
@@ -37,28 +42,14 @@ sections:
       bgColour: bg-white
       ctaLink: https://github.com/sigstore/friends
     column3:
-      header: ""
-      imageAsset: ""
-      text: ""
-      ctaText: ""
+      header: Attend a community meeting
+      imageAsset: /img/community_orange_colorway.svg
+      text: We typically have a community-wide meeting on the third Tuesday of every month @ 16:30 UTC time. Additional meetings for specific initiatives occur throughout the month.
+      ctaText: Check our community calendar
       bgColour: bg-white
-      ctaLink: ""
+      ctaLink: https://calendar.google.com/calendar/embed?src=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&ctz=America%2FNew_York
     header: Want to get involved?
     text: ""
-  - type: sigstoreDivider
-    showSigstoreDivider: true
-  - type: sponsorsList
-    isSponsorsList: true
-  - type: sigstoreDivider
-    showSigstoreDivider: true
-  - type: newsEvents
-    isNewsAndEvents: false
-  - type: sigstoreDivider
-    showSigstoreDivider: true
-  - type: storySoFar
-    showStory: true
-  - type: sigstoreDivider
-    showSigstoreDivider: true
 ---
 
 Body text
