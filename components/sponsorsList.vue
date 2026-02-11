@@ -8,7 +8,6 @@
                     <img class="md:w-122 w-55 md:mr-20" src="/img/chainguard.svg" alt="Chainguard sponsor logo" />
                     <img class="md:w-122 w-55 mr-20" src="/img/redhatlogo.png" alt="RedHat sponsor logo" />
                     <img class="md:w-122 w-55 mr-20" src="/img/purdueunilogo.png" alt="Purdue University sponsor logo" />
-                    <img class="md:w-122 w-55 mr-20" src="/img/stacklok.png" alt="Stacklok sponsor logo" />
                 </div>
             </div>
         </div>
