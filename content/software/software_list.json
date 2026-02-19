@@ -2,31 +2,31 @@
   "product": [
     {
       "productName": "Cosign",
-      "productOverview": "For signing and verification of artifacts and containers, with storage in an Open Container Initiative (OCI) registry, making signatures and in-toto/SLSA attestations invisible infrastructure.",
+      "productOverview": "Sign and verify artifacts, containers, and anything using the Open Container Initiative (OCI) registry for distribution. With Cosign, signatures and in-toto/SLSA attestations become invisible infrastructure.",
       "productCTALink": "https://github.com/sigstore/cosign",
       "productCTA": "View the repo"
     },
     {
       "productName": "Rekor",
-      "productOverview": "Append-only, auditable transparency log service, Rekor records signed metadata to a ledger that can be queried, but can’t be tampered with.\n\n\n",
+      "productOverview": "Rekor is an immutable, auditable transparency log service. It records signed metadata to a ledger that can be queried, but can’t be tampered with.\n\n\n",
       "productCTA": "View the repo",
       "productCTALink": "https://github.com/sigstore/rekor"
     },
     {
       "productName": "Policy Controller",
-      "productOverview": "Policy Controller is used to enforce policy on a cluster on verifiable supply-chain metadata from Cosign.",
+      "productOverview": "Policy Controller is used to enforce policy on a cluster with verifiable supply-chain metadata from Cosign.",
       "productCTA": "View the repo",
       "productCTALink": "https://github.com/sigstore/policy-controller"
     },
     {
       "productName": "OpenID Connect",
-      "productOverview": "An identity layer that checks if you're who you say you are. It lets clients request and receive information about authenticated sessions and users.",
+      "productOverview": "OpenID Connect provides an identity layer that checks if you're who you say you are. It lets clients request and receive information about authenticated sessions and users.",
       "productCTA": "Learn more",
       "productCTALink": "https://openid.net/connect/"
     },
     {
       "productName": "Fulcio",
-      "productOverview": "Code-signing certificate authority, issuing short-lived certificates to an authenticated identity and publishing them to a certificate transparency log.",
+      "productOverview": "Fulcio, a code-signing certificate authority, issues short-lived certificates to an authenticated identity and publishes them to a certificate transparency log.",
       "productCTA": "View the repo",
       "productCTALink": "https://github.com/sigstore/fulcio"
     },
@@ -35,6 +35,19 @@
       "productOverview": "The foundation for trust underpinning Sigstore utilizes TUF. This repository describes this process, our keyholders, and how the root keys are protected.",
       "productCTA": "Sigstore's trust root",
       "productCTALink": "https://github.com/sigstore/root-signing"
+    },
+    {
+      "productName": "Sigstore language clients",
+      "productOverview": "Easily incorporate Sigstore into your project with our language specific clients.",
+      "productCTA": "Learn more",
+      "productCTALink": "https://docs.sigstore.dev/language_clients/language_client_overview/"
+    },
+    {
+      "productName": "Sigstore GitHub Actions",
+      "productOverview": "Sigstore's GitHub Actions make it easy to integrate signing and verifying into your CI system.",
+      "productCTA": "Learn more",
+      "productCTALink": "https://docs.sigstore.dev/quickstart/quickstart-ci/"
     }
+
   ]
 }

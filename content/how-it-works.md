@@ -6,8 +6,7 @@ thumbnail: /img/icon.png
 sections:
   - ctaStyle: transparentCta
     showSupportedBy: false
-    text: A combination of technologies to handle signing, verification and
-      provenance checks that respect privacy and work at scale.
+    text: Our suite of tools is designed to handle software supply chain security at scale.  
     header: Software safety, integrated
     showStatsBanner: false
     bgColour: bg-pastel-blue
@@ -30,8 +29,7 @@ sections:
     column2:
       header: Verify
       imageAsset: /img/howtouseit_verify.svg
-      text: Transparency logs store unique identification like who created it
-        and where it was built, so you know it hasn’t been changed when you verify.
+      text: Verify that your software is what you expect it to be. Transparency logs store unique identification including who signed the software and where it was built.
       ctaText: Learn more
       ctaLink: https://docs.sigstore.dev/cosign/verifying/verify/
       isCardStyle: true
@@ -39,28 +37,18 @@ sections:
     column3:
       header: Monitor
       imageAsset: /img/howtouseit_monitor.svg
-      text: Data stored in the logs is readily auditable, a foundation for future
+      text: Transparency logs are readily auditable, creating a foundation for future
         monitors and integrations to build into your security workflow.
       ctaText: Learn more
       ctaLink: https://docs.sigstore.dev/logging/overview
       isCardStyle: true
       bgColour: "#ddeff1"
     header: How can you use it?
-    text: We’ve combined a few technologies that can be used independently, or as
-      one single process. It’s a way for software developers to sign off on what
-      they build, without needing to jump through hoops or know tricky security
-      protocols. And it’s a way for anyone using those releases to verify the
-      signatures against a tamper-proof log.
+    text: Sigstore is comprised of several tools that can be used independently or combined for a comprehensive supply chain security solution. Sign your software without navigating tricky security protocols. Verify signatures against a tamper-proof log.
   - type: sigstoreDivider
     showSigstoreDivider: true
   - type: softwareBehind
     showSoftwareBehind: true
-  - type: sigstoreDivider
-    showSigstoreDivider: true
-  - type: sigstoreEcosystem
-    showSigstoreEcosystem: true
-  - type: faqSection
-    showFaqSection: true
 ---
 
 Hello
