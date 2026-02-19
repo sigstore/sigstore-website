@@ -8,42 +8,30 @@
             <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_2">
                 <div class="text-gray-dark markdown" v-html="$md.render(story.textBlock)"></div>
             </div>
+            </div>
+        <br><br>
+        <div v-if="story.recentTextBlock" class="md:flex justify-between items-start container inner">
+            <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_1">
+                <h2 class="text-36 leading-32 mb-32 text-gray-dark">{{story.recentHeader}}</h2>
+            </div>
+            <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_2">
+                <div class="text-gray-dark markdown" v-html="$md.render(story.recentTextBlock)"></div>
         </div>
-        <div v-if="story.releaseDate" class="md:flex justify-center items-start container inner py-128">
-            <div class="rounded-xl bg-orange-medium p-40 md:max-w-500">
-                <div 
-                    class="text-center text-orange-dark markdown"
-                    v-html="$md.render(story.releaseDate)"
-                >
-                </div>
-                <div class="flex justify-center mt-24">
-                    <Cta :internalCta="ctaInfo" />
-                </div>
-            </div>
         </div>
-        <div class="text-gray-dark container inner text-center">
-            <h3 class="text-36 pb-128">Plans &amp; next steps</h3>
-            <div v-for="(step, index) in dates.step" :key="index" class="pb-120 dotted--divider relative">
-                <p class="h text-16 text-gray-dark mb-16">{{ step.date == Date.now() ? 'Now' : step.date }}</p>
-                <p class="h text-24 text-purple-dark mb-16">{{ step.title }}</p>
-                <div 
-                    class="text-center text-gray-dark markdown"
-                    v-html="$md.render(step.text)"
-                />
+        <br><br>
+        <div v-if="story.initiativesTextBlock" class="md:flex justify-between items-start container inner">
+            <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_1">
+                <h2 class="text-36 leading-32 mb-32 text-gray-dark">{{story.initiativesHeader}}</h2>
             </div>
-            <div class="flex justify-center mt-24">
-                <Cta class="border-2 border-black" :internalCta="ctaInfoEmail" />
-            </div>
+            <div v-animate-on-scroll class="w-full md:w-1/2 step-delay_2">
+                <div class="text-gray-dark markdown" v-html="$md.render(story.initiativesTextBlock)"></div>
+        </div>
         </div>
     </section>
 </template>
 <script lang="js">
-import Cta from '@/components/transparentCta.vue'
-export default {
 
-    components: {
-        Cta
-    },
+export default {
 
     data: () => ({
         story: {

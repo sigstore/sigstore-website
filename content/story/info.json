@@ -1,5 +1,8 @@
 {
-  "header": "Story so far",
-  "textBlock": "It’s still early days, but Sigstore’s already growing up fast. We began as a collaboration between Red Hat and the Google Open Source Security Team to look at technologies for signing and verifying code, working together to make freely available, automated solutions for open source maintainers to verify the provenance of all software. And for software developers to sign releases in the first place.\n\nDeveloping with the continuous help, support and encouragement from the Linux Foundation, Red Hat, Purdue, Google and open source experts across the industry, Sigstore’s become an active community collaborating to push it even further forwards and become a mainstay for the future.",
-  "releaseDate": "**Now generally available!**"
+  "header": "The Sigstore story",
+  "textBlock": "Sigstore began as a collaboration between Red Hat and Google's Open Source Security Team to design technologies for signing and verifying code. The team created freely available, automated solutions for developers to sign their releases and to verify the provenance of all software.\n\nSigstore is now developed by an engaged open source community with support from the Linux Foundation. Sigstore's active community pursues the goal of creating and maintaining an industry-standard solution for signing and verifying software.",
+  "recentHeader": "Recent Sigstore updates",
+  "recentTextBlock": "- [Our newly-released, language-specific clients allow users to interact with Sigstore tools using Python, Java, Go and more.](https://docs.sigstore.dev/language_clients/language_client_overview/)\n\n - [We recently released Cosign v3, which includes select features from our language clients, paired with easy backwards-compatibility.](https://blog.sigstore.dev/cosign-3-0-available/)\n\n - [Rekor v2, a tile-backed transparency log, is now generally available.](https://blog.sigstore.dev/rekor-v2-ga/) ",
+  "initiativesHeader": "Initiatives",
+  "initiativesTextBlock": "- [Cosign v4 is currently in active development.](https://coffeehousecoders.org/blog/cosign_and_clients.html)"
 }
