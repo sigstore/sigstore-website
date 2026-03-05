@@ -29,7 +29,7 @@ sections:
     column2:
       header: Verify
       imageAsset: /img/howtouseit_verify.svg
-      text: Verify that your software is what you expect it to be. Transparency logs store unique identification including who signed the software and where it was built.
+      text: Verify that your software is what you expect it to be. Transparency logs store unique identification information.
       ctaText: Learn more
       ctaLink: https://docs.sigstore.dev/cosign/verifying/verify/
       isCardStyle: true
@@ -37,10 +37,9 @@ sections:
     column3:
       header: Monitor
       imageAsset: /img/howtouseit_monitor.svg
-      text: Transparency logs are readily auditable, creating a foundation for future
-        monitors and integrations to build into your security workflow.
+      text: Monitoring is critical to the transparency log ecosystem. With Rekor Log Monitor you can verify your log consistency and monitor for specific identities within the log. 
       ctaText: Learn more
-      ctaLink: https://docs.sigstore.dev/logging/overview
+      ctaLink: https://github.com/sigstore/rekor-monitor/
       isCardStyle: true
       bgColour: "#ddeff1"
     header: How can you use it?

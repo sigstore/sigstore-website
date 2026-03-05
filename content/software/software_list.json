@@ -2,13 +2,13 @@
   "product": [
     {
       "productName": "Cosign",
-      "productOverview": "Sign and verify artifacts, containers, and anything using the Open Container Initiative (OCI) registry for distribution. With Cosign, signatures and in-toto/SLSA attestations become invisible infrastructure.",
+      "productOverview": "Cosign is an easy-to-use solution for signing and verify artifacts and containers.",
       "productCTALink": "https://github.com/sigstore/cosign",
       "productCTA": "View the repo"
     },
     {
       "productName": "Rekor",
-      "productOverview": "Rekor is an immutable, auditable transparency log service. It records signed metadata to a ledger that can be queried, but can’t be tampered with.\n\n\n",
+      "productOverview": "Rekor is an append-only, auditable transparency log service. It records signed metadata to a ledger that can be queried, but can’t be tampered with.\n\n\n",
       "productCTA": "View the repo",
       "productCTALink": "https://github.com/sigstore/rekor"
     },
@@ -20,7 +20,7 @@
     },
     {
       "productName": "OpenID Connect",
-      "productOverview": "OpenID Connect provides an identity layer that checks if you're who you say you are. It lets clients request and receive information about authenticated sessions and users.",
+      "productOverview": "OpenID Connect provides an identity layer to authenticate users. It lets clients request and receive information about authenticated sessions and users.",
       "productCTA": "Learn more",
       "productCTALink": "https://openid.net/connect/"
     },
