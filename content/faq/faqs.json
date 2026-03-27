@@ -1,28 +1,28 @@
 {
   "faq": [
     {
-      "question": "What can I sign and store?",
-      "answer": "Sigstore tooling supports signing any artifacts, such as files or containers. Rekor supports many file formats, such as in-toto attestations, JARs, RPMs, or Alpine images. Sigstore is also actively being integrated with package repositories to ease the adoption of signing for their communities."
+      "question": "What can I sign?",
+      "answer": "Sigstore tooling supports signing any artifacts, such as files or containers. Rekor supports many file formats, such as in-toto attestations, JARs, RPMs, or Alpine images."
     },
     {
-      "question": "What's the current status?",
-      "answer": "Sigstore announced general availability (GA) for the Rekor transparency log and Fulcio certificate authority public benefit services in October 2022. Cosign, one of the Sigstore clients, had its v2.0 release in February 2023, and other Sigstore clients, including sigstore-js and sigstore-python, have had v1.0 releases. Sigstore is actively developing client tooling for other package repositories and upstream communities."
+      "question": "Is Sigstore easy to use?",
+      "answer": "Signing and verifying software benefits the entire ecosystem, so we have made our tools easy to adopt and use. You can see how easy it is by taking a look at our [Cosign quickstart guide](https://docs.sigstore.dev/quickstart/quickstart-cosign/) or our [CI quickstart guide](https://docs.sigstore.dev/quickstart/quickstart-ci/). The Sigstore project is also customizeable and complex, so implementing advanced features (like using your own instance of Rekor, for example) will take a bit longer. Detailed information on each Sigstore tool is available in our [developer documentation](https://docs.sigstore.dev/)."
     },
     {
-      "question": "How easy is it to use?",
-      "answer": "As easy as we can make it. Signing and verifying seems like a lot of extra effort with a lot of pitfalls. Our aim is to design away the manual effort and risk of error, automating the signing into a few simple commands. Verification and signing is greatly simplified by leveraging identity-based, or keyless, workflows."
-    },
-    {
-      "question": "How do I learn more about the project?",
-      "answer": "Read more about Sigstore at https://docs.sigstore.dev, and check out the FAQs at https://docs.sigstore.dev/about/faq/."
+      "question": "How do I learn more about Sigstore?",
+      "answer": "Our [documentation](https://docs.sigstore.dev) includes extensive information about all the tools that make up Sigstore. It also includes quickstart guides, a discussion of our security model, and information about our language-specific clients and CI integrations. Other resources include the project's [YouTube channel](https://www.youtube.com/@projectsigstore), the [OpenSSF's website](https://openssf.org/), and the [Sigstore Blog](https://blog.sigstore.dev/). "
     },
     {
       "question": "How do I get help if I have a question?",
-      "answer": "The fastest way to get answers, ideas and feedback is on Sigstore's Slack, or post an issue on one of Sigstore's repositories."
+      "answer": "The fastest way to get answers, ideas and feedback is on [Sigstore's Slack](https://sigstore.slack.com/join/shared_invite/zt-2ub0ztl5z-PkWb_Ldwef5d6nb~oryaTA), or to post an issue on one of [Sigstore's repositories](https://github.com/sigstore)."
     },
     {
-      "question": "How can I get involved with the project?",
-      "answer": "The best way is to try out the technologies and let us know your thoughts! We welcome new members to the working group over on Slack, https://join.slack.com/t/sigstore/shared_invite/zt-2ub0ztl5z-PkWb_Ldwef5d6nb~oryaTA. You can also follow us on Twitter at @projectsigstore or the blog, https://blog.sigstore.dev, for updates, or join the mailing list at sigstore-dev@googlegroups.com."
+      "question": "How can I get involved?",
+      "answer": "The best way is to get involved is to try out the technologies and let us know your thoughts! We welcome new members to the working group over on [Slack](https://sigstore.slack.com/join/shared_invite/zt-2ub0ztl5z-PkWb_Ldwef5d6nb~oryaTA) and you can join the mailing list at sigstore-dev@googlegroups.com. You are also welcome to join us on our [community calls](https://openssf.org/calendar/). They are typically on the third Tuesday of every month @ 16:30 UTC."
+    },
+    {
+      "question": "What is Sigstore's current status?",
+      "answer": "Sigstore became an OpenSSF graduated project in March 2024. Other important dates include:\n - Sigstore announced general availability (GA) for the Rekor transparency log and Fulcio certificate authority public benefit services in October 2022.\n- Cosign v3 was made available in October 2025.\n- Sigstore-signed in-toto attestations were adopted by Homebrew in May 2024, PyPI in November 2024, and Maven Central in January 2025.\n- Model signing in NVIDIA’s NGC was adopted in July 2025.\n- Language specific clients were released in 2024 and 2025.\n In short, Sigstore is actively growing both as a technology and as a community."
     }
   ]
 }
