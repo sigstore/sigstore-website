@@ -44,8 +44,8 @@ sections:
     column3:
       header: Attend a community meeting
       imageAsset: /img/community_orange_colorway.svg
-      text: We typically have a community-wide meeting on the third Tuesday of every month @ 16:30 UTC time. Additional meetings for specific initiatives occur throughout the month.
-      ctaText: Check our community calendar
+      text: Community-wide meetings are held every other Thursday. Meeting times alternate in order to accomodate more time zones. Meetings for specific Sigstore projects and initiatives occur throughout the month.
+      ctaText: Find a meeting
       bgColour: bg-white
       ctaLink: https://calendar.google.com/calendar/embed?src=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&ctz=America%2FNew_York
     header: Want to get involved?
