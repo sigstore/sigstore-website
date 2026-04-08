@@ -6,7 +6,7 @@
     },
     {
       "question": "Is Sigstore easy to use?",
-      "answer": "Signing and verifying software benefits the entire ecosystem, so we have made our tools easy to adopt and use. You can see how easy it is by taking a look at our [Cosign quickstart guide](https://docs.sigstore.dev/quickstart/quickstart-cosign/) or our [CI quickstart guide](https://docs.sigstore.dev/quickstart/quickstart-ci/). The Sigstore project is also customizeable, so implementing advanced features (like using your own instance of Rekor, for example) will take a bit longer. Detailed information on each Sigstore tool is available in our [developer documentation](https://docs.sigstore.dev/)."
+      "answer": "Signing and verifying software benefits the entire ecosystem, so we have made our tools easy to adopt and use. You can see how easy it is by taking a look at our [Cosign quickstart guide](https://docs.sigstore.dev/quickstart/quickstart-cosign/) or our [CI quickstart guide](https://docs.sigstore.dev/quickstart/quickstart-ci/). The Sigstore project is also customizable and modular, with support for deploying self-hosted infrastructure. Detailed information on each Sigstore tool is available in our [developer documentation](https://docs.sigstore.dev/)."
     },
     {
       "question": "Who can benefit from using Sigstore?",
