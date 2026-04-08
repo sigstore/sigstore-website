@@ -18,6 +18,3 @@ sections:
   - type: faqSection
     showFaqSection: true
 ---
-
-Hello
-

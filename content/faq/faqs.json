@@ -2,7 +2,7 @@
   "faq": [
     {
       "question": "What can I sign?",
-      "answer": "Sigstore tooling supports signing any artifacts, such as files, containers, binaries, and attestations. [Cosign](https://github.com/sigstore/cosign) is excellent for signing files, binaries, and containers. [Gitsign](https://github.com/sigstore/gitsign) is specialized for git commits and the [Model Transparency](https://github.com/sigstore/model-transparency) project is perfect for signing ML models."
+      "answer": "Sigstore tooling supports signing any artifacts, such as files, containers, binaries, and attestations. [Cosign](https://github.com/sigstore/cosign) is excellent for signing files, binaries, and containers. [Gitsign](https://github.com/sigstore/gitsign) is specialized for git commits and the [Model Transparency](https://github.com/sigstore/model-transparency) project is perfect for signing ML models. Sigstore also maintains a number of [language client libraries](https://docs.sigstore.dev/language_clients/language_client_overview/) so you can use Sigstore in a language of your choice."
     },
     {
       "question": "Is Sigstore easy to use?",
