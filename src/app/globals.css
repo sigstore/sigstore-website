@@ -1,0 +1,763 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ============================================
+   THEME: Custom design tokens
+   Migrated from tailwind.config.js + SCSS vars
+   ============================================ */
+@theme {
+  /* --- Colors --- */
+  --color-black: #000000;
+  --color-black-overlay: rgba(0, 0, 0, 0.12);
+  --color-blue-medium: #6349FF;
+  --color-purple-light: rgba(99, 73, 255, 1);
+  --color-purple-dark: #2A1E71;
+  --color-orange-medium: #FFC398;
+  --color-orange-dark: #793030;
+  --color-pastel-orange: #FFEAD7;
+  --color-pastel-light: rgba(255, 234, 215, 1);
+  --color-pastel-neutral: #E9E9E9;
+  --color-pastel-blue: #DDEFF1;
+  --color-gray-grey-bkg: rgba(241, 233, 229, 1);
+  --color-gray-light: #E9E9E9;
+  --color-gray-medium: #AFAFAF;
+  --color-gray-dark: #444444;
+  --color-white: #FFFFFF;
+  --color-inherit: inherit;
+  --color-transparent: transparent;
+
+  /* Additional SCSS color vars */
+  --color-body: #4d4b4b;
+  --color-heading: #4d5873;
+  --color-scss-black: #2f3542;
+  --color-scss-blue: #2f6af4;
+  --color-purple: #6349FF;
+  --color-red: #ff475b;
+  --color-green: #14ca26;
+  --color-grey: #757575;
+  --color-flat-white: #e5e5e5;
+
+  /* --- Spacing (pxToRem base 10) --- */
+  --spacing-0: 0px;
+  --spacing-1: 0.1rem;
+  --spacing-2: 0.2rem;
+  --spacing-3: 0.3rem;
+  --spacing-4: 0.4rem;
+  --spacing-5: 0.5rem;
+  --spacing-6: 0.6rem;
+  --spacing-7: 0.7rem;
+  --spacing-8: 0.8rem;
+  --spacing-9: 0.9rem;
+  --spacing-10: 1rem;
+  --spacing-11: 1.1rem;
+  --spacing-12: 1.2rem;
+  --spacing-13: 1.3rem;
+  --spacing-14: 1.4rem;
+  --spacing-15: 1.5rem;
+  --spacing-16: 1.6rem;
+  --spacing-17: 1.7rem;
+  --spacing-18: 1.8rem;
+  --spacing-19: 1.9rem;
+  --spacing-20: 2rem;
+  --spacing-21: 2.1rem;
+  --spacing-22: 2.2rem;
+  --spacing-23: 2.3rem;
+  --spacing-24: 2.4rem;
+  --spacing-25: 2.5rem;
+  --spacing-26: 2.6rem;
+  --spacing-27: 2.7rem;
+  --spacing-28: 2.8rem;
+  --spacing-30: 3rem;
+  --spacing-32: 3.2rem;
+  --spacing-34: 3.4rem;
+  --spacing-35: 3.5rem;
+  --spacing-36: 3.6rem;
+  --spacing-38: 3.8rem;
+  --spacing-40: 4rem;
+  --spacing-42: 4.2rem;
+  --spacing-44: 4.4rem;
+  --spacing-45: 4.5rem;
+  --spacing-46: 4.6rem;
+  --spacing-48: 4.8rem;
+  --spacing-50: 5rem;
+  --spacing-52: 5.2rem;
+  --spacing-54: 5.4rem;
+  --spacing-55: 5.5rem;
+  --spacing-56: 5.6rem;
+  --spacing-58: 5.8rem;
+  --spacing-60: 6rem;
+  --spacing-62: 6.2rem;
+  --spacing-64: 6.4rem;
+  --spacing-65: 6.5rem;
+  --spacing-66: 6.6rem;
+  --spacing-68: 6.8rem;
+  --spacing-70: 7rem;
+  --spacing-72: 7.2rem;
+  --spacing-74: 7.4rem;
+  --spacing-75: 7.5rem;
+  --spacing-76: 7.6rem;
+  --spacing-78: 7.8rem;
+  --spacing-80: 8rem;
+  --spacing-82: 8.2rem;
+  --spacing-84: 8.4rem;
+  --spacing-85: 8.5rem;
+  --spacing-86: 8.6rem;
+  --spacing-88: 8.8rem;
+  --spacing-90: 9rem;
+  --spacing-92: 9.2rem;
+  --spacing-94: 9.4rem;
+  --spacing-95: 9.5rem;
+  --spacing-96: 9.6rem;
+  --spacing-98: 9.8rem;
+  --spacing-100: 10rem;
+  --spacing-105: 10.5rem;
+  --spacing-108: 10.8rem;
+  --spacing-110: 11rem;
+  --spacing-112: 11.2rem;
+  --spacing-115: 11.5rem;
+  --spacing-116: 11.6rem;
+  --spacing-118: 11.8rem;
+  --spacing-120: 12rem;
+  --spacing-122: 12.2rem;
+  --spacing-124: 12.4rem;
+  --spacing-125: 12.5rem;
+  --spacing-128: 12.8rem;
+  --spacing-130: 13rem;
+  --spacing-132: 13.2rem;
+  --spacing-135: 13.5rem;
+  --spacing-140: 14rem;
+  --spacing-145: 14.5rem;
+  --spacing-148: 14.8rem;
+  --spacing-150: 15rem;
+  --spacing-152: 15.2rem;
+  --spacing-155: 15.5rem;
+  --spacing-156: 15.6rem;
+  --spacing-158: 15.8rem;
+  --spacing-160: 16rem;
+  --spacing-164: 16.4rem;
+  --spacing-165: 16.5rem;
+  --spacing-170: 17rem;
+  --spacing-172: 17.2rem;
+  --spacing-175: 17.5rem;
+  --spacing-180: 18rem;
+  --spacing-185: 18.5rem;
+  --spacing-188: 18.8rem;
+  --spacing-190: 19rem;
+  --spacing-192: 19.2rem;
+  --spacing-195: 19.5rem;
+  --spacing-196: 19.6rem;
+  --spacing-200: 20rem;
+  --spacing-210: 21rem;
+  --spacing-216: 21.6rem;
+  --spacing-220: 22rem;
+  --spacing-223: 22.3rem;
+  --spacing-225: 22.5rem;
+  --spacing-230: 23rem;
+  --spacing-240: 24rem;
+  --spacing-250: 25rem;
+  --spacing-275: 27.5rem;
+  --spacing-298: 29.8rem;
+  --spacing-300: 30rem;
+  --spacing-322: 32.2rem;
+  --spacing-325: 32.5rem;
+  --spacing-333: 33.3rem;
+  --spacing-345: 34.5rem;
+  --spacing-350: 35rem;
+  --spacing-375: 37.5rem;
+  --spacing-400: 40rem;
+  --spacing-425: 42.5rem;
+  --spacing-450: 45rem;
+  --spacing-475: 47.5rem;
+  --spacing-500: 50rem;
+
+  /* --- Font Sizes (Tailwind v4: --text-* namespace for text-* utility) --- */
+  --text-11: 1.1rem;
+  --text-12: 1.2rem;
+  --text-13: 1.3rem;
+  --text-14: 1.4rem;
+  --text-15: 1.5rem;
+  --text-16: 1.6rem;
+  --text-17: 1.7rem;
+  --text-18: 1.8rem;
+  --text-19: 1.9rem;
+  --text-20: 2rem;
+  --text-21: 2.1rem;
+  --text-22: 2.2rem;
+  --text-23: 2.3rem;
+  --text-24: 2.4rem;
+  --text-25: 2.5rem;
+  --text-33: 3.3rem;
+  --text-36: 3.6rem;
+  --text-38: 3.8rem;
+  --text-44: 4.4rem;
+  --text-50: 5rem;
+  --text-54: 5.4rem;
+  --text-58: 5.8rem;
+  --text-81: 8.1rem;
+  --text-90: 9rem;
+  --text-120: 12rem;
+  --text-128: 12.8rem;
+
+  /* --- Line Heights (Tailwind v4: --leading-* namespace for leading-* utility) --- */
+  --leading-13: 1.3rem;
+  --leading-15: 1.5rem;
+  --leading-16: 1.6rem;
+  --leading-17: 1.7rem;
+  --leading-18: 1.8rem;
+  --leading-20: 2rem;
+  --leading-22: 2.2rem;
+  --leading-23: 2.3rem;
+  --leading-24: 2.4rem;
+  --leading-26: 2.6rem;
+  --leading-29: 2.9rem;
+  --leading-30: 3rem;
+  --leading-32: 3.2rem;
+  --leading-40: 4rem;
+  --leading-42: 4.2rem;
+  --leading-43: 4.3rem;
+  --leading-44: 4.4rem;
+  --leading-48: 4.8rem;
+  --leading-49: 4.9rem;
+  --leading-53: 5.3rem;
+  --leading-60: 6rem;
+  --leading-64: 6.4rem;
+  --leading-98: 9.8rem;
+
+  /* --- Border Radius --- */
+  --radius-none: 0;
+  --radius-sm: 0.125rem;
+  --radius-default: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+  --radius-large: 12px;
+
+  /* --- Max Width --- */
+  --max-w-122: 122px;
+  --max-w-315: 315px;
+  --max-w-334: 334px;
+  --max-w-352: 352px;
+  --max-w-440: 440px;
+  --max-w-500: 500px;
+  --max-w-690: 690px;
+
+  /* --- Width --- */
+  --width-832: 832px;
+
+  /* --- Transition Delay --- */
+  --transition-delay-100: 100ms;
+  --transition-delay-200: 200ms;
+  --transition-delay-300: 300ms;
+  --transition-delay-400: 400ms;
+  --transition-delay-500: 500ms;
+  --transition-delay-600: 600ms;
+  --transition-delay-800: 800ms;
+
+  /* --- Min Height --- */
+  --min-h-146: 14.6rem;
+  --min-h-180: 18rem;
+  --min-h-320: 32rem;
+  --min-h-400: 40rem;
+  --min-h-440: 44rem;
+  --min-h-480: 48rem;
+  --min-h-700: 70rem;
+
+  /* --- Breakpoints --- */
+  --breakpoint-sm: 560px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1800px;
+
+  /* --- Font Family --- */
+  --font-sans: var(--font-inter), sans-serif;
+  --font-header: var(--font-gt-maru), sans-serif;
+}
+
+/* ============================================
+   BASE: Global element styles
+   Migrated from _gen-type.scss, _gen-buttons.scss
+   ============================================ */
+@layer base {
+  html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 1.6rem;
+    color: var(--color-body);
+  }
+
+  h1, .h1 {
+    font-family: var(--font-header);
+    font-weight: 500;
+    font-size: 3.3rem;
+    line-height: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    h1, .h1 {
+      font-size: 5.4rem;
+      line-height: 6rem;
+    }
+  }
+
+  h2, .h2 {
+    font-family: var(--font-header);
+    font-weight: 500;
+    font-size: 3.3rem;
+    line-height: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    h2, .h2 {
+      font-size: 5.4rem;
+      line-height: 6rem;
+    }
+  }
+
+  h3, .h3 {
+    font-family: var(--font-header);
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    h3, .h3 {
+      font-size: 3.6rem;
+      line-height: 4.3rem;
+    }
+  }
+
+  h4, .h4, h5, h6 {
+    font-family: var(--font-header);
+    font-weight: 500;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+  }
+
+  @media (min-width: 768px) {
+    h4, .h4, h5, h6 {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+    }
+  }
+
+  p {
+    font-family: var(--font-sans);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+  }
+
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  a {
+    position: relative;
+    font-family: var(--font-sans);
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    width: fit-content;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  hr {
+    border-top: 1px solid var(--color-scss-black);
+    opacity: 0.1;
+  }
+
+  blockquote, .blockquote {
+    font-family: var(--font-header);
+    font-weight: 500;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    blockquote, .blockquote {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+    }
+  }
+}
+
+/* ============================================
+   UTILITIES: Custom utility classes
+   ============================================ */
+@layer utilities {
+  /* --- Font classes --- */
+  .f-sans {
+    font-family: var(--font-sans);
+  }
+
+  .f-header, .f-header p {
+    font-family: var(--font-header);
+  }
+
+  .h {
+    font-family: var(--font-header);
+    font-weight: 500;
+  }
+
+  .subheading, .subheading p {
+    font-family: var(--font-header);
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    font-weight: 500;
+  }
+
+  @media (min-width: 768px) {
+    .subheading, .subheading p {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+    }
+  }
+
+  /* --- Container --- */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    width: 100%;
+  }
+
+  .container.inner {
+    @media (min-width: 1024px) {
+      padding-left: 12.2rem;
+      padding-right: 12.2rem;
+    }
+  }
+
+  .container--card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: 768px) {
+    .container--card {
+      padding-left: 6.4rem;
+      padding-right: 6.4rem;
+    }
+  }
+
+  .container-bleed {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+  }
+
+  /* --- Scroll animations --- */
+  .before-enter {
+    opacity: 0;
+    transform: translateY(35px);
+    transition-property: all;
+    transition-duration: 0.75s;
+    transition-timing-function: ease-in-out;
+    transition-delay: inherit;
+  }
+
+  .enter {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .delay-step_1 {
+    transition-delay: 100ms;
+  }
+
+  .delay-step_2 {
+    transition-delay: 200ms;
+  }
+
+  .delay-step_3 {
+    transition-delay: 300ms;
+  }
+
+  .delay-step_5 {
+    transition-delay: 500ms;
+  }
+
+  /* --- SVG fill utilities --- */
+  .fill-white path,
+  .fill-white rect {
+    fill: #FFFFFF;
+  }
+
+  .fill-white-stroke path {
+    stroke: #FFFFFF;
+  }
+
+  .fill-grey path {
+    fill: #AFAFAF;
+  }
+
+  .fill-blue path,
+  .fill-blue g {
+    fill: #2f6af4;
+    stroke: #2f6af4;
+  }
+
+  .fill-blue circle {
+    stroke: #2f6af4;
+  }
+
+  .fill-blue--circle circle {
+    fill: #2f6af4;
+  }
+
+  .fill-blue-logo path,
+  .fill-blue-logo g {
+    fill: #2f6af4;
+  }
+
+  .fill-black path,
+  .fill-black g {
+    fill: #000000;
+    stroke: #000000;
+  }
+
+  .fill-black circle {
+    stroke: #000000;
+  }
+
+  .fill-black rect {
+    fill: #000000;
+  }
+
+  .fill-purple-dark-stroke path {
+    stroke: #2A1E71;
+  }
+
+  .fill-orange-dark-stroke path {
+    stroke: #793030;
+  }
+
+  .logo-white path,
+  .logo-white circle {
+    fill: #FFFFFF;
+  }
+
+  /* --- Button base --- */
+  .button {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    font-family: var(--font-header);
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    transition: 300ms cubic-bezier(0.3, 0, 0.175, 1);
+    user-select: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+
+  @media (min-width: 768px) {
+    .button {
+      line-height: 2rem;
+      min-height: 35px;
+      font-size: 12px;
+    }
+  }
+
+  .button:hover {
+    background-color: var(--color-purple);
+    border-color: var(--color-purple);
+    color: white;
+  }
+
+  .button--transparent-border {
+    border: solid 2px black;
+    border-radius: 9999px;
+    background-color: white;
+  }
+
+  /* --- Inline button styles --- */
+  .inline--button-grey {
+    color: var(--color-gray-dark);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .inline--button-grey svg {
+    transition: all 0.2s ease-in-out;
+    transform: translateX(0px);
+  }
+
+  .inline--button-grey:hover {
+    color: var(--color-purple);
+  }
+
+  .inline--button-grey:hover svg {
+    transform: translateX(5px);
+  }
+
+  .inline--button-grey:hover svg path {
+    stroke: var(--color-purple);
+  }
+
+  .inline--button-white {
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .inline--button-white svg {
+    transition: all 0.2s ease-in-out;
+    transform: translateX(0px);
+  }
+
+  .inline--button-white:hover {
+    color: var(--color-purple);
+  }
+
+  .inline--button-white:hover svg {
+    transform: translateX(5px);
+  }
+
+  .inline--button-white:hover svg path {
+    stroke: var(--color-purple);
+  }
+
+  /* --- Markdown rendering --- */
+  .markdown h4 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .markdown p {
+    margin-bottom: 2rem;
+    white-space: pre-line;
+  }
+
+  /* --- Misc utilities --- */
+  .w-content {
+    width: fit-content;
+  }
+
+  .img-mask {
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+
+  .stat_banner {
+    @media (min-width: 1024px) {
+      border-radius: 40px;
+    }
+  }
+
+  /* --- Fade transitions --- */
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  /* --- Headroom.js --- */
+  .headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+  }
+
+  .headroom--pinned {
+    transform: translateY(0%);
+  }
+
+  .headroom--unpinned {
+    transform: translateY(-100%);
+  }
+
+  /* --- Active nav link --- */
+  .nav-link-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    opacity: 1;
+    border-bottom: 1px solid #AFAFAF;
+    transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  }
+}
+
+/* ============================================
+   ANIMATIONS: Keyframes
+   Migrated from _gen-animations.scss
+   ============================================ */
+@keyframes slideOut {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes revealUp {
+  0% { opacity: 0; transform: translate3d(0, 100px, 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomInFade {
+  0% { opacity: 0; transform: scale(1.4); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes flowIn {
+  0% { margin-left: 100%; transform: rotate(-10deg); }
+  100% { margin-left: 0%; }
+}
+
+@keyframes appearIn {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* ============================================
+   CSS CUSTOM PROPERTIES: Color vars from SCSS
+   ============================================ */
+:root {
+  --c-black: #2f3542;
+  --c-white: #fff;
+  --c-dark-blue: #2A1E71;
+  --c-blue: #2f6af4;
+  --c-purple: #6349FF;
+  --c-yellow: #f1a63b;
+  --c-egg-white: #f6f0eb;
+  --c-red: #ff475b;
+  --c-grey: #757575;
+  --c-flat-white: #e5e5e5;
+  --c-green: #14ca26;
+  --c-dark-green: #5db075;
+  --c-bg-blue: #1c68fd;
+  --c-body: #4d4b4b;
+}
