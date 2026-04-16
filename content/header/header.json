@@ -11,9 +11,14 @@
       "menuLink": "trust-security"
     },
     {
-      "name": "Community",
-      "position": "2",
-      "menuLink": "community"
+    "name": "Community",
+    "position": "2",
+    "menuLink": "community"
+    },
+    {
+      "name": "FAQ",
+      "position": "3",
+      "menuLink": "community-faq"
     }
   ]
 }

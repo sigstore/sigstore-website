@@ -3,8 +3,8 @@
     <section class="py-64 bg-pastel-blue" data-header-text="text-purple-dark">
         <div class="text-gray-dark container inner text-center">
             <h3 class="text-36 pb-32">Frequently asked questions</h3>
-            <p>Looking for something detailed around the API?</p>
-            <p class="pb-40">Check out our <a href="https://docs.sigstore.dev/faq" target="_blank">developer docs</a></p>
+            <p>A detailed, technical FAQ is available in our <a href="https://docs.sigstore.dev/about/faq/">developer documentation.</a></p>
+            <p class="pb-40">A general FAQ is included below.</p>
             <article 
                 v-if="faqs.length > 0" 
                 v-for="(faq, index) in faqs" 
@@ -17,7 +17,7 @@
                     <p class="font-bold" :class="[activeFaq == index ? 'pb-24' : null]">{{ faq.question }}</p>
                     <span class="transition" :class="[activeFaq == index ? 'transform rotate-180' : 'transform rotate-0']"><chevron /></span>
                 </div>
-                <div v-if="activeFaq == index" class="markdown" v-html="$md.render(faq.answer)"></div>
+                <div v-if="activeFaq == index" class="faq-markdown" v-html="$md.render(faq.answer)"></div>
             </article>
         </div>
     </section>
