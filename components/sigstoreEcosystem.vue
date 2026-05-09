@@ -16,7 +16,6 @@
             <div v-if="activeGroupData" class="w-full">
                 <div class="">
                     <div class="w-full md:w-2/3 text-left ul-markdown mx-auto" v-html="$md.render(activeGroupData.textOverview)"></div>
-                    <div class="w-full  mx-auto my-32"><img :src="activeGroupData.groupDiagram"></div>
                 </div>
             </div>
         </div>
