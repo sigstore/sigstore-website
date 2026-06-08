@@ -17,7 +17,7 @@
                     <p class="font-bold" :class="[activeFaq == index ? 'pb-24' : null]">{{ faq.question }}</p>
                     <span class="transition" :class="[activeFaq == index ? 'transform rotate-180' : 'transform rotate-0']"><chevron /></span>
                 </div>
-                <div v-if="activeFaq == index" class="faq-markdown" v-html="$md.render(faq.answer)"></div>
+                <div v-if="activeFaq == index" class="ul-markdown" v-html="$md.render(faq.answer)"></div>
             </article>
         </div>
     </section>

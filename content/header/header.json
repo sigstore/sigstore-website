@@ -16,8 +16,13 @@
     "menuLink": "community"
     },
     {
+    "name": "Ecosystem",
+    "position": "3",
+    "menuLink": "ecosystem"
+    },
+    {
       "name": "FAQ",
-      "position": "3",
+      "position": "4",
       "menuLink": "community-faq"
     }
   ]

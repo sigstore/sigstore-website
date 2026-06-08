@@ -2,7 +2,6 @@
 <template>
     <section class="py-64 md:py-128 bg-white" data-header-text="text-gray-dark">
         <div class="text-gray-dark container inner text-center">
-            <h3 class="text-36 pb-44">The Sigstore ecosystem</h3>
             <div class="flex justify-start md:justify-center items-start mb-64 overflow-x-scroll md:overflow-x-visible relative">
                 <button
                     v-for="(group, index) in groupTabs" 
@@ -16,8 +15,7 @@
 
             <div v-if="activeGroupData" class="w-full">
                 <div class="">
-                    <div class="w-full md:w-2/3 text-left markdown mx-auto" v-html="$md.render(activeGroupData.textOverview)"></div>
-                    <div class="w-full  mx-auto my-32"><img :src="activeGroupData.groupDiagram" :alt="`${activeGroupData.groupName} architecture diagram`"></div>
+                    <div class="w-full md:w-2/3 text-left ul-markdown mx-auto" v-html="$md.render(activeGroupData.textOverview)"></div>
                 </div>
             </div>
         </div>

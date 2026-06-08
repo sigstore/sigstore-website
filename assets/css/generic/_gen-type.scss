@@ -238,11 +238,12 @@ ul {
   }
 }
 
-.faq-markdown {
+.ul-markdown {
   @extend .markdown;
   ul {
     list-style-type: disc;
     padding-inline-start: 40px;
+    margin-bottom: 40px;
   };
   a {
     text-decoration: underline;
