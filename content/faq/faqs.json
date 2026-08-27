@@ -18,11 +18,11 @@
     },
     {
       "question": "How do I get help if I have a question?",
-      "answer": "The fastest way to get answers, ideas and feedback is on [Sigstore's Slack](https://sigstore.slack.com/join/shared_invite/zt-2ub0ztl5z-PkWb_Ldwef5d6nb~oryaTA), or to post an issue on one of [Sigstore's repositories](https://github.com/sigstore)."
+      "answer": "The fastest way to get answers, ideas and feedback is on [Sigstore's Slack](https://join.slack.com/t/sigstore/shared_invite/zt-47srvpyn6-j8Ek5hGBwKN32IjLw8BvYA), or to post an issue on one of [Sigstore's repositories](https://github.com/sigstore)."
     },
     {
       "question": "How can I get involved?",
-      "answer": "The best way is to get involved is to try out the technologies and let us know your thoughts! We welcome new members to the working group over on [Slack](https://sigstore.slack.com/join/shared_invite/zt-2ub0ztl5z-PkWb_Ldwef5d6nb~oryaTA) and you can join the mailing list at sigstore-dev@googlegroups.com. You are also welcome to join us on our community calls. Meetings are held every other Thursday. The time alternates to accomodate more timezones. Details are available on the [OpenSSF Calendar](https://openssf.org/calendar/)."
+      "answer": "The best way is to get involved is to try out the technologies and let us know your thoughts! We welcome new members to the working group over on [Slack](https://join.slack.com/t/sigstore/shared_invite/zt-47srvpyn6-j8Ek5hGBwKN32IjLw8BvYA) and you can join the mailing list at sigstore-dev@googlegroups.com. You are also welcome to join us on our community calls. Meetings are held every other Thursday. The time alternates to accomodate more timezones. Details are available on the [OpenSSF Calendar](https://openssf.org/calendar/)."
     },
     {
       "question": "What is Sigstore's current status?",
